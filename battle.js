@@ -12,11 +12,14 @@ function setTextbox(text) {
   document.getElementById('textbox').innerHTML = text;
 }
 
-function animateAttack(creature) {
-  const el = document.getElementById(creature === player ? 'player' : 'enemy');
-  const direction = creature === player ? '50px' : '-50px';
-  el.style.transform = `translateX(${direction})`;
-  setTimeout(() => { el.style.transform = 'translateX(0px)'; }, 300);
+function animateAttack(attacker, defender) {
+  const atkEl = document.getElementById(attacker === player ? 'player' : 'enemy');
+  const defEl = document.getElementById(defender === player ? 'player' : 'enemy');
+  const direction = attacker === player ? '60px' : '-60px';
+  atkEl.style.transform = `translateX(${direction})`;
+  defEl.classList.add('shake');
+  setTimeout(() => { atkEl.style.transform = 'translateX(0)'; }, 300);
+  setTimeout(() => { defEl.classList.remove('shake'); }, 500);
 }
 
 function endBattle(winner) {
@@ -28,24 +31,24 @@ function endBattle(winner) {
 
 function playerAttack() {
   setTextbox(`${player.name} used ${player.move.name}!`);
-  animateAttack(player);
+  animateAttack(player, enemy);
   setTimeout(() => {
     enemy.hp = Math.max(0, enemy.hp - player.move.power);
     updateHP();
     if (enemy.hp <= 0) return endBattle(player);
-    setTimeout(fetchQuestion, 2000);
-  }, 500);
+    setTimeout(fetchQuestion, 1200);
+  }, 600);
 }
 
 function enemyTurn() {
   setTextbox(`${enemy.name} used ${enemy.move.name}!`);
-  animateAttack(enemy);
+  animateAttack(enemy, player);
   setTimeout(() => {
     player.hp = Math.max(0, player.hp - enemy.move.power);
     updateHP();
     if (player.hp <= 0) return endBattle(enemy);
-    setTimeout(fetchQuestion, 2000);
-  }, 500);
+    setTimeout(fetchQuestion, 1200);
+  }, 600);
 }
 
 function fetchQuestion() {
@@ -87,11 +90,13 @@ function fetchQuestion() {
     setTimeout(() => {
       modal.classList.remove('show');
       if (selected === q.answer) {
-        setTimeout(playerAttack, 2000);
+        setTextbox(`Correct! ${player.name} attacks!`);
+        setTimeout(playerAttack, 500);
       } else {
-        setTimeout(enemyTurn, 2000);
+        setTextbox(`Wrong! ${enemy.name} attacks!`);
+        setTimeout(enemyTurn, 500);
       }
-    }, 3000);
+    }, 2000);
   }
 
   const buttons = content.querySelectorAll('button');

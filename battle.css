@@ -30,7 +30,7 @@ body {
   position: absolute;
   text-align: center;
   font-size: 18px;
-  transition: transform 0.5s ease;
+  transition: transform 0.3s ease;
 }
 
 #player { bottom: 30px; left: 40px; }
@@ -199,4 +199,14 @@ img.fish-sprite {
   cursor: pointer;
   z-index: 2;
   text-decoration: none;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-10px); }
+  75% { transform: translateX(10px); }
+}
+
+.shake {
+  animation: shake 0.5s;
 }
