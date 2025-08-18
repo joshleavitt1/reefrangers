@@ -1,0 +1,109 @@
+const player = { name: 'Shellfin', hp: 100, move: { name: 'Fin Swipe', power: 100 } };
+const enemy = { name: 'Octomurk', hp: 100, move: { name: 'Constrict', power: 20 } };
+
+const questions = [
+  { q: "What is 2 + 2?", options: ["3", "4", "5"], answer: "4" },
+  { q: "Which is a fish?", options: ["Cat", "Shark", "Dog"], answer: "Shark" },
+  { q: "What color is the sky?", options: ["Blue", "Red", "Green"], answer: "Blue" }
+];
+
+function updateHP() {
+  document.getElementById('player-hp').style.width = player.hp + '%';
+  document.getElementById('enemy-hp').style.width = enemy.hp + '%';
+}
+
+function setTextbox(text) {
+  document.getElementById('textbox').innerHTML = text;
+}
+
+function animateAttack(creature) {
+  const el = document.getElementById(creature === player ? 'player' : 'enemy');
+  const direction = creature === player ? '50px' : '-50px';
+  el.style.transform = `translateX(${direction})`;
+  setTimeout(() => { el.style.transform = 'translateX(0px)'; }, 300);
+}
+
+function endBattle(winner) {
+  setTextbox(`${winner.name} wins the battle!`);
+  setTimeout(() => {
+    window.location.href = "index.html";
+  }, 3000);
+}
+
+function playerAttack() {
+  setTextbox(`${player.name} used ${player.move.name}!`);
+  animateAttack(player);
+  setTimeout(() => {
+    enemy.hp = Math.max(0, enemy.hp - player.move.power);
+    updateHP();
+    if (enemy.hp <= 0) return endBattle(player);
+    setTimeout(fetchQuestion, 2000);
+  }, 500);
+}
+
+function enemyTurn() {
+  setTextbox(`${enemy.name} used ${enemy.move.name}!`);
+  animateAttack(enemy);
+  setTimeout(() => {
+    player.hp = Math.max(0, player.hp - enemy.move.power);
+    updateHP();
+    if (player.hp <= 0) return endBattle(enemy);
+    setTimeout(fetchQuestion, 2000);
+  }, 500);
+}
+
+function fetchQuestion() {
+  const q = questions[Math.floor(Math.random() * questions.length)];
+  const modal = document.getElementById('modal');
+  const content = document.getElementById('modal-content');
+
+  let timeLeft = 15;
+  let timerId;
+
+  content.innerHTML = `<div>${q.q}</div>
+    <div id="timer" style="margin:10px 0; font-size:14px; color:#555;">Time left: ${timeLeft}s</div>
+    ${q.options.map(opt => `<button>${opt}</button>`).join('')}`;
+  modal.classList.add('show');
+
+  timerId = setInterval(() => {
+    timeLeft--;
+    const timerEl = document.getElementById('timer');
+    if (timerEl) timerEl.textContent = `Time left: ${timeLeft}s`;
+    if (timeLeft <= 0) {
+      clearInterval(timerId);
+      showAnswerFeedback(null);
+    }
+  }, 1000);
+
+  function showAnswerFeedback(selected) {
+    clearInterval(timerId);
+    const buttons = Array.from(content.querySelectorAll('button'));
+    buttons.forEach(btn => {
+      btn.disabled = true;
+      if (btn.innerText === q.answer) {
+        btn.classList.add('correct');
+        btn.innerHTML += " ✅";
+      } else {
+        btn.classList.add('wrong');
+        btn.innerHTML += " ❌";
+      }
+    });
+    setTimeout(() => {
+      modal.classList.remove('show');
+      if (selected === q.answer) {
+        setTimeout(playerAttack, 2000);
+      } else {
+        setTimeout(enemyTurn, 2000);
+      }
+    }, 3000);
+  }
+
+  const buttons = content.querySelectorAll('button');
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => showAnswerFeedback(btn.innerText));
+  });
+}
+
+// Initialize
+updateHP();
+setTimeout(fetchQuestion, 1000);

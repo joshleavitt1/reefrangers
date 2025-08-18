@@ -1,0 +1,206 @@
+/* Shared base styles */
+body {
+  margin: 0;
+  font-family: "Arial Rounded MT Bold", Arial, sans-serif;
+  background: #BDDCFF url('images/bg2.png') center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Bubble animation */
+.bubble {
+  position: absolute;
+  bottom: -50px;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 50%;
+  pointer-events: none;
+  animation: rise linear infinite;
+}
+
+@keyframes rise {
+  0% { transform: translateY(0) translateX(0) scale(1); opacity: 0.6; }
+  100% { transform: translateY(-700px) translateX(var(--drift)) scale(0.5); opacity: 0; }
+}
+
+/* Layout container */
+#app {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
+}
+
+/* Home page layout */
+body.home #app {
+  justify-content: space-between;
+  padding: 40px;
+}
+
+/* Mission page layout */
+body.mission #app {
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Apple glass base */
+.apple-glass {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 16px;
+  backdrop-filter: blur(4px) saturate(110%);
+  -webkit-backdrop-filter: blur(4px) saturate(110%);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  text-align: center;
+}
+
+/* Currency */
+#currency {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 22px;
+  gap: 8px;
+  padding: 12px 20px;
+}
+
+#currency span {
+  font-size: 16px;
+  letter-spacing: .025cap;
+}
+
+/* Title */
+#title {
+  text-align: center;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+#title h1 {
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 48px;
+  letter-spacing: .1cap;
+  margin: 0 0 8px;
+}
+
+#title p {
+  font-size: 16px;
+  letter-spacing: .025cap;
+}
+
+/* Creature */
+#creature-container {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: float 3s ease-in-out infinite;
+  z-index: 1;
+}
+
+body.home #creature-container {
+  margin: 10px 0;
+}
+
+body.mission #creature-container {
+  margin-bottom: 80px;
+}
+
+#creature-container img {
+  width: 260px;
+  height: auto;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+/* Navigation */
+#nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 12px 20px;
+}
+
+.nav-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-item span.emoji {
+  font-size: 32px;
+  margin-bottom: 4px;
+}
+
+.nav-item span.text {
+  font-size: 16px;
+  letter-spacing: .025cap;
+}
+
+/* Mission page elements */
+#close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+  z-index: 2;
+  text-decoration: none;
+}
+
+#mission {
+  padding: 40px;
+  width: 300px;
+}
+
+#mission h1 {
+  font-family: 'Luckiest Guy', cursive;
+  margin: 0;
+  font-size: 40px;
+}
+
+#mission p {
+  font-size: 16px;
+  margin-bottom: 16px;
+  line-height: 160%;
+}
+
+#mission .rewards {
+  margin-bottom: 24px;
+  font-size: 16px;
+}
+
+.button {
+  display: block;
+  width: 100%;
+  background: linear-gradient(180deg, #00A6FF, #006AFF);
+  border: none;
+  border-radius: 8px;
+  padding: 16px 0;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+}
