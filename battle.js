@@ -1,11 +1,7 @@
 const player = { name: 'Shellfin', hp: 100, move: { name: 'Fin Swipe', power: 100 } };
 const enemy = { name: 'Octomurk', hp: 100, move: { name: 'Constrict', power: 20 } };
 
-const questions = [
-  { q: "What is 2 + 2?", options: ["3", "4", "5"], answer: "4" },
-  { q: "Which is a fish?", options: ["Cat", "Shark", "Dog"], answer: "Shark" },
-  { q: "What color is the sky?", options: ["Blue", "Red", "Green"], answer: "Blue" }
-];
+let questions = [];
 
 function updateHP() {
   document.getElementById('player-hp').style.width = player.hp + '%';
@@ -104,6 +100,15 @@ function fetchQuestion() {
   });
 }
 
-// Initialize
-updateHP();
-setTimeout(fetchQuestion, 1000);
+async function init() {
+  try {
+    const res = await fetch("questions.json");
+    questions = await res.json();
+  } catch (err) {
+    console.error("Failed to load questions:", err);
+  }
+  updateHP();
+  setTimeout(fetchQuestion, 1000);
+}
+
+init();
