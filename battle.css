@@ -155,9 +155,12 @@ img.fish-sprite {
 }
 
 .modal-content button.wrong {
-  background: #EDF1F6;
-  border: 0;
-  color: #660000;
+  border: 2px solid #B60000;
+  color: #B60000;
+}
+
+.modal-content button:disabled {
+  opacity: 1;
 }
 
 .correct {
@@ -201,12 +204,3 @@ img.fish-sprite {
   text-decoration: none;
 }
 
-@keyframes shake {
-  0%, 100% { transform: translateX(0); }
-  25% { transform: translateX(-10px); }
-  75% { transform: translateX(10px); }
-}
-
-.shake {
-  animation: shake 0.5s;
-}

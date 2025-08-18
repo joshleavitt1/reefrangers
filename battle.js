@@ -12,14 +12,11 @@ function setTextbox(text) {
   document.getElementById('textbox').innerHTML = text;
 }
 
-function animateAttack(attacker, defender) {
+function animateAttack(attacker) {
   const atkEl = document.getElementById(attacker === player ? 'player' : 'enemy');
-  const defEl = document.getElementById(defender === player ? 'player' : 'enemy');
   const direction = attacker === player ? '60px' : '-60px';
   atkEl.style.transform = `translateX(${direction})`;
-  defEl.classList.add('shake');
   setTimeout(() => { atkEl.style.transform = 'translateX(0)'; }, 300);
-  setTimeout(() => { defEl.classList.remove('shake'); }, 500);
 }
 
 function endBattle(winner) {
@@ -31,7 +28,7 @@ function endBattle(winner) {
 
 function playerAttack() {
   setTextbox(`${player.name} used ${player.move.name}!`);
-  animateAttack(player, enemy);
+  animateAttack(player);
   setTimeout(() => {
     enemy.hp = Math.max(0, enemy.hp - player.move.power);
     updateHP();
@@ -42,7 +39,7 @@ function playerAttack() {
 
 function enemyTurn() {
   setTextbox(`${enemy.name} used ${enemy.move.name}!`);
-  animateAttack(enemy, player);
+  animateAttack(enemy);
   setTimeout(() => {
     player.hp = Math.max(0, player.hp - enemy.move.power);
     updateHP();
