@@ -8,10 +8,6 @@ function updateHP() {
   document.getElementById('enemy-hp').style.width = enemy.hp + '%';
 }
 
-function setTextbox(text) {
-  document.getElementById('textbox').innerHTML = text;
-}
-
 function animateAttack(attacker) {
   const atkEl = document.getElementById(attacker === player ? 'player' : 'enemy');
   const direction = attacker === player ? '60px' : '-60px';
@@ -20,14 +16,23 @@ function animateAttack(attacker) {
 }
 
 function endBattle(winner) {
-  setTextbox(`${winner.name} wins the battle!`);
+  const winnerEl = document.getElementById(winner === player ? 'player' : 'enemy');
+  const loserEl = document.getElementById(winner === player ? 'enemy' : 'player');
+
+  loserEl.style.display = 'none';
+  const info = winnerEl.querySelector('.name-hp-box');
+  if (info) info.style.display = 'none';
+  const banner = document.createElement('h1');
+  banner.textContent = 'Winner';
+  banner.className = 'winner-banner';
+  winnerEl.appendChild(banner);
+
   setTimeout(() => {
     window.location.href = "index.html";
   }, 3000);
 }
 
 function playerAttack() {
-  setTextbox(`${player.name} used ${player.move.name}!`);
   animateAttack(player);
   setTimeout(() => {
     enemy.hp = Math.max(0, enemy.hp - player.move.power);
@@ -38,7 +43,6 @@ function playerAttack() {
 }
 
 function enemyTurn() {
-  setTextbox(`${enemy.name} used ${enemy.move.name}!`);
   animateAttack(enemy);
   setTimeout(() => {
     player.hp = Math.max(0, player.hp - enemy.move.power);
@@ -87,10 +91,8 @@ function fetchQuestion() {
     setTimeout(() => {
       modal.classList.remove('show');
       if (selected === q.answer) {
-        setTextbox(`Correct! ${player.name} attacks!`);
         setTimeout(playerAttack, 500);
       } else {
-        setTextbox(`Wrong! ${enemy.name} attacks!`);
         setTimeout(enemyTurn, 500);
       }
     }, 2000);
