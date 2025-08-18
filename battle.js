@@ -1,4 +1,4 @@
-const player = { name: 'Shellfin', hp: 100, move: { name: 'Fin Swipe', power: 100 } };
+const player = { name: 'Shellfin', hp: 100, move: { name: 'Fin Swipe', power: 25 } };
 const enemy = { name: 'Octomurk', hp: 100, move: { name: 'Constrict', power: 20 } };
 
 let questions = [];
