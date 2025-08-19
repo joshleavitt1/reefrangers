@@ -46,7 +46,6 @@ body.home #app {
 /* Mission page layout */
 body.mission #app {
   justify-content: center;
-  gap: 20px;
 }
 
 /* Apple glass base */
@@ -207,4 +206,36 @@ body.mission #creature-container {
   text-decoration: none;
   text-align: center;
   cursor: pointer;
+}
+
+/* Login page layout */
+body.login #app {
+  justify-content: space-between;
+  padding: 40px;
+}
+
+#login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  max-width: 300px;
+}
+
+.input-container {
+  padding: 0;
+}
+
+.input-container input {
+  width: 100%;
+  padding: 12px;
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  outline: none;
+}
+
+body.login #creature-container {
+  margin: 10px 0;
 }
