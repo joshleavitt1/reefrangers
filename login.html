@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Reef Rangers</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="login">
+  <div id="app">
+    <!-- Title -->
+    <div id="title">
+      <h1>Reef Rangers</h1>
+      <p>Complete daily missions, collect rare creatures, and power real ocean conservation.</p>
+    
+    <form id="login-form">
+      <div class="apple-glass input-container">
+        <input type="text" placeholder="Username" required>
+      </div>
+      <div class="apple-glass input-container">
+        <input type="password" placeholder="Password" required>
+      </div>
+      <button type="submit" class="button">Let's Play</button>
+    </form>
+    </div>
+
+    <!-- Creature -->
+    <div id="creature-container">
+      <img src="images/creature.png" alt="Creature Sprite">
+    </div>
+
+    <!-- Bottom nav -->
+    <div class="apple-glass" id="nav">
+      <a class="nav-item" href="mission.html">
+        <span class="emoji">🤿</span>
+        <span class="text">Mission</span>
+      </a>
+      <div class="nav-item">
+        <span class="emoji">🐠</span>
+        <span class="text">Creatures</span>
+      </div>
+      <div class="nav-item">
+        <span class="emoji">🪸</span>
+        <span class="text">Market</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="bubbles.js"></script>
+</body>
+</html>
