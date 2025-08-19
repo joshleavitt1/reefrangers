@@ -20,6 +20,7 @@ function createUser(username) {
     signInStreak: 0,
     seashells: 0,
     missionsCompleted: 0,
+    lastSignIn: 0,
   };
   saveUsers(users);
   return true;

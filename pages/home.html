@@ -46,8 +46,16 @@
     <script>
       const user = getCurrentUser();
       if (user) {
+        const now = Date.now();
+        const oneDay = 24 * 60 * 60 * 1000;
+        let { signInStreak, lastSignIn } = user;
+        if (!lastSignIn || now - lastSignIn >= oneDay) {
+          signInStreak += 1;
+          lastSignIn = now;
+          updateCurrentUser({ signInStreak, lastSignIn });
+        }
         document.getElementById("streak").textContent =
-          `🔱 ${user.signInStreak} Day Streak`;
+          `🔱 ${signInStreak} Day Streak`;
         document.getElementById("seashells").textContent =
           `🐚 ${user.seashells} Seashells`;
         if (user.creatures && user.creatures.length > 0) {
@@ -55,7 +63,6 @@
           const infoEl = document.getElementById("creature-info");
           if (infoEl) infoEl.textContent = `${c.name} - Lv ${c.level}`;
         }
-        updateCurrentUser({ signInStreak: user.signInStreak + 1 });
       } else {
         window.location.href = "index.html";
       }

@@ -6,7 +6,8 @@
     ],
     "signInStreak": 5,
     "seashells": 5,
-    "missionsCompleted": 5
+    "missionsCompleted": 5,
+    "lastSignIn": 0
   },
   "Alice": {
     "username": "Alice",
@@ -15,6 +16,7 @@
     ],
     "signInStreak": 0,
     "seashells": 0,
-    "missionsCompleted": 0
+    "missionsCompleted": 0,
+    "lastSignIn": 0
   }
 }
