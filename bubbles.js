@@ -13,4 +13,8 @@ function createBubble() {
   bubble.addEventListener('animationend', () => bubble.remove());
 }
 
-setInterval(createBubble, 4000);
+// ✅ This makes one bubble appear immediately
+createBubble();
+
+// Then keep making more every 2 seconds (change 2000 if you want faster/slower)
+setInterval(createBubble, 2000);
