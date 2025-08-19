@@ -12,8 +12,7 @@ body {
 }
 
 #battle {
-  width: 100%;
-  max-width: var(--max-width);
+  width: 560px;
   height: 560px;
   position: relative;
 }
@@ -223,6 +222,7 @@ img.fish-sprite {
   color: gold;
   text-shadow: 2px 2px 4px #000;
 }
+
 
 /* battle.css */
 .creature, .fish-sprite { will-change: transform; }

@@ -1,6 +1,6 @@
 /* Shared base styles */
 :root {
-  --max-width: 400px;
+  --max-width: 425px;
 }
 
 body {
@@ -22,6 +22,7 @@ body {
   border-radius: 50%;
   pointer-events: none;
   animation: rise linear infinite;
+  width: 100%;
 }
 
 @keyframes rise {
@@ -45,7 +46,8 @@ body {
 /* Home page layout */
 body.home #app {
   justify-content: space-between;
-  padding: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 /* Mission page layout */
@@ -73,6 +75,7 @@ body.mission #app {
   font-size: 22px;
   gap: 8px;
   padding: 12px 20px;
+  width: 100%;
 }
 
 .currency span {
@@ -82,7 +85,8 @@ body.mission #app {
 
 #currency-container {
   display: flex;
-  gap: 8px;
+  gap: 16px;
+  width: 100%;
 }
 
 /* Title */
@@ -137,8 +141,8 @@ body.mission #creature-container {
 #nav {
   display: flex;
   justify-content: space-between;
-  gap: 24px;
-  padding: 12px 20px;
+  padding: 12px 0px;
+  width: 100%;
 }
 
 .nav-item {
@@ -152,11 +156,12 @@ body.mission #creature-container {
   text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
   text-decoration: none;
   color: inherit;
+  gap: 6px; /* 👈 this adds consistent space between emoji and label */
 }
+
 
 .nav-item span.emoji {
   font-size: 32px;
-  margin-bottom: 4px;
 }
 
 .nav-item span.text {
@@ -178,7 +183,7 @@ body.mission #creature-container {
 
 #mission {
   padding: 40px;
-  width: 300px;
+  width: 100%;
 }
 
 #mission h1 {
