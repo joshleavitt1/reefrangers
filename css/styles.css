@@ -114,6 +114,11 @@ body.mission #app {
 }
 
 /* Creature */
+#creature-info {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 8px;
+}
 #creature-container {
   width: 180px;
   height: 180px;
