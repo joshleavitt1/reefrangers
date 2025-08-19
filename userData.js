@@ -1,5 +1,5 @@
-const STORAGE_KEY = 'reefRangersUsers';
-const CURRENT_USER_KEY = 'reefRangersCurrentUser';
+const STORAGE_KEY = "reefRangersUsers";
+const CURRENT_USER_KEY = "reefRangersCurrentUser";
 
 function loadUsers() {
   const raw = localStorage.getItem(STORAGE_KEY);

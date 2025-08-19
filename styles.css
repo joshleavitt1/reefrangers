@@ -6,7 +6,7 @@
 body {
   margin: 0;
   font-family: "Arial Rounded MT Bold", Arial, sans-serif;
-  background: #BDDCFF url('images/bg2.png') center/cover no-repeat;
+  background: #bddcff url("images/bg2.png") center/cover no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,8 +26,14 @@ body {
 }
 
 @keyframes rise {
-  0% { transform: translateY(0) translateX(0) scale(1); opacity: 0.6; }
-  100% { transform: translateY(-700px) translateX(var(--drift)) scale(0.5); opacity: 0; }
+  0% {
+    transform: translateY(0) translateX(0) scale(1);
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateY(-700px) translateX(var(--drift)) scale(0.5);
+    opacity: 0;
+  }
 }
 
 /* Layout container */
@@ -80,7 +86,7 @@ body.mission #app {
 
 .currency span {
   font-size: 16px;
-  letter-spacing: .025cap;
+  letter-spacing: 0.025cap;
 }
 
 #currency-container {
@@ -93,7 +99,7 @@ body.mission #app {
 #title {
   text-align: center;
   color: #fff;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 #title h1 {
@@ -104,7 +110,7 @@ body.mission #app {
 
 #title p {
   font-size: 16px;
-  letter-spacing: .025cap;
+  letter-spacing: 0.025cap;
 }
 
 /* Creature */
@@ -133,8 +139,13 @@ body.mission #creature-container {
 }
 
 @keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-20px); }
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
 }
 
 /* Navigation */
@@ -153,12 +164,11 @@ body.mission #creature-container {
   padding: 8px;
   font-size: 16px;
   cursor: pointer;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
   text-decoration: none;
   color: inherit;
   gap: 6px; /* 👈 this adds consistent space between emoji and label */
 }
-
 
 .nav-item span.emoji {
   font-size: 32px;
@@ -166,7 +176,7 @@ body.mission #creature-container {
 
 .nav-item span.text {
   font-size: 16px;
-  letter-spacing: .025cap;
+  letter-spacing: 0.025cap;
 }
 
 /* Shared close button */
@@ -209,7 +219,7 @@ body.mission #creature-container {
 .button {
   display: block;
   width: 100%;
-  background: linear-gradient(180deg, #00A6FF, #006AFF);
+  background: linear-gradient(180deg, #00a6ff, #006aff);
   border: none;
   border-radius: 8px;
   padding: 16px 0;
@@ -224,15 +234,15 @@ body.mission #creature-container {
 /* ---------- Login page ---------- */
 body.login #app {
   /* keep the whole login column centered on the page */
-  justify-content: center;   /* vertical center */
-  align-items: center;       /* horizontal center */
+  justify-content: center; /* vertical center */
+  align-items: center; /* horizontal center */
   padding: 0;
 }
 
 #login-title,
 #login-form {
   width: 100%;
-  max-width: var(--max-width);          /* shared max width column */
+  max-width: var(--max-width); /* shared max width column */
   box-sizing: border-box;
 }
 
@@ -243,13 +253,13 @@ body.login #app {
 }
 
 #login-title h1 {
-  font-family: 'Damion', sans-serif;
+  font-family: "Damion", sans-serif;
   font-weight: 100;
   font-size: 96px;
   margin: 0 0 40px;
   line-height: 0.8;
   color: #fff;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
 #login-title p {
@@ -257,29 +267,28 @@ body.login #app {
   margin: 0;
   color: #fff;
   opacity: 0.9;
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
   line-height: 1.6; /* increases line spacing */
 }
-
 
 /* Form */
 #login-form {
   display: flex;
   flex-direction: column;
   padding: 0 20px;
-  margin-top: 32px;          /* <<< clear, guaranteed space between paragraph and fields */
+  margin-top: 32px; /* <<< clear, guaranteed space between paragraph and fields */
 }
 
 /* Inputs */
 .input-container {
-  margin: 0;                 /* reset any default spacing */
+  margin: 0; /* reset any default spacing */
   padding: 0;
 }
 
 .input-container input {
   width: 100%;
   padding: 16px;
-  background: #FFFFFF;
+  background: #ffffff;
   border: 1px solid transparent; /* stable box model */
   border-radius: 8px;
   font-size: 16px;
@@ -293,7 +302,7 @@ body.login #app {
 
 /* Optional: nicer focus for inputs */
 .input-container input:focus {
-  border-color: #00A6FF;
+  border-color: #00a6ff;
   box-shadow: 0 0 0 3px rgba(0, 166, 255, 0.25);
 }
 
@@ -313,4 +322,3 @@ body.login #app {
 body.login #creature-container {
   margin: 10px 0 30px;
 }
-

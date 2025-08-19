@@ -1,66 +1,79 @@
 // battle.js — delayed start + HP drain + 2-phase victory
 
 // ====== Config ======
-const START_DELAY_MS      = 3000;  // Delay before first question (ms)
-const HP_TRANSITION_MS    = 600;   // HP bar drain duration (ms)
-const LINGER_BOTH_MS      = 1200;  // After final damage, keep BOTH creatures visible for this long
-const VICTORY_SCREEN_MS   = 3000;  // Show winner-only screen before redirect (ms)
-const PLAYER_VICTORY_SRC  = "images/creature.png"; // Sprite to use if the PLAYER wins
+const START_DELAY_MS = 3000; // Delay before first question (ms)
+const HP_TRANSITION_MS = 600; // HP bar drain duration (ms)
+const LINGER_BOTH_MS = 1200; // After final damage, keep BOTH creatures visible for this long
+const VICTORY_SCREEN_MS = 3000; // Show winner-only screen before redirect (ms)
+const PLAYER_VICTORY_SRC = "images/creature.png"; // Sprite to use if the PLAYER wins
 
 // ====== State ======
-const player = { name: 'Shellfin', hp: 100, move: { name: 'Fin Swipe', power: 100 } };
-const enemy  = { name: 'Octomurk',  hp: 100, move: { name: 'Constrict', power: 100 } };
+const player = {
+  name: "Shellfin",
+  hp: 100,
+  move: { name: "Fin Swipe", power: 100 },
+};
+const enemy = {
+  name: "Octomurk",
+  hp: 100,
+  move: { name: "Constrict", power: 100 },
+};
 let questions = [];
 let isGameOver = false;
 
 // ====== Helpers ======
 function updateHP() {
-  document.getElementById('player-hp').style.width = player.hp + '%';
-  document.getElementById('enemy-hp').style.width  = enemy.hp  + '%';
+  document.getElementById("player-hp").style.width = player.hp + "%";
+  document.getElementById("enemy-hp").style.width = enemy.hp + "%";
 }
 
 function animateHP(side /* "player" | "enemy" */, pct, done) {
   const fill = document.getElementById(`${side}-hp`);
-  if (!fill) { done?.(); return; }
+  if (!fill) {
+    done?.();
+    return;
+  }
   fill.style.transition = `width ${HP_TRANSITION_MS}ms ease`;
-  void fill.offsetWidth;              // force reflow so transition triggers
+  void fill.offsetWidth; // force reflow so transition triggers
   fill.style.width = `${pct}%`;
 
   let finished = false;
-  const fallback = setTimeout(() => { if (!finished) done?.(); }, HP_TRANSITION_MS + 80);
+  const fallback = setTimeout(() => {
+    if (!finished) done?.();
+  }, HP_TRANSITION_MS + 80);
 
   const onEnd = (e) => {
-    if (e.propertyName !== 'width') return;
+    if (e.propertyName !== "width") return;
     finished = true;
     clearTimeout(fallback);
-    fill.removeEventListener('transitionend', onEnd);
+    fill.removeEventListener("transitionend", onEnd);
     done?.();
   };
-  fill.addEventListener('transitionend', onEnd, { once: true });
+  fill.addEventListener("transitionend", onEnd, { once: true });
 }
 
 function animateAttack(attacker) {
-  const rootId = attacker === player ? 'player' : 'enemy';
+  const rootId = attacker === player ? "player" : "enemy";
   const atkEl =
     document.querySelector(`#${rootId} .fish-sprite`) ||
     document.getElementById(rootId);
   if (!atkEl) return;
 
   const distance = attacker === player ? 60 : -60;
-  atkEl.style.transition = 'transform 300ms ease';
+  atkEl.style.transition = "transform 300ms ease";
   const baseTransform = getComputedStyle(atkEl).transform;
-  const base = baseTransform && baseTransform !== 'none' ? baseTransform : '';
+  const base = baseTransform && baseTransform !== "none" ? baseTransform : "";
 
-  atkEl.style.transform = base || 'translateX(0)';
+  atkEl.style.transform = base || "translateX(0)";
   atkEl.getBoundingClientRect(); // reflow
 
   requestAnimationFrame(() => {
     atkEl.style.transform = `${base} translateX(${distance}px)`;
     const snapBack = () => {
       atkEl.style.transform = `${base} translateX(0)`;
-      atkEl.removeEventListener('transitionend', snapBack);
+      atkEl.removeEventListener("transitionend", snapBack);
     };
-    atkEl.addEventListener('transitionend', snapBack, { once: true });
+    atkEl.addEventListener("transitionend", snapBack, { once: true });
   });
 }
 
@@ -68,95 +81,99 @@ function animateAttack(attacker) {
 // Phase A: linger both creatures visible for LINGER_BOTH_MS (no layout changes)
 // Phase B: show ONLY winner, centered with "Winner" banner; swap sprite if player wins
 function endBattle(winner) {
-  if (typeof isGameOver !== 'undefined' && isGameOver) return;
-  if (typeof isGameOver === 'undefined') window.isGameOver = true; else isGameOver = true;
+  if (typeof isGameOver !== "undefined" && isGameOver) return;
+  if (typeof isGameOver === "undefined") window.isGameOver = true;
+  else isGameOver = true;
 
-  const LINGER = (typeof LINGER_BOTH_MS !== 'undefined') ? LINGER_BOTH_MS : 1200;
+  const LINGER = typeof LINGER_BOTH_MS !== "undefined" ? LINGER_BOTH_MS : 1200;
 
   // Close any open modal
-  const modal = document.getElementById('modal');
-  if (modal) modal.classList.remove('show');
+  const modal = document.getElementById("modal");
+  if (modal) modal.classList.remove("show");
 
-  const winnerEl       = document.getElementById(winner === player ? 'player' : 'enemy');
-  const winnerIsPlayer = (winner === player);
+  const winnerEl = document.getElementById(
+    winner === player ? "player" : "enemy",
+  );
+  const winnerIsPlayer = winner === player;
 
   // Phase A: linger briefly with both creatures visible
   setTimeout(() => {
-    const battleRoot  = document.getElementById('battle');
-    const battlefield = document.getElementById('battlefield');
+    const battleRoot = document.getElementById("battle");
+    const battlefield = document.getElementById("battlefield");
 
     // Remove battlefield/UI so only background remains
     if (battlefield) battlefield.remove();
     if (modal) modal.remove();
 
-    if (battleRoot) battleRoot.style.position = 'relative';
+    if (battleRoot) battleRoot.style.position = "relative";
 
     // === Centered, shrink-wrapped victory box ===
-    const victoryBox = document.createElement('div');
+    const victoryBox = document.createElement("div");
     Object.assign(victoryBox.style, {
-      position: 'absolute',
-      left: '50%',
-      top: '50%',
-      transform: 'translate(-50%, -50%)',
-      display: 'inline-flex',
-      flexDirection: 'column',
-      alignItems: 'center',
-      justifyContent: 'center',
-      gap: '20px',
-      pointerEvents: 'auto',
+      position: "absolute",
+      left: "50%",
+      top: "50%",
+      transform: "translate(-50%, -50%)",
+      display: "inline-flex",
+      flexDirection: "column",
+      alignItems: "center",
+      justifyContent: "center",
+      gap: "20px",
+      pointerEvents: "auto",
     });
 
     // Banner (fade/slide in)
-    const banner = document.createElement('h1');
-    banner.textContent = 'Winner';
+    const banner = document.createElement("h1");
+    banner.textContent = "Winner";
     Object.assign(banner.style, {
-      fontSize: '32px',
-      fontWeight: '800',
-      color: 'gold',
-      textShadow: '1px 1px 3px #000',
-      margin: '0',
-      lineHeight: '1.1',
-      textAlign: 'center',
-      opacity: '0',
-      transform: 'translateY(-6px)',
+      fontSize: "32px",
+      fontWeight: "800",
+      color: "gold",
+      textShadow: "1px 1px 3px #000",
+      margin: "0",
+      lineHeight: "1.1",
+      textAlign: "center",
+      opacity: "0",
+      transform: "translateY(-6px)",
     });
 
     // Sprite wrapper (pop scale 1.8 -> 2.0)
-    const spriteWrapper = document.createElement('div');
+    const spriteWrapper = document.createElement("div");
     Object.assign(spriteWrapper.style, {
-      display: 'inline-block',
-      lineHeight: '0',
-      margin: '80px',
-      padding: '0',
-      transformOrigin: 'center center',
-      transform: 'scale(0.75)',   // start smaller for pop
-      willChange: 'transform',
+      display: "inline-block",
+      lineHeight: "0",
+      margin: "80px",
+      padding: "0",
+      transformOrigin: "center center",
+      transform: "scale(0.75)", // start smaller for pop
+      willChange: "transform",
     });
 
     // Winner sprite (player gets special art)
-    const originalSprite = winnerEl?.querySelector('.fish-sprite');
-    const sprite = document.createElement('img');
-    sprite.alt  = winnerIsPlayer ? player.name : enemy.name;
-    sprite.src  = winnerIsPlayer ? 'images/creature.png'
-                                 : (originalSprite?.getAttribute('src') || '');
+    const originalSprite = winnerEl?.querySelector(".fish-sprite");
+    const sprite = document.createElement("img");
+    sprite.alt = winnerIsPlayer ? player.name : enemy.name;
+    sprite.src = winnerIsPlayer
+      ? "images/creature.png"
+      : originalSprite?.getAttribute("src") || "";
     Object.assign(sprite.style, {
-      display: 'block',
-      maxWidth: '100%',
-      height: 'auto',
-      opacity: '0',              // fade in
-      willChange: 'opacity',
+      display: "block",
+      maxWidth: "100%",
+      height: "auto",
+      opacity: "0", // fade in
+      willChange: "opacity",
     });
 
     spriteWrapper.appendChild(sprite);
 
     // Dynamic button
-    const button = document.createElement('button');
-    button.className = 'button'; // uses your styles.css .button class
-    button.textContent = winnerIsPlayer ? 'Claim Your Reward' : 'Try Again';
-    button.addEventListener('click', () => {
+    const button = document.createElement("button");
+    button.className = "button"; // uses your styles.css .button class
+    button.textContent = winnerIsPlayer ? "Claim Your Reward" : "Try Again";
+    button.addEventListener("click", () => {
       if (winnerIsPlayer) {
         // Go to rewards / home
-        window.location.href = 'home.html';
+        window.location.href = "home.html";
       } else {
         // Restart the battle cleanly (rebuilds battlefield we removed)
         window.location.reload();
@@ -170,28 +187,30 @@ function endBattle(winner) {
     battleRoot.appendChild(victoryBox);
 
     // Force reflow, then animate
-    void banner.offsetWidth; void sprite.offsetWidth; void spriteWrapper.offsetWidth;
+    void banner.offsetWidth;
+    void sprite.offsetWidth;
+    void spriteWrapper.offsetWidth;
 
-    banner.style.transition        = 'opacity 600ms ease, transform 600ms ease';
-    sprite.style.transition        = 'opacity 800ms ease';
-    spriteWrapper.style.transition = 'transform 420ms cubic-bezier(0.22, 1, 0.36, 1)';
+    banner.style.transition = "opacity 600ms ease, transform 600ms ease";
+    sprite.style.transition = "opacity 800ms ease";
+    spriteWrapper.style.transition =
+      "transform 420ms cubic-bezier(0.22, 1, 0.36, 1)";
 
     requestAnimationFrame(() => {
-      banner.style.opacity   = '1';
-      banner.style.transform = 'translateY(0)';
-      sprite.style.opacity   = '1';
-      spriteWrapper.style.transform = 'scale(1.75)'; // pop to full 2×
+      banner.style.opacity = "1";
+      banner.style.transform = "translateY(0)";
+      sprite.style.opacity = "1";
+      spriteWrapper.style.transform = "scale(1.75)"; // pop to full 2×
     });
   }, LINGER);
 }
-
 
 // ====== Turn Flow ======
 function playerAttack() {
   animateAttack(player);
   setTimeout(() => {
     enemy.hp = Math.max(0, enemy.hp - player.move.power);
-    animateHP('enemy', enemy.hp, () => {
+    animateHP("enemy", enemy.hp, () => {
       if (enemy.hp <= 0) {
         endBattle(player);
       } else {
@@ -205,7 +224,7 @@ function enemyTurn() {
   animateAttack(enemy);
   setTimeout(() => {
     player.hp = Math.max(0, player.hp - enemy.move.power);
-    animateHP('player', player.hp, () => {
+    animateHP("player", player.hp, () => {
       if (player.hp <= 0) {
         endBattle(enemy);
       } else {
@@ -223,20 +242,20 @@ function fetchQuestion() {
   }
 
   const q = questions[Math.floor(Math.random() * questions.length)];
-  const modal = document.getElementById('modal');
-  const content = document.getElementById('modal-content');
+  const modal = document.getElementById("modal");
+  const content = document.getElementById("modal-content");
 
   let timeLeft = 15;
   let timerId;
 
   content.innerHTML = `<div>${q.q}</div>
     <div id="timer" style="margin:10px 0; font-size:14px; color:#555;">Time left: ${timeLeft}s</div>
-    ${q.options.map(opt => `<button>${opt}</button>`).join('')}`;
-  modal.classList.add('show');
+    ${q.options.map((opt) => `<button>${opt}</button>`).join("")}`;
+  modal.classList.add("show");
 
   timerId = setInterval(() => {
     timeLeft--;
-    const timerEl = document.getElementById('timer');
+    const timerEl = document.getElementById("timer");
     if (timerEl) timerEl.textContent = `Time left: ${timeLeft}s`;
     if (timeLeft <= 0) {
       clearInterval(timerId);
@@ -246,19 +265,19 @@ function fetchQuestion() {
 
   function showAnswerFeedback(selected) {
     clearInterval(timerId);
-    const buttons = Array.from(content.querySelectorAll('button'));
-    buttons.forEach(btn => {
+    const buttons = Array.from(content.querySelectorAll("button"));
+    buttons.forEach((btn) => {
       btn.disabled = true;
       if (btn.innerText === q.answer) {
-        btn.classList.add('correct');
+        btn.classList.add("correct");
         btn.innerHTML += " ✅";
       } else {
-        btn.classList.add('wrong');
+        btn.classList.add("wrong");
         btn.innerHTML += " ❌";
       }
     });
     setTimeout(() => {
-      modal.classList.remove('show');
+      modal.classList.remove("show");
       if (selected === q.answer) {
         // ✅ Correct: player's attack; enemy's turn is skipped automatically
         setTimeout(playerAttack, 500);
@@ -268,9 +287,9 @@ function fetchQuestion() {
     }, 2000);
   }
 
-  const buttons = content.querySelectorAll('button');
-  buttons.forEach(btn => {
-    btn.addEventListener('click', () => showAnswerFeedback(btn.innerText));
+  const buttons = content.querySelectorAll("button");
+  buttons.forEach((btn) => {
+    btn.addEventListener("click", () => showAnswerFeedback(btn.innerText));
   });
 }
 
@@ -289,17 +308,17 @@ async function initGame() {
   updateHP();
 
   // Intro overlay fade + delayed start
-  const intro = document.getElementById('intro');
+  const intro = document.getElementById("intro");
   if (intro) {
-    intro.style.opacity = '1';
-    intro.style.transition = 'opacity 0.5s ease';
+    intro.style.opacity = "1";
+    intro.style.transition = "opacity 0.5s ease";
   }
 
   setTimeout(() => {
     if (intro) {
-      intro.style.opacity = '0';
+      intro.style.opacity = "0";
       setTimeout(() => {
-        intro.style.display = 'none';
+        intro.style.display = "none";
         setTimeout(fetchQuestion, 600);
       }, 500);
     } else {
@@ -308,4 +327,4 @@ async function initGame() {
   }, START_DELAY_MS);
 }
 
-window.addEventListener('DOMContentLoaded', initGame);
+window.addEventListener("DOMContentLoaded", initGame);
