@@ -1,0 +1,20 @@
+{
+  "D": {
+    "username": "D",
+    "creatures": [
+      { "name": "Starfish", "level": 1, "hp": 10, "attack": 2 }
+    ],
+    "signInStreak": 0,
+    "seashells": 0,
+    "missionsCompleted": 0
+  },
+  "Alice": {
+    "username": "Alice",
+    "creatures": [
+      { "name": "Seahorse", "level": 1, "hp": 12, "attack": 3 }
+    ],
+    "signInStreak": 0,
+    "seashells": 0,
+    "missionsCompleted": 0
+  }
+}
