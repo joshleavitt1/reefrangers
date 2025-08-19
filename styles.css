@@ -185,6 +185,7 @@ body.mission #creature-container {
 #mission {
   padding: 40px;
   width: 100%;
+  box-sizing: border-box;
 }
 
 #mission h1 {
