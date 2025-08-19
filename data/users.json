@@ -1,6 +1,6 @@
 {
-  "D": {
-    "username": "D",
+  "Josh": {
+    "username": "Josh",
     "creatures": [
       { "name": "Starfish", "level": 1, "hp": 10, "attack": 2 }
     ],
@@ -9,7 +9,7 @@
     "missionsCompleted": 5
   },
   "Alice": {
-    "username": "A",
+    "username": "Alice",
     "creatures": [
       { "name": "Seahorse", "level": 1, "hp": 12, "attack": 3 }
     ],
