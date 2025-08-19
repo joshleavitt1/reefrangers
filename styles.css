@@ -1,4 +1,8 @@
 /* Shared base styles */
+:root {
+  --max-width: 400px;
+}
+
 body {
   margin: 0;
   font-family: "Arial Rounded MT Bold", Arial, sans-serif;
@@ -35,6 +39,7 @@ body {
   box-sizing: border-box;
   position: relative;
   z-index: 1;
+  max-width: var(--max-width);
 }
 
 /* Home page layout */
@@ -215,13 +220,12 @@ body.login #app {
   justify-content: center;   /* vertical center */
   align-items: center;       /* horizontal center */
   padding: 0;
-  max-width: 400px;
 }
 
 #login-title,
 #login-form {
   width: 100%;
-  max-width: 400px;          /* shared max width column */
+  max-width: var(--max-width);          /* shared max width column */
   box-sizing: border-box;
 }
 

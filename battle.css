@@ -12,7 +12,8 @@ body {
 }
 
 #battle {
-  width: 600px;
+  width: 100%;
+  max-width: var(--max-width);
   height: 560px;
   position: relative;
 }
