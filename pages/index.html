@@ -35,13 +35,13 @@
       const usernameInput = document.getElementById("username");
       const errorMsg = document.getElementById("login-error");
 
-      form.addEventListener("submit", function (e) {
+      form.addEventListener("submit", async function (e) {
         e.preventDefault();
         const username = usernameInput.value.trim();
         usernameInput.classList.remove("input-error");
         errorMsg.textContent = "";
 
-        if (login(username)) {
+        if (await login(username)) {
           window.location.href = this.getAttribute("action");
         } else {
           usernameInput.classList.add("input-error");

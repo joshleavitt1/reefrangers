@@ -25,22 +25,6 @@ function createUser(username) {
   return true;
 }
 
-async function initUsers() {
-  if (!localStorage.getItem(STORAGE_KEY)) {
-    try {
-      const response = await fetch(USERS_URL);
-      if (response.ok) {
-        const users = await response.json();
-        saveUsers(users);
-      }
-    } catch (err) {
-      console.error("Failed to load users.json", err);
-    }
-  }
-}
-
-initUsers();
-
 function setCurrentUser(username) {
   localStorage.setItem(CURRENT_USER_KEY, username);
 }
@@ -52,14 +36,23 @@ function getCurrentUser() {
   return users[username] || null;
 }
 
-function login(username) {
-  const users = loadUsers();
-  const user = users[username];
-  if (!user) {
+async function login(username) {
+  try {
+    const response = await fetch(USERS_URL);
+    if (!response.ok) {
+      return false;
+    }
+    const users = await response.json();
+    saveUsers(users);
+    if (!users[username]) {
+      return false;
+    }
+    setCurrentUser(username);
+    return true;
+  } catch (err) {
+    console.error("Failed to load users.json", err);
     return false;
   }
-  setCurrentUser(username);
-  return true;
 }
 
 function signOut() {
