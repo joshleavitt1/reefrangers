@@ -31,10 +31,10 @@
       e.preventDefault();
       const username = this.querySelector('input[type="text"]').value.trim();
       const password = this.querySelector('input[type="password"]').value;
-      if (loginOrCreate(username, password)) {
+      if (login(username, password)) {
         window.location.href = this.getAttribute('action');
       } else {
-        alert('Incorrect password');
+        alert('Incorrect username or password');
       }
     });
   </script>

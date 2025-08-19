@@ -21,27 +21,18 @@ function getCurrentUser() {
   return users[username] || null;
 }
 
-function loginOrCreate(username, password) {
+function login(username, password) {
   const users = loadUsers();
-  let user = users[username];
-  if (user) {
-    if (user.password !== password) {
-      return false; // incorrect password
-    }
-  } else {
-    user = {
-      username,
-      password,
-      creaturesCollected: [],
-      signInStreak: 0,
-      seashellsEarned: 0,
-      missionsCompleted: 0
-    };
-    users[username] = user;
+  const user = users[username];
+  if (!user || user.password !== password) {
+    return false;
   }
-  saveUsers(users);
   setCurrentUser(username);
   return true;
+}
+
+function signOut() {
+  localStorage.removeItem(CURRENT_USER_KEY);
 }
 
 function updateCurrentUser(update) {
@@ -56,5 +47,6 @@ window.loadUsers = loadUsers;
 window.saveUsers = saveUsers;
 window.setCurrentUser = setCurrentUser;
 window.getCurrentUser = getCurrentUser;
-window.loginOrCreate = loginOrCreate;
+window.login = login;
 window.updateCurrentUser = updateCurrentUser;
+window.signOut = signOut;
