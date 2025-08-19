@@ -10,10 +10,10 @@
     <!-- Top currency -->
     <div id="currency-container">
       <div class="apple-glass currency">
-        <span class="emoji">🔱 5 Day Streak</span>
+        <span class="emoji" id="streak">🔱 0 Day Streak</span>
       </div>
       <div class="apple-glass currency">
-        <span class="emoji">🐚 30 Seashells</span>
+        <span class="emoji" id="seashells">🐚 0 Seashells</span>
       </div>
     </div>
 
@@ -39,6 +39,17 @@
     </div>
   </div>
 
+  <script src="userData.js"></script>
+  <script>
+    const user = getCurrentUser();
+    if (user) {
+      document.getElementById('streak').textContent = `🔱 ${user.signInStreak} Day Streak`;
+      document.getElementById('seashells').textContent = `🐚 ${user.seashellsEarned} Seashells`;
+      updateCurrentUser({ signInStreak: user.signInStreak + 1 });
+    } else {
+      window.location.href = 'index.html';
+    }
+  </script>
   <script src="bubbles.js"></script>
 </body>
 </html>

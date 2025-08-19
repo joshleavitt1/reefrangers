@@ -25,6 +25,19 @@
     </form>
   </div>
 
+  <script src="userData.js"></script>
+  <script>
+    document.getElementById('login-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const username = this.querySelector('input[type="text"]').value.trim();
+      const password = this.querySelector('input[type="password"]').value;
+      if (loginOrCreate(username, password)) {
+        window.location.href = this.getAttribute('action');
+      } else {
+        alert('Incorrect password');
+      }
+    });
+  </script>
   <script src="bubbles.js"></script>
 </body>
 </html>
