@@ -1,57 +1,59 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>Reef Rangers</title>
-<link rel="stylesheet" href="styles.css">
-</head>
-<body class="home">
-  <!-- Sign out X -->
-  <a id="close" href="index.html" onclick="signOut()">✕</a>
-  <div id="app">
-    <!-- Top currency -->
-    <div id="currency-container">
-      <div class="apple-glass currency">
-        <span class="emoji" id="streak">🔱 0 Day Streak</span>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Reef Rangers</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body class="home">
+    <!-- Sign out X -->
+    <a id="close" href="index.html" onclick="signOut()">✕</a>
+    <div id="app">
+      <!-- Top currency -->
+      <div id="currency-container">
+        <div class="apple-glass currency">
+          <span class="emoji" id="streak">🔱 0 Day Streak</span>
+        </div>
+        <div class="apple-glass currency">
+          <span class="emoji" id="seashells">🐚 0 Seashells</span>
+        </div>
       </div>
-      <div class="apple-glass currency">
-        <span class="emoji" id="seashells">🐚 0 Seashells</span>
+
+      <!-- Creature -->
+      <div id="creature-container">
+        <img src="images/creature.png" alt="Creature Sprite" />
+      </div>
+
+      <!-- Bottom nav -->
+      <div class="apple-glass" id="nav">
+        <a class="nav-item" href="mission.html">
+          <span class="emoji">🤿</span>
+          <span class="text">Mission</span>
+        </a>
+        <div class="nav-item">
+          <span class="emoji">🐠</span>
+          <span class="text">Creatures</span>
+        </div>
+        <div class="nav-item">
+          <span class="emoji">🪸</span>
+          <span class="text">Market</span>
+        </div>
       </div>
     </div>
 
-    <!-- Creature -->
-    <div id="creature-container">
-      <img src="images/creature.png" alt="Creature Sprite">
-    </div>
-
-    <!-- Bottom nav -->
-    <div class="apple-glass" id="nav">
-      <a class="nav-item" href="mission.html">
-        <span class="emoji">🤿</span>
-        <span class="text">Mission</span>
-      </a>
-      <div class="nav-item">
-        <span class="emoji">🐠</span>
-        <span class="text">Creatures</span>
-      </div>
-      <div class="nav-item">
-        <span class="emoji">🪸</span>
-        <span class="text">Market</span>
-      </div>
-    </div>
-  </div>
-
-  <script src="userData.js"></script>
-  <script>
-    const user = getCurrentUser();
-    if (user) {
-      document.getElementById('streak').textContent = `🔱 ${user.signInStreak} Day Streak`;
-      document.getElementById('seashells').textContent = `🐚 ${user.seashellsEarned} Seashells`;
-      updateCurrentUser({ signInStreak: user.signInStreak + 1 });
-    } else {
-      window.location.href = 'index.html';
-    }
-  </script>
-  <script src="bubbles.js"></script>
-</body>
+    <script src="js/userData.js"></script>
+    <script>
+      const user = getCurrentUser();
+      if (user) {
+        document.getElementById("streak").textContent =
+          `🔱 ${user.signInStreak} Day Streak`;
+        document.getElementById("seashells").textContent =
+          `🐚 ${user.seashellsEarned} Seashells`;
+        updateCurrentUser({ signInStreak: user.signInStreak + 1 });
+      } else {
+        window.location.href = "index.html";
+      }
+    </script>
+    <script src="js/bubbles.js"></script>
+  </body>
 </html>
