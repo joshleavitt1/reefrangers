@@ -156,7 +156,7 @@ function endBattle(winner) {
     button.addEventListener('click', () => {
       if (winnerIsPlayer) {
         // Go to rewards / home
-        window.location.href = 'index.html';
+        window.location.href = 'home.html';
       } else {
         // Restart the battle cleanly (rebuilds battlefield we removed)
         window.location.reload();
