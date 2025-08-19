@@ -89,9 +89,8 @@ body.mission #app {
 }
 
 #title h1 {
-  font-family: 'Carter One', cursive;
+  font-family: "Arial Rounded MT Bold", Arial, sans-serif;
   font-size: 48px;
-  letter-spacing: .1cap;
   margin: 0 0 8px;
 }
 
@@ -179,7 +178,7 @@ body.mission #creature-container {
 }
 
 #mission h1 {
-  font-family: 'Carter One', cursive;
+  font-family: "Arial Rounded MT Bold", Arial, sans-serif;
   margin: 0;
   font-size: 40px;
 }

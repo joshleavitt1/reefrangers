@@ -96,7 +96,7 @@ img.fish-sprite {
   align-items: center;
   z-index: 2;
   pointer-events: none;
-  animation: fadeOut 2s ease forwards;
+  animation: fadeOut 4s ease forwards;
 }
 
 .intro-overlay h1 {
@@ -216,20 +216,15 @@ img.fish-sprite {
   font-size: 18px;
 }
 
-.bubble {
-  position: absolute;
-  bottom: 0;
-  width: 20px;
-  height: 20px;
-  background: rgba(255,255,255,0.7);
-  border-radius: 50%;
-  animation: rise 4s linear infinite;
+.winner-banner {
+  font-size: 2em;
+  font-weight: bold;
+  color: gold;
+  text-shadow: 2px 2px 4px #000;
 }
 
-@keyframes rise {
-  0% { transform: translateY(0) scale(1); opacity: 1; }
-  100% { transform: translateY(-400px) scale(0.5); opacity: 0; }
-}
+/* battle.css */
+.creature, .fish-sprite { will-change: transform; }
 
 /* Top X icon */
 #close {
