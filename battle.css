@@ -227,15 +227,4 @@ img.fish-sprite {
 /* battle.css */
 .creature, .fish-sprite { will-change: transform; }
 
-/* Top X icon */
-#close {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  font-size: 28px;
-  color: white;
-  cursor: pointer;
-  z-index: 2;
-  text-decoration: none;
-}
 

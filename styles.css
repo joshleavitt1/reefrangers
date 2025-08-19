@@ -169,7 +169,7 @@ body.mission #creature-container {
   letter-spacing: .025cap;
 }
 
-/* Mission page elements */
+/* Shared close button */
 #close {
   position: absolute;
   top: 20px;
@@ -181,6 +181,7 @@ body.mission #creature-container {
   text-decoration: none;
 }
 
+/* Mission page elements */
 #mission {
   padding: 40px;
   width: 100%;
