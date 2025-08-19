@@ -234,7 +234,7 @@ body.login #app {
 #login-title h1 {
   font-family: "Arial Rounded MT Bold", Arial, sans-serif;
   font-weight: 700;
-  font-size: 120px;
+  font-size: 64px;
   margin: 0 0 12px;
   color: #fff;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
@@ -256,7 +256,7 @@ body.login #app {
   flex-direction: column;
   gap: 24px;                 /* spacing between inputs/button */
   padding: 0 20px;
-  margin-top: 48px;          /* <<< clear, guaranteed space between paragraph and fields */
+  margin-top: 32px;          /* <<< clear, guaranteed space between paragraph and fields */
 }
 
 /* Inputs */
