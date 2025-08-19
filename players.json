@@ -1,0 +1,14 @@
+{
+  "players": {
+    "demo": {
+      "username": "demo",
+      "password": "demo",
+      "creaturesCollected": [
+        { "name": "Shellfin", "level": 1, "hp": 50, "attack": 10 }
+      ],
+      "signInStreak": 0,
+      "seashellsEarned": 0,
+      "missionsCompleted": 0
+    }
+  }
+}

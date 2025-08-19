@@ -1,0 +1,6 @@
+{
+  "enemyCreatures": [
+    { "name": "Octomurk", "hp": 100, "attack": 15 },
+    { "name": "Crustaclaw", "hp": 80,  "attack": 10 }
+  ]
+}
