@@ -60,6 +60,11 @@ body {
   margin-bottom: 6px;
 }
 
+.stats {
+  margin-top: 4px;
+  font-size: 14px;
+}
+
 .hp-bar {
   height: 8px;
   width: 100%;

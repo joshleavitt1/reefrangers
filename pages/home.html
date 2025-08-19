@@ -20,6 +20,7 @@
       </div>
 
       <!-- Creature -->
+      <div id="creature-info"></div>
       <div id="creature-container">
         <img src="../images/creature.png" alt="Creature Sprite" />
       </div>
@@ -48,7 +49,12 @@
         document.getElementById("streak").textContent =
           `🔱 ${user.signInStreak} Day Streak`;
         document.getElementById("seashells").textContent =
-          `🐚 ${user.seashellsEarned} Seashells`;
+          `🐚 ${user.seashells} Seashells`;
+        if (user.creatures && user.creatures.length > 0) {
+          const c = user.creatures[0];
+          const infoEl = document.getElementById("creature-info");
+          if (infoEl) infoEl.textContent = `${c.name} - Lv ${c.level}`;
+        }
         updateCurrentUser({ signInStreak: user.signInStreak + 1 });
       } else {
         window.location.href = "index.html";
