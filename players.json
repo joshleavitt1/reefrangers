@@ -1,8 +1,7 @@
 {
   "players": {
-    "demo": {
+    "1": {
       "username": "1",
-      "password": "1",
       "creaturesCollected": [
         { "name": "Shellfin", "level": 1, "hp": 50, "attack": 10 }
       ],

@@ -14,30 +14,35 @@
       <p>Complete daily missions, collect rare creatures, and power real ocean conservation.</p>
     </div>
 
-    <form id="login-form" action="home.html">
-      <div class="apple-glass input-container">
-        <input type="text" placeholder="Username" required>
-      </div>
-      <div class="apple-glass input-container">
-        <input type="password" placeholder="Password" required>
-      </div>
-      <button type="submit" class="button">Let's Play</button>
-    </form>
-  </div>
+      <form id="login-form" action="home.html">
+        <div class="apple-glass input-container">
+          <input id="username" type="text" placeholder="Username" required>
+        </div>
+        <p id="login-error" class="error-message"></p>
+        <button type="submit" class="button">Let's Play</button>
+      </form>
+    </div>
 
-  <script src="userData.js"></script>
-  <script>
-    document.getElementById('login-form').addEventListener('submit', function(e) {
-      e.preventDefault();
-      const username = this.querySelector('input[type="text"]').value.trim();
-      const password = this.querySelector('input[type="password"]').value;
-      if (login(username, password)) {
-        window.location.href = this.getAttribute('action');
-      } else {
-        alert('Incorrect username or password');
-      }
-    });
-  </script>
-  <script src="bubbles.js"></script>
-</body>
-</html>
+    <script src="userData.js"></script>
+    <script>
+      const form = document.getElementById('login-form');
+      const usernameInput = document.getElementById('username');
+      const errorMsg = document.getElementById('login-error');
+
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const username = usernameInput.value.trim();
+        usernameInput.classList.remove('input-error');
+        errorMsg.textContent = '';
+
+        if (login(username)) {
+          window.location.href = this.getAttribute('action');
+        } else {
+          usernameInput.classList.add('input-error');
+          errorMsg.textContent = "User doesn't exist. Try again.";
+        }
+      });
+    </script>
+    <script src="bubbles.js"></script>
+  </body>
+  </html>

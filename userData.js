@@ -21,10 +21,10 @@ function getCurrentUser() {
   return users[username] || null;
 }
 
-function login(username, password) {
+function login(username) {
   const users = loadUsers();
   const user = users[username];
-  if (!user || user.password !== password) {
+  if (!user) {
     return false;
   }
   setCurrentUser(username);
