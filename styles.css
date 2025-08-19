@@ -266,7 +266,6 @@ body.login #app {
 #login-form {
   display: flex;
   flex-direction: column;
-  gap: 24px;                 /* spacing between inputs/button */
   padding: 0 20px;
   margin-top: 32px;          /* <<< clear, guaranteed space between paragraph and fields */
 }
@@ -296,16 +295,6 @@ body.login #app {
 .input-container input:focus {
   border-color: #00A6FF;
   box-shadow: 0 0 0 3px rgba(0, 166, 255, 0.25);
-}
-
-.input-error {
-  outline: 1px solid orange;
-}
-
-.error-message {
-  color: orange;
-  font-size: 14px;
-  margin: 4px 0 0;
 }
 
 /* Optional: tweak creature spacing on login */
