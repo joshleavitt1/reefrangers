@@ -6,8 +6,8 @@
       "creaturesCollected": [
         { "name": "Shellfin", "level": 1, "hp": 50, "attack": 10 }
       ],
-      "signInStreak": 0,
-      "seashellsEarned": 0,
+      "signInStreak": 10,
+      "seashellsEarned": 5,
       "missionsCompleted": 0
     }
   }
