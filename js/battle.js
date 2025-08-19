@@ -5,7 +5,7 @@ const START_DELAY_MS = 3000; // Delay before first question (ms)
 const HP_TRANSITION_MS = 600; // HP bar drain duration (ms)
 const LINGER_BOTH_MS = 1200; // After final damage, keep BOTH creatures visible for this long
 const VICTORY_SCREEN_MS = 3000; // Show winner-only screen before redirect (ms)
-const PLAYER_VICTORY_SRC = "images/creature.png"; // Sprite to use if the PLAYER wins
+const PLAYER_VICTORY_SRC = "../images/creature.png"; // Sprite to use if the PLAYER wins
 
 // ====== State ======
 const player = {
@@ -154,7 +154,7 @@ function endBattle(winner) {
     const sprite = document.createElement("img");
     sprite.alt = winnerIsPlayer ? player.name : enemy.name;
     sprite.src = winnerIsPlayer
-      ? "images/creature.png"
+      ? "../images/creature.png"
       : originalSprite?.getAttribute("src") || "";
     Object.assign(sprite.style, {
       display: "block",
@@ -297,7 +297,7 @@ function fetchQuestion() {
 async function initGame() {
   // Load questions
   try {
-    const res = await fetch("questions.json");
+    const res = await fetch("../data/questions.json");
     const data = await res.json();
     if (Array.isArray(data)) questions = data;
   } catch (err) {
