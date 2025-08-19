@@ -297,6 +297,18 @@ body.login #app {
   box-shadow: 0 0 0 3px rgba(0, 166, 255, 0.25);
 }
 
+/* Highlight input when user doesn't exist */
+.input-container input.input-error {
+  outline: 2px solid orange;
+}
+
+/* Login error message */
+#login-error {
+  margin-top: 8px;
+  color: #fff;
+  text-align: center;
+}
+
 /* Optional: tweak creature spacing on login */
 body.login #creature-container {
   margin: 10px 0 30px;
