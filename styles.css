@@ -193,6 +193,7 @@ body.mission #creature-container {
   font-size: 16px;
 }
 
+/* Buttons */
 .button {
   display: block;
   width: 100%;
@@ -208,34 +209,85 @@ body.mission #creature-container {
   cursor: pointer;
 }
 
-/* Login page layout */
+/* ---------- Login page ---------- */
 body.login #app {
-  justify-content: space-between;
-  padding: 40px;
+  /* keep the whole login column centered on the page */
+  justify-content: center;   /* vertical center */
+  align-items: center;       /* horizontal center */
+  padding: 0;
+  max-width: 400px;
 }
 
+#login-title,
+#login-form {
+  width: 100%;
+  max-width: 400px;          /* shared max width column */
+  box-sizing: border-box;
+}
+
+/* Title block */
+#login-title {
+  text-align: center;
+  padding: 0 20px;
+}
+
+#login-title h1 {
+  font-family: "Arial Rounded MT Bold", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 120px;
+  margin: 0 0 12px;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+}
+
+#login-title p {
+  font-size: 18px;
+  margin: 0;
+  color: #fff;
+  opacity: 0.9;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+  line-height: 1.8; /* increases line spacing */
+}
+
+
+/* Form */
 #login-form {
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  width: 100%;
-  max-width: 300px;
+  gap: 24px;                 /* spacing between inputs/button */
+  padding: 0 20px;
+  margin-top: 48px;          /* <<< clear, guaranteed space between paragraph and fields */
 }
 
+/* Inputs */
 .input-container {
+  margin: 0;                 /* reset any default spacing */
   padding: 0;
 }
 
 .input-container input {
   width: 100%;
-  padding: 12px;
-  background: transparent;
-  border: none;
-  color: #fff;
+  padding: 16px;
+  background: #FFFFFF;
+  border: 1px solid transparent; /* stable box model */
+  border-radius: 8px;
   font-size: 16px;
+  color: #888888;
+  line-height: 1.2;
+  box-sizing: border-box;
   outline: none;
+  appearance: none;
+  -webkit-appearance: none;
 }
 
-body.login #creature-container {
-  margin: 10px 0;
+/* Optional: nicer focus for inputs */
+.input-container input:focus {
+  border-color: #00A6FF;
+  box-shadow: 0 0 0 3px rgba(0, 166, 255, 0.25);
 }
+
+/* Optional: tweak creature spacing on login */
+body.login #creature-container {
+  margin: 10px 0 30px;
+}
+
