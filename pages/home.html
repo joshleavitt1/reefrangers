@@ -22,7 +22,7 @@
       <!-- Creature -->
       <div id="creature-info"></div>
       <div id="creature-container">
-        <img src="../images/creature.png" alt="Creature Sprite" />
+        <img src="../images/shellfin.png" alt="Creature Sprite" />
       </div>
 
       <!-- Bottom nav -->
@@ -62,6 +62,9 @@
           const c = user.creatures[0];
           const infoEl = document.getElementById("creature-info");
           if (infoEl) infoEl.textContent = c.name;
+          const imgEl = document.querySelector("#creature-container img");
+          if (imgEl && c.sprite && c.sprite.normal)
+            imgEl.src = c.sprite.normal;
         }
       } else {
         window.location.href = "index.html";

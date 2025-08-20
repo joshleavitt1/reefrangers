@@ -23,15 +23,34 @@
       </div>
     </div>
 
+    <script src="../js/userData.js"></script>
     <script>
       document.addEventListener("DOMContentLoaded", async () => {
+        const user = getCurrentUser();
+        if (!user) {
+          window.location.href = "index.html";
+          return;
+        }
         try {
           const res = await fetch("../data/missions.json");
           const data = await res.json();
           if (Array.isArray(data.missions) && data.missions.length > 0) {
-            const mission =
-              data.missions[Math.floor(Math.random() * data.missions.length)];
-            sessionStorage.setItem("currentMission", JSON.stringify(mission));
+            let missionIndex = 0;
+            if (Array.isArray(user.missionsCompleted)) {
+              const idx = user.missionsCompleted.findIndex(
+                (m) => !m.completed,
+              );
+              if (idx !== -1) missionIndex = idx;
+            }
+            const mission = data.missions[missionIndex];
+            sessionStorage.setItem(
+              "currentMission",
+              JSON.stringify(mission),
+            );
+            sessionStorage.setItem(
+              "currentMissionIndex",
+              String(missionIndex),
+            );
             document.getElementById("mission-title").textContent = mission.name;
             document.getElementById("mission-desc").textContent =
               mission.description;

@@ -19,7 +19,7 @@ function createUser(username) {
     creatures: [],
     signInStreak: 0,
     seashells: 0,
-    missionsCompleted: 0,
+    missionsCompleted: [],
     lastSignIn: 0,
   };
   saveUsers(users);
