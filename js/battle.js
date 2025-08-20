@@ -173,7 +173,7 @@ function endBattle(winner) {
       transform: "translateY(-6px)",
     });
 
-    // Sprite wrapper (pop scale 0.5 -> 1)
+    // Sprite wrapper (pop scale)
     const spriteWrapper = document.createElement("div");
     Object.assign(spriteWrapper.style, {
       display: "inline-block",
@@ -181,7 +181,7 @@ function endBattle(winner) {
       margin: "10px 0",
       padding: "0",
       transformOrigin: "center center",
-      transform: "scale(0.5)", // start smaller for pop
+      transform: "scale(0.7)", // start slightly smaller for pop
       willChange: "transform",
     });
 
@@ -194,7 +194,7 @@ function endBattle(winner) {
       : originalSprite?.getAttribute("src") || "";
     Object.assign(sprite.style, {
       display: "block",
-      width: "260px",
+      width: "min(90vw, 360px)", // enlarge winner sprite
       height: "auto",
       opacity: "0", // fade in
       willChange: "opacity",
