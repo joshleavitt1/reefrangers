@@ -197,9 +197,15 @@ function endBattle(winner) {
     button.textContent = winnerIsPlayer ? "Claim Your Reward" : "Try Again";
     button.addEventListener("click", () => {
       if (winnerIsPlayer) {
-        // Go to rewards / home
+        if (currentMission && user) {
+          const newSeashells =
+            (user.seashells || 0) + (currentMission.reward || 0);
+          updateCurrentUser({ seashells: newSeashells });
+        }
+        sessionStorage.removeItem("currentMission");
         window.location.href = "home.html";
       } else {
+        sessionStorage.removeItem("currentMission");
         // Restart the battle cleanly (rebuilds battlefield we removed)
         window.location.reload();
       }
@@ -331,11 +337,18 @@ async function initGame() {
 
   // Load mission data
   try {
-    const res = await fetch("../data/missions.json");
-    const data = await res.json();
-    if (Array.isArray(data.missions) && data.missions.length > 0) {
-      currentMission =
-        data.missions[Math.floor(Math.random() * data.missions.length)];
+    const stored = sessionStorage.getItem("currentMission");
+    if (stored) {
+      currentMission = JSON.parse(stored);
+    } else {
+      const res = await fetch("../data/missions.json");
+      const data = await res.json();
+      if (Array.isArray(data.missions) && data.missions.length > 0) {
+        currentMission =
+          data.missions[Math.floor(Math.random() * data.missions.length)];
+      }
+    }
+    if (currentMission && currentMission.enemy) {
       const e = currentMission.enemy;
       enemy.name = e.name;
       enemy.hp = e.hp;

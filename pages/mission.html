@@ -16,15 +16,34 @@
 
       <!-- Mission box -->
       <div class="apple-glass" id="mission">
-        <h1>Mission</h1>
-        <p>
-          Octomurk is eating creatures on the reef. Time to show him who’s boss.
-        </p>
-        <div class="rewards">🐚 5 reef rewards</div>
-        <a href="battle.html" class="button">Accept Mission</a>
+        <h1 id="mission-title"></h1>
+        <p id="mission-desc"></p>
+        <div class="rewards" id="mission-reward"></div>
+        <a href="battle.html" class="button" id="accept-mission">Accept Mission</a>
       </div>
     </div>
 
+    <script>
+      document.addEventListener("DOMContentLoaded", async () => {
+        try {
+          const res = await fetch("../data/missions.json");
+          const data = await res.json();
+          if (Array.isArray(data.missions) && data.missions.length > 0) {
+            const mission =
+              data.missions[Math.floor(Math.random() * data.missions.length)];
+            sessionStorage.setItem("currentMission", JSON.stringify(mission));
+            document.getElementById("mission-title").textContent = mission.name;
+            document.getElementById("mission-desc").textContent =
+              mission.description;
+            document.getElementById(
+              "mission-reward",
+            ).textContent = `🐚 ${mission.reward} reef rewards`;
+          }
+        } catch (err) {
+          console.error("Failed to load missions:", err);
+        }
+      });
+    </script>
     <script src="../js/bubbles.js"></script>
   </body>
 </html>

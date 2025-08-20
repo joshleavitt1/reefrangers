@@ -61,7 +61,7 @@
         if (user.creatures && user.creatures.length > 0) {
           const c = user.creatures[0];
           const infoEl = document.getElementById("creature-info");
-          if (infoEl) infoEl.textContent = `${c.name} - Lv ${c.level}`;
+          if (infoEl) infoEl.textContent = c.name;
         }
       } else {
         window.location.href = "index.html";
