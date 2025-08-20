@@ -262,7 +262,9 @@ function fetchQuestion() {
 
   content.innerHTML = `<div>${q.q}</div>
     <div id="timer" style="margin:10px 0; font-size:14px; color:#555;">Time left: ${timeLeft}s</div>
-    ${q.options.map((opt) => `<button>${opt}</button>`).join("")}`;
+    ${q.options
+      .map((opt) => `<button class="button">${opt}</button>`)
+      .join("")}`;
   modal.classList.add("show");
 
   timerId = setInterval(() => {
