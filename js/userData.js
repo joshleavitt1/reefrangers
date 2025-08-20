@@ -38,16 +38,26 @@ function getCurrentUser() {
 }
 
 async function login(username) {
+  // First, try to load the user from localStorage so progress is preserved
+  let users = loadUsers();
+  if (users[username]) {
+    setCurrentUser(username);
+    return true;
+  }
+
+  // If the user isn't found locally, fall back to the bundled users.json
   try {
     const response = await fetch(USERS_URL);
     if (!response.ok) {
       return false;
     }
-    const users = await response.json();
-    saveUsers(users);
+    const fetched = await response.json();
+    // Merge fetched users with any existing local data without overwriting
+    users = { ...fetched, ...users };
     if (!users[username]) {
       return false;
     }
+    saveUsers(users);
     setCurrentUser(username);
     return true;
   } catch (err) {
