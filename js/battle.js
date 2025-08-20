@@ -143,63 +143,27 @@ function endBattle(winner) {
 
     if (battleRoot) battleRoot.style.position = "relative";
 
-    // === Centered, shrink-wrapped victory box ===
+    // === Victory/defeat overlay ===
     const victoryBox = document.createElement("div");
-    Object.assign(victoryBox.style, {
-      position: "absolute",
-      left: "50%",
-      top: "50%",
-      transform: "translate(-50%, -50%)",
-      display: "inline-flex",
-      flexDirection: "column",
-      alignItems: "center",
-      justifyContent: "center",
-      gap: "20px",
-      pointerEvents: "auto",
-    });
+    victoryBox.className = "end-screen";
 
-    // Banner (fade/slide in)
+    // Banner
     const banner = document.createElement("h1");
-    banner.textContent = "Winner";
-    Object.assign(banner.style, {
-      fontSize: "48px",
-      fontWeight: "800",
-      color: "#fff",
-      textShadow: "1px 1px 3px #000",
-      margin: "0",
-      lineHeight: "1.1",
-      textAlign: "center",
-      opacity: "0",
-      transform: "translateY(-6px)",
-    });
+    banner.className = "end-banner";
+    banner.textContent = winnerIsPlayer ? "Victory!" : "Defeat";
 
-    // Sprite wrapper (pop scale 0.5 -> 1)
+    // Sprite wrapper
     const spriteWrapper = document.createElement("div");
-    Object.assign(spriteWrapper.style, {
-      display: "inline-block",
-      lineHeight: "0",
-      margin: "80px",
-      padding: "0",
-      transformOrigin: "center center",
-      transform: "scale(0.5)", // start smaller for pop
-      willChange: "transform",
-    });
+    spriteWrapper.className = "sprite-wrapper";
 
     // Winner sprite (player gets special art)
     const originalSprite = winnerEl?.querySelector(".fish-sprite");
     const sprite = document.createElement("img");
+    sprite.className = "end-sprite";
     sprite.alt = winnerIsPlayer ? player.name : enemy.name;
     sprite.src = winnerIsPlayer
       ? PLAYER_VICTORY_SRC
       : originalSprite?.getAttribute("src") || "";
-    Object.assign(sprite.style, {
-      display: "block",
-      width: "260px",
-      maxWidth: "100%",
-      height: "auto",
-      opacity: "0", // fade in
-      willChange: "opacity",
-    });
 
     spriteWrapper.appendChild(sprite);
 
@@ -246,21 +210,9 @@ function endBattle(winner) {
     victoryBox.appendChild(button);
     battleRoot.appendChild(victoryBox);
 
-    // Force reflow, then animate
-    void banner.offsetWidth;
-    void sprite.offsetWidth;
-    void spriteWrapper.offsetWidth;
-
-    banner.style.transition = "opacity 600ms ease, transform 600ms ease";
-    sprite.style.transition = "opacity 800ms ease";
-    spriteWrapper.style.transition =
-      "transform 420ms cubic-bezier(0.22, 1, 0.36, 1)";
-
+    // Trigger reveal animations
     requestAnimationFrame(() => {
-      banner.style.opacity = "1";
-      banner.style.transform = "translateY(0)";
-      sprite.style.opacity = "1";
-      spriteWrapper.style.transform = "scale(1)"; // pop to full size
+      victoryBox.classList.add("show");
     });
   }, LINGER);
 }
