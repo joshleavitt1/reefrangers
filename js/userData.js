@@ -2,9 +2,19 @@ const STORAGE_KEY = "reefRangersUsers";
 const CURRENT_USER_KEY = "reefRangersCurrentUser";
 const USERS_URL = "../data/users.json";
 
+function normalizeUsername(name) {
+  return name ? name.toLowerCase() : "";
+}
+
 function loadUsers() {
   const raw = localStorage.getItem(STORAGE_KEY);
-  return raw ? JSON.parse(raw) : {};
+  if (!raw) return {};
+  const parsed = JSON.parse(raw);
+  const normalized = {};
+  for (const [key, value] of Object.entries(parsed)) {
+    normalized[normalizeUsername(key)] = value;
+  }
+  return normalized;
 }
 
 function saveUsers(users) {
@@ -12,9 +22,10 @@ function saveUsers(users) {
 }
 
 function createUser(username) {
+  const norm = normalizeUsername(username);
   const users = loadUsers();
-  if (users[username]) return false;
-  users[username] = {
+  if (users[norm]) return false;
+  users[norm] = {
     username,
     creatures: [],
     signInStreak: 0,
@@ -27,21 +38,24 @@ function createUser(username) {
 }
 
 function setCurrentUser(username) {
-  localStorage.setItem(CURRENT_USER_KEY, username);
+  localStorage.setItem(CURRENT_USER_KEY, normalizeUsername(username));
 }
 
 function getCurrentUser() {
   const username = localStorage.getItem(CURRENT_USER_KEY);
   if (!username) return null;
   const users = loadUsers();
-  return users[username] || null;
+  return users[normalizeUsername(username)] || null;
 }
 
 async function login(username) {
+  const norm = normalizeUsername(username);
   // First, try to load the user from localStorage so progress is preserved
   let users = loadUsers();
-  if (users[username]) {
-    setCurrentUser(username);
+  if (users[norm]) {
+    // Ensure normalized keys are persisted
+    saveUsers(users);
+    setCurrentUser(norm);
     return true;
   }
 
@@ -52,13 +66,17 @@ async function login(username) {
       return false;
     }
     const fetched = await response.json();
+    const normalizedFetched = {};
+    for (const [key, value] of Object.entries(fetched)) {
+      normalizedFetched[normalizeUsername(key)] = value;
+    }
     // Merge fetched users with any existing local data without overwriting
-    users = { ...fetched, ...users };
-    if (!users[username]) {
+    users = { ...normalizedFetched, ...users };
+    if (!users[norm]) {
       return false;
     }
     saveUsers(users);
-    setCurrentUser(username);
+    setCurrentUser(norm);
     return true;
   } catch (err) {
     console.error("Failed to load users.json", err);
@@ -73,8 +91,9 @@ function signOut() {
 function updateCurrentUser(update) {
   const users = loadUsers();
   const username = localStorage.getItem(CURRENT_USER_KEY);
-  if (!username || !users[username]) return;
-  Object.assign(users[username], update);
+  const norm = normalizeUsername(username);
+  if (!norm || !users[norm]) return;
+  Object.assign(users[norm], update);
   saveUsers(users);
 }
 
