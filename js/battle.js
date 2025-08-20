@@ -5,18 +5,28 @@ const START_DELAY_MS = 3000; // Delay before first question (ms)
 const HP_TRANSITION_MS = 600; // HP bar drain duration (ms)
 const LINGER_BOTH_MS = 1200; // After final damage, keep BOTH creatures visible for this long
 const VICTORY_SCREEN_MS = 3000; // Show winner-only screen before redirect (ms)
-const PLAYER_VICTORY_SRC = "../images/creature.png"; // Sprite to use if the PLAYER wins
 
 // ====== State ======
 const user = typeof getCurrentUser === "function" ? getCurrentUser() : null;
 if (!user) {
   window.location.href = "index.html";
 }
-const defaultCreature = { name: "Shellfin", level: 1, hp: 100, attack: 10 };
+const defaultCreature = {
+  name: "Shellfin",
+  level: 1,
+  hp: 100,
+  attack: 10,
+  sprite: {
+    normal: "../images/shellfin.png",
+    battle: "../images/shellfin_battle.png",
+  },
+};
 const playerCreature =
   user && user.creatures && user.creatures.length > 0
     ? user.creatures[0]
     : defaultCreature;
+const PLAYER_VICTORY_SRC =
+  playerCreature.sprite?.normal || "../images/shellfin.png";
 const player = {
   name: playerCreature.name,
   hp: playerCreature.hp,
@@ -179,7 +189,7 @@ function endBattle(winner) {
     const sprite = document.createElement("img");
     sprite.alt = winnerIsPlayer ? player.name : enemy.name;
     sprite.src = winnerIsPlayer
-      ? "../images/creature.png"
+      ? PLAYER_VICTORY_SRC
       : originalSprite?.getAttribute("src") || "";
     Object.assign(sprite.style, {
       display: "block",
@@ -200,9 +210,23 @@ function endBattle(winner) {
         if (currentMission && user) {
           const newSeashells =
             (user.seashells || 0) + (currentMission.reward || 0);
-          updateCurrentUser({ seashells: newSeashells });
+          const idxStr = sessionStorage.getItem("currentMissionIndex");
+          const missionsCompleted = Array.isArray(user.missionsCompleted)
+            ? [...user.missionsCompleted]
+            : [];
+          if (idxStr !== null) {
+            const idx = parseInt(idxStr, 10);
+            if (missionsCompleted[idx]) missionsCompleted[idx].completed = true;
+            updateCurrentUser({
+              seashells: newSeashells,
+              missionsCompleted,
+            });
+          } else {
+            updateCurrentUser({ seashells: newSeashells });
+          }
         }
         sessionStorage.removeItem("currentMission");
+        sessionStorage.removeItem("currentMissionIndex");
         window.location.href = "home.html";
       } else {
         sessionStorage.removeItem("currentMission");
@@ -363,6 +387,11 @@ async function initGame() {
   if (playerNameEl) playerNameEl.textContent = player.name;
   const enemyNameEl = document.getElementById("enemy-name");
   if (enemyNameEl) enemyNameEl.textContent = enemy.name;
+
+  const playerSpriteEl = document.querySelector("#player .fish-sprite");
+  if (playerSpriteEl && playerCreature.sprite && playerCreature.sprite.battle) {
+    playerSpriteEl.src = playerCreature.sprite.battle;
+  }
 
   // Initial HP state
   updateHP();
