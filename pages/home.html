@@ -27,7 +27,7 @@
 
       <!-- Bottom nav -->
         <div class="apple-glass" id="nav">
-          <a class="nav-item" href="#" id="mission-link">
+          <a class="nav-item" href="mission.html" id="mission-link">
             <span class="emoji">🤿</span>
             <span class="text">Mission</span>
           </a>
@@ -67,37 +67,13 @@
             imgEl.src = c.sprite.normal;
         }
 
-        const missionLink = document.getElementById("mission-link");
-        if (missionLink) {
-          missionLink.addEventListener("click", async (e) => {
-            e.preventDefault();
-            try {
-              const res = await fetch("../data/missions.json");
-              const data = await res.json();
-              if (Array.isArray(data.missions) && data.missions.length > 0) {
-                let missionIndex = 0;
-                if (Array.isArray(user.missionsCompleted)) {
-                  const idx = user.missionsCompleted.findIndex(
-                    (m) => !m.completed,
-                  );
-                  if (idx !== -1) missionIndex = idx;
-                }
-                const mission = data.missions[missionIndex];
-                sessionStorage.setItem(
-                  "currentMission",
-                  JSON.stringify(mission),
-                );
-                sessionStorage.setItem(
-                  "currentMissionIndex",
-                  String(missionIndex),
-                );
-                window.location.href = "battle.html";
-              }
-            } catch (err) {
-              console.error("Failed to load missions:", err);
-            }
-          });
-        }
+      const missionLink = document.getElementById("mission-link");
+      if (missionLink) {
+        missionLink.addEventListener("click", (e) => {
+          e.preventDefault();
+          window.location.href = "mission.html";
+        });
+      }
       } else {
         window.location.href = "index.html";
       }
