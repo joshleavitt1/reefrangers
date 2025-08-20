@@ -20,5 +20,27 @@
       { "name": "Whirlpool Wrath", "completed": false }
     ],
     "lastSignIn": 0
+  },
+  "Test": {
+    "username": "Test",
+    "creatures": [
+      {
+        "name": "Shellfin",
+        "hp": 75,
+        "attack": 200,
+        "sprite": {
+          "normal": "../images/shellfin.png",
+          "battle": "../images/shellfin_battle.png"
+        }
+      }
+    ],
+    "signInStreak": 0,
+    "seashells": 0,
+    "missionsCompleted": [
+      { "name": "Reef Rampage", "completed": false },
+      { "name": "Shark Showdown", "completed": false },
+      { "name": "Whirlpool Wrath", "completed": false }
+    ],
+    "lastSignIn": 0
   }
 }
