@@ -321,7 +321,7 @@ img.fish-sprite:hover {
 
 .sprite-wrapper {
   line-height: 0;
-  transform: scale(0);
+  transform: scale(0.8);
   opacity: 0;
   margin: 20px 0;
   transition: transform 0.42s cubic-bezier(0.22, 1, 0.36, 1),
