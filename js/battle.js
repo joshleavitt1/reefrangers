@@ -169,7 +169,7 @@ function endBattle(winner) {
 
     // Dynamic button
     const button = document.createElement("button");
-    button.className = "button"; // uses your styles.css .button class
+    button.className = "button end-button"; // base button style with auto width
     const reward = currentMission?.reward || 0;
     button.textContent = winnerIsPlayer
       ? `Claim 🐚 ${reward} Seashell${reward === 1 ? "" : "s"}`
