@@ -2,17 +2,7 @@
   "Josh": {
     "username": "Josh",
     "creatures": [
-      { "name": "Starfish", "level": 1, "hp": 10, "attack": 2 }
-    ],
-    "signInStreak": 5,
-    "seashells": 5,
-    "missionsCompleted": 5,
-    "lastSignIn": 0
-  },
-  "Alice": {
-    "username": "Alice",
-    "creatures": [
-      { "name": "Seahorse", "level": 1, "hp": 12, "attack": 3 }
+      { "name": "Shellfin", "hp": 75, "attack": 25 }
     ],
     "signInStreak": 0,
     "seashells": 0,

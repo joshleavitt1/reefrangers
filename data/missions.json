@@ -1,16 +1,22 @@
 {
   "missions": [
     {
-      "name": "Defend the Reef",
-      "description": "Drive away the hungry Lionfish threatening young coral.",
-      "reward": 50,
-      "enemy": { "name": "Lionfish", "hp": 60, "attack": 12 }
+      "name": "Reef Rampage",
+      "description": "Octomurk’s feeding frenzy threatens the reef. Dodge his thrashing limbs and strike back before he swallows the ocean whole.",
+      "reward": 5,
+      "enemy": { "name": "Octomurk", "hp": 50, "attack": 25 }
     },
     {
-      "name": "Guard the Clam",
-      "description": "Protect a giant clam from the relentless Reeftooth.",
-      "reward": 75,
-      "enemy": { "name": "Reeftooth", "hp": 80, "attack": 15 }
+      "name": "Shark Showdown",
+      "description": "Ironjaw the reef shark won’t back down. Outsmart his lunges and prove that brains can beat brawn beneath the waves.",
+      "reward": 5,
+      "enemy": { "name": "Ironjaw", "hp": 75, "attack": 25 }
+    },
+    {
+      "name": "Whirlpool Wrath",
+      "description": "Leviathan, the ancient whale-serpent, summons storms and whirlpools to guard his dominion. Outswim the current, confront the beast, and calm the raging seas.",
+      "reward": 10,
+      "enemy": { "name": "Leviathan", "hp": 100, "attack": 25 }
     }
   ]
 }
