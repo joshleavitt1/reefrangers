@@ -30,6 +30,7 @@
     </div>
 
     <script src="../js/userData.js"></script>
+    <script src="../js/assets.js"></script>
     <script>
       const form = document.getElementById("login-form");
       const usernameInput = document.getElementById("username");
@@ -42,6 +43,7 @@
         errorMsg.textContent = "";
 
         if (await login(username)) {
+          await preloadArtAssets();
           window.location.href = this.getAttribute("action");
         } else {
           usernameInput.classList.add("input-error");
