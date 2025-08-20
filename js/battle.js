@@ -162,9 +162,9 @@ function endBattle(winner) {
     const banner = document.createElement("h1");
     banner.textContent = "Winner";
     Object.assign(banner.style, {
-      fontSize: "32px",
+      fontSize: "48px",
       fontWeight: "800",
-      color: "gold",
+      color: "#fff",
       textShadow: "1px 1px 3px #000",
       margin: "0",
       lineHeight: "1.1",
@@ -173,15 +173,15 @@ function endBattle(winner) {
       transform: "translateY(-6px)",
     });
 
-    // Sprite wrapper (pop scale 1.8 -> 2.0)
+    // Sprite wrapper (pop scale 0.5 -> 1)
     const spriteWrapper = document.createElement("div");
     Object.assign(spriteWrapper.style, {
       display: "inline-block",
       lineHeight: "0",
-      margin: "80px",
+      margin: "10px 0",
       padding: "0",
       transformOrigin: "center center",
-      transform: "scale(0.75)", // start smaller for pop
+      transform: "scale(0.5)", // start smaller for pop
       willChange: "transform",
     });
 
@@ -194,7 +194,7 @@ function endBattle(winner) {
       : originalSprite?.getAttribute("src") || "";
     Object.assign(sprite.style, {
       display: "block",
-      maxWidth: "100%",
+      width: "260px",
       height: "auto",
       opacity: "0", // fade in
       willChange: "opacity",
@@ -205,7 +205,10 @@ function endBattle(winner) {
     // Dynamic button
     const button = document.createElement("button");
     button.className = "button"; // uses your styles.css .button class
-    button.textContent = winnerIsPlayer ? "Claim Your Reward" : "Try Again";
+    const reward = currentMission?.reward || 0;
+    button.textContent = winnerIsPlayer
+      ? `Claim 🐚 ${reward} Seashell${reward === 1 ? "" : "s"}`
+      : "Try Again";
     button.addEventListener("click", () => {
       if (winnerIsPlayer) {
         if (currentMission && user) {
@@ -256,7 +259,7 @@ function endBattle(winner) {
       banner.style.opacity = "1";
       banner.style.transform = "translateY(0)";
       sprite.style.opacity = "1";
-      spriteWrapper.style.transform = "scale(1.75)"; // pop to full 2×
+      spriteWrapper.style.transform = "scale(1)"; // pop to full size
     });
   }, LINGER);
 }
