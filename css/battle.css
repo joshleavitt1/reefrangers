@@ -15,15 +15,19 @@ body {
   width: 560px;
   height: 560px;
   position: relative;
+  animation: battleFadeIn 0.6s ease;
 }
 
 .battlefield {
   height: 560px;
   position: relative;
   overflow: hidden;
-  background: transparent;
+  background: rgba(0, 0, 0, 0.2);
   border-radius: 8px;
   color: white;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  border: 2px solid rgba(255, 255, 255, 0.2);
 }
 
 .creature {
@@ -85,9 +89,14 @@ body {
 img.fish-sprite {
   width: 220px;
   height: auto;
-  transition: transform 0.5s;
+  transition: transform 0.5s, filter 0.5s;
   cursor: pointer;
   margin-top: 8px;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.5));
+}
+
+img.fish-sprite:hover {
+  transform: scale(1.05);
 }
 
 .intro-overlay {
@@ -259,4 +268,76 @@ img.fish-sprite {
 .creature,
 .fish-sprite {
   will-change: transform;
+}
+
+@keyframes battleFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.end-screen {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+  text-align: center;
+  backdrop-filter: blur(4px);
+  pointer-events: auto;
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.end-screen.show {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.end-banner {
+  font-size: 48px;
+  font-weight: 800;
+  color: #fff;
+  text-shadow: 1px 1px 3px #000;
+  margin: 0;
+  line-height: 1.1;
+  transform: translateY(-6px);
+  opacity: 0;
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.end-screen.show .end-banner {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.sprite-wrapper {
+  line-height: 0;
+  transform: scale(0.5);
+  opacity: 0;
+  margin: 20px 0;
+  transition: transform 0.42s cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 0.42s;
+}
+
+.end-screen.show .sprite-wrapper {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.end-sprite {
+  display: block;
+  width: 260px;
+  max-width: 100%;
+  height: auto;
 }
