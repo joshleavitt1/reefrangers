@@ -30,6 +30,7 @@ const enemy = {
   move: { name: "Constrict", power: 15 },
 };
 let questions = [];
+let currentMission = null;
 let isGameOver = false;
 
 // ====== Helpers ======
@@ -328,22 +329,21 @@ async function initGame() {
     console.error("Failed to load questions:", err);
   }
 
-  // Load enemy data
+  // Load mission data
   try {
-    const res = await fetch("../data/data.json");
+    const res = await fetch("../data/missions.json");
     const data = await res.json();
-    if (Array.isArray(data.enemyCreatures) && data.enemyCreatures.length > 0) {
-      const e =
-        data.enemyCreatures[
-          Math.floor(Math.random() * data.enemyCreatures.length)
-        ];
+    if (Array.isArray(data.missions) && data.missions.length > 0) {
+      currentMission =
+        data.missions[Math.floor(Math.random() * data.missions.length)];
+      const e = currentMission.enemy;
       enemy.name = e.name;
       enemy.hp = e.hp;
       enemy.maxHp = e.hp;
       enemy.move.power = e.attack;
     }
   } catch (err) {
-    console.error("Failed to load enemy data:", err);
+    console.error("Failed to load missions:", err);
   }
 
   const playerNameEl = document.getElementById("player-name");
