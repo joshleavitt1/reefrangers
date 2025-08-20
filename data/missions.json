@@ -1,0 +1,16 @@
+{
+  "missions": [
+    {
+      "name": "Defend the Reef",
+      "description": "Drive away the hungry Lionfish threatening young coral.",
+      "reward": 50,
+      "enemy": { "name": "Lionfish", "hp": 60, "attack": 12 }
+    },
+    {
+      "name": "Guard the Clam",
+      "description": "Protect a giant clam from the relentless Reeftooth.",
+      "reward": 75,
+      "enemy": { "name": "Reeftooth", "hp": 80, "attack": 15 }
+    }
+  ]
+}
