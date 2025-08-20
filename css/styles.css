@@ -118,7 +118,7 @@ body.mission #app {
   text-align: center;
   color: #fff;
   margin-bottom: 8px;
-  size: 48px;
+  font-size: 48px;
 }
 #creature-container {
   width: 180px;
