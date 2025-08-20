@@ -38,6 +38,7 @@ const enemy = {
   hp: 100,
   maxHp: 100,
   move: { name: "Constrict", power: 15 },
+  sprite: "../images/octomurk.png",
 };
 let questions = [];
 let currentMission = null;
@@ -378,6 +379,7 @@ async function initGame() {
       enemy.hp = e.hp;
       enemy.maxHp = e.hp;
       enemy.move.power = e.attack;
+      if (e.sprite) enemy.sprite = e.sprite;
     }
   } catch (err) {
     console.error("Failed to load missions:", err);
@@ -387,6 +389,10 @@ async function initGame() {
   if (playerNameEl) playerNameEl.textContent = player.name;
   const enemyNameEl = document.getElementById("enemy-name");
   if (enemyNameEl) enemyNameEl.textContent = enemy.name;
+  const enemySpriteEl = document.querySelector("#enemy .fish-sprite");
+  if (enemySpriteEl && enemy.sprite) {
+    enemySpriteEl.src = enemy.sprite;
+  }
 
   const playerSpriteEl = document.querySelector("#player .fish-sprite");
   if (playerSpriteEl && playerCreature.sprite && playerCreature.sprite.battle) {
