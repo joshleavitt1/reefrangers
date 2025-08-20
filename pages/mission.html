@@ -11,7 +11,7 @@
     <div id="app">
       <!-- Creature -->
       <div id="creature-container">
-        <img src="../images/bad.png" alt="Creature Sprite" />
+        <img src="../images/octomurk.png" alt="Creature Sprite" />
       </div>
 
       <!-- Mission box -->
@@ -42,26 +42,31 @@
               );
               if (idx !== -1) missionIndex = idx;
             }
-            const mission = data.missions[missionIndex];
-            sessionStorage.setItem(
-              "currentMission",
-              JSON.stringify(mission),
-            );
-            sessionStorage.setItem(
-              "currentMissionIndex",
-              String(missionIndex),
-            );
-            document.getElementById("mission-title").textContent = mission.name;
-            document.getElementById("mission-desc").textContent =
-              mission.description;
-            document.getElementById(
-              "mission-reward",
-            ).textContent = `🐚 ${mission.reward} reef rewards`;
+              const mission = data.missions[missionIndex];
+              sessionStorage.setItem(
+                "currentMission",
+                JSON.stringify(mission),
+              );
+              sessionStorage.setItem(
+                "currentMissionIndex",
+                String(missionIndex),
+              );
+              document.getElementById("mission-title").textContent = mission.name;
+              document.getElementById("mission-desc").textContent =
+                mission.description;
+              document.getElementById(
+                "mission-reward",
+              ).textContent = `🐚 ${mission.reward} reef rewards`;
+              const imgEl = document.querySelector(
+                "#creature-container img",
+              );
+              if (imgEl && mission.enemy && mission.enemy.sprite)
+                imgEl.src = mission.enemy.sprite;
+            }
+          } catch (err) {
+            console.error("Failed to load missions:", err);
           }
-        } catch (err) {
-          console.error("Failed to load missions:", err);
-        }
-      });
+        });
     </script>
     <script src="../js/bubbles.js"></script>
   </body>
