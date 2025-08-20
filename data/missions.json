@@ -19,7 +19,7 @@
         "name": "Ironjaw",
         "hp": 75,
         "attack": 25,
-        "sprite": "../images/octomurk.png"
+        "sprite": "../images/test.png"
       }
     },
     {
