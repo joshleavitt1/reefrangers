@@ -19,23 +19,14 @@ body {
   animation: battleFadeIn 0.6s ease;
 }
 
+/* Battlefield container */
 .battlefield {
-  .battlefield {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    overflow: hidden;
-    color: white;
-  
-    /* ❌ remove these */
-    /* border-radius: 8px; */
-    /* backdrop-filter: blur(4px); */
-    /* border: 1px solid rgba(255, 255, 255, 0.4); */
-    /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
-    
-    background: transparent; /* 👈 makes sure it stays clear */
-  }
-  
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  color: white;
+  background: transparent; /* keep the arena clear */
 }
 
 .creature {
@@ -46,13 +37,13 @@ body {
 }
 
 #player {
-  bottom: 30px;
+  bottom: 60px; /* push player's creature further down */
   left: 40px;
   animation: slideInLeft 1s ease-out forwards;
 }
 
 #enemy {
-  top: 30px;
+  top: 60px; /* push enemy's creature further up */
   right: 40px;
   animation: slideInRight 1s ease-out forwards;
 }
@@ -64,9 +55,6 @@ body {
   text-align: left;
   font-size: 16px;
   line-height: 1.8em;
-  border-radius: 10px;
-  backdrop-filter: blur(4px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
   text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
   margin-bottom: 8px;
 }
@@ -196,13 +184,11 @@ img.fish-sprite:hover {
 }
 
 .modal-content {
-  background: #fff;
   padding: 32px;
   width: 350px;
   text-align: center;
   font-size: 18px;
   line-height: 1.5;
-  border-radius: 8px;
   transform: scale(0.8);
   opacity: 0;
   transition:

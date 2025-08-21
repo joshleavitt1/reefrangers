@@ -158,6 +158,8 @@ body.mission #creature-container {
 /* Navigation */
 .nav-row {
   display: flex;
+  flex-direction: row; /* ensure nav items line up horizontally */
+  justify-content: center; /* keep nav centered at the bottom */
   width: 100%;
   gap: 16px; /* spacing between the two blocks */
 }
