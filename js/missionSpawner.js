@@ -1,4 +1,5 @@
 // missionSpawner.js
+// Spawns a random mission first after 5s, then every 30s.
 // Spawns a random mission every 30 seconds.
 
 (async function () {
@@ -33,6 +34,8 @@
       const app = document.getElementById("app");
       if (!app) return;
 
+      const bubbles = app.querySelectorAll(".mission-bubble");
+      if (bubbles.length >= 3) bubbles[0].remove();
       const existing = document.querySelector(".mission-bubble");
       if (existing) existing.remove();
 
@@ -64,6 +67,10 @@
       app.appendChild(bubble);
     }
 
+    setTimeout(() => {
+      spawnMission();
+      setInterval(spawnMission, 30000);
+    }, 5000);
     spawnMission();
     setInterval(spawnMission, 30000);
   });
