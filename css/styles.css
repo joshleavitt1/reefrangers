@@ -63,11 +63,10 @@ body.mission #app {
 
 /* Apple glass base */
 .apple-glass {
-  background: rgba(0, 0, 0, 0.2);
   border-radius: 16px;
   backdrop-filter: blur(4px) saturate(110%);
   -webkit-backdrop-filter: blur(4px) saturate(110%);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   color: #fff;
   text-align: center;
