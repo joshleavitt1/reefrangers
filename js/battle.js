@@ -342,6 +342,9 @@ async function initGame() {
       enemy.maxHp = e.hp;
       enemy.move.power = e.attack;
       if (e.sprite) enemy.sprite = e.sprite;
+    } else if (currentMission && currentMission.sprite) {
+      enemy.name = currentMission.name;
+      enemy.sprite = currentMission.sprite;
     }
   } catch (err) {
     console.error("Failed to load missions:", err);
@@ -359,6 +362,12 @@ async function initGame() {
   const playerSpriteEl = document.querySelector("#player .fish-sprite");
   if (playerSpriteEl && playerCreature.sprite && playerCreature.sprite.battle) {
     playerSpriteEl.src = playerCreature.sprite.battle;
+  }
+
+  // Auto-win if mission has no enemy (e.g., Treasure)
+  if (!currentMission || !currentMission.enemy) {
+    setTimeout(() => endBattle(player), 1000);
+    return;
   }
 
   // Initial HP state
