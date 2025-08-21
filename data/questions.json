@@ -1,510 +1,1802 @@
 [
   {
-    "q": "What is the largest species of shark?",
-    "options": ["Whale shark", "Great white shark", "Hammerhead shark"],
-    "answer": "Whale shark"
+    "q": "Which animal around Long Island has a hard shell and a long tail spike?",
+    "options": [
+      "Menhaden (bunker)",
+      "Sand tiger shark",
+      "Horseshoe crab"
+    ],
+    "answer": "Horseshoe crab"
   },
   {
-    "q": "What organ do fish use to breathe underwater?",
-    "options": ["Lungs", "Gills", "Skin"],
-    "answer": "Gills"
+    "q": "Which animal often lives in sandy Long Island beaches?",
+    "options": [
+      "Horseshoe crab",
+      "Sand tiger shark",
+      "Winter flounder"
+    ],
+    "answer": "Horseshoe crab"
   },
   {
-    "q": "Which marine mammal uses echolocation to navigate?",
-    "options": ["Dolphin", "Manatee", "Sea lion"],
-    "answer": "Dolphin"
+    "q": "Which animal walks on many legs?",
+    "options": [
+      "Horseshoe crab",
+      "Striped bass",
+      "Green sea turtle"
+    ],
+    "answer": "Horseshoe crab"
   },
   {
-    "q": "Which ocean animal has eight arms?",
-    "options": ["Octopus", "Sea star", "Squid"],
-    "answer": "Octopus"
+    "q": "Which animal likes to eat worms and small clams?",
+    "options": [
+      "Common periwinkle",
+      "Horseshoe crab",
+      "Longfin squid"
+    ],
+    "answer": "Horseshoe crab"
   },
   {
-    "q": "What organisms are the primary producers in the ocean?",
-    "options": ["Phytoplankton", "Krill", "Zooplankton"],
-    "answer": "Phytoplankton"
+    "q": "Which animal around Long Island has two strong claws and blue legs?",
+    "options": [
+      "Blue crab",
+      "Bay scallop",
+      "Fluke (summer flounder)"
+    ],
+    "answer": "Blue crab"
   },
   {
-    "q": "Coral skeletons are made primarily of which substance?",
-    "options": ["Silica", "Calcium carbonate", "Chitin"],
-    "answer": "Calcium carbonate"
+    "q": "Which animal often lives in bays and marshes around Long Island?",
+    "options": [
+      "Black sea bass",
+      "Atlantic oyster",
+      "Blue crab"
+    ],
+    "answer": "Blue crab"
   },
   {
-    "q": "What is the sunlit upper layer of the ocean called?",
-    "options": ["Abyssal zone", "Epipelagic zone", "Hadal zone"],
-    "answer": "Epipelagic zone"
+    "q": "Which animal swims sideways with paddle back legs?",
+    "options": [
+      "Blue crab",
+      "Cownose ray",
+      "Winter flounder"
+    ],
+    "answer": "Blue crab"
   },
   {
-    "q": "Mangrove forests thrive in what type of water?",
-    "options": ["Freshwater", "Brackish water", "Open ocean"],
-    "answer": "Brackish water"
+    "q": "Which animal likes to eat small fish and plants?",
+    "options": [
+      "Hard clam (quahog)",
+      "Blue crab",
+      "Fluke (summer flounder)"
+    ],
+    "answer": "Blue crab"
   },
   {
-    "q": "What tool do sea otters use to open shellfish?",
-    "options": ["Rocks", "Sticks", "Shells"],
-    "answer": "Rocks"
+    "q": "Which animal around Long Island has lives in an empty snail shell?",
+    "options": [
+      "Striped bass",
+      "Atlantic oyster",
+      "Hermit crab"
+    ],
+    "answer": "Hermit crab"
   },
   {
-    "q": "Which of these is a filter feeder?",
-    "options": ["Baleen whale", "Barracuda", "Moray eel"],
-    "answer": "Baleen whale"
+    "q": "Which animal often lives in tidal pools on Long Island?",
+    "options": [
+      "Sandbar shark",
+      "Blue crab",
+      "Hermit crab"
+    ],
+    "answer": "Hermit crab"
   },
   {
-    "q": "Which fish can inflate its body as a defense?",
-    "options": ["Pufferfish", "Swordfish", "Anchovy"],
-    "answer": "Pufferfish"
+    "q": "Which animal walks and hides in its shell?",
+    "options": [
+      "Winter flounder",
+      "Longfin squid",
+      "Hermit crab"
+    ],
+    "answer": "Hermit crab"
   },
   {
-    "q": "Clownfish live in mutualism with which organism?",
-    "options": ["Sea anemone", "Sea urchin", "Sea cucumber"],
-    "answer": "Sea anemone"
+    "q": "Which animal likes to eat bits of plants and tiny animals?",
+    "options": [
+      "Hermit crab",
+      "Sandbar shark",
+      "Sand tiger shark"
+    ],
+    "answer": "Hermit crab"
   },
   {
-    "q": "A group of fish swimming together is called a what?",
-    "options": ["Pack", "School", "Colony"],
-    "answer": "School"
+    "q": "Which animal around Long Island has two big claws?",
+    "options": [
+      "Longfin squid",
+      "American lobster",
+      "Common periwinkle"
+    ],
+    "answer": "American lobster"
   },
   {
-    "q": "Animals living on the ocean floor are known as what?",
-    "options": ["Pelagic", "Benthic", "Nekton"],
-    "answer": "Benthic"
+    "q": "Which animal often lives in rocky ocean bottom off Long Island?",
+    "options": [
+      "American lobster",
+      "Harbor seal",
+      "Cownose ray"
+    ],
+    "answer": "American lobster"
   },
   {
-    "q": "Which organism forms large underwater forests?",
-    "options": ["Kelp", "Sargassum", "Mangrove"],
-    "answer": "Kelp"
+    "q": "Which animal walks and can swim backward?",
+    "options": [
+      "Black sea bass",
+      "Winter flounder",
+      "American lobster"
+    ],
+    "answer": "American lobster"
   },
   {
-    "q": "What gas is produced by algae during photosynthesis?",
-    "options": ["Oxygen", "Nitrogen", "Carbon dioxide"],
-    "answer": "Oxygen"
+    "q": "Which animal likes to eat fish and clams?",
+    "options": [
+      "American lobster",
+      "Humpback whale",
+      "Sand tiger shark"
+    ],
+    "answer": "American lobster"
   },
   {
-    "q": "Which marine reptiles lay eggs on land?",
-    "options": ["Sea snakes", "Sea turtles", "Iguanas"],
-    "answer": "Sea turtles"
+    "q": "Which animal around Long Island has five arms?",
+    "options": [
+      "Loggerhead sea turtle",
+      "Cownose ray",
+      "Northern sea star"
+    ],
+    "answer": "Northern sea star"
   },
   {
-    "q": "Fish that migrate from the ocean to freshwater to spawn are called what?",
-    "options": ["Catadromous", "Anadromous", "Benthopelagic"],
-    "answer": "Anadromous"
+    "q": "Which animal often lives in rocky bottoms near Long Island?",
+    "options": [
+      "Atlantic oyster",
+      "Northern sea star",
+      "Longfin squid"
+    ],
+    "answer": "Northern sea star"
   },
   {
-    "q": "Which ocean zone is completely dark?",
-    "options": ["Photic zone", "Abyssal zone", "Neritic zone"],
-    "answer": "Abyssal zone"
+    "q": "Which animal crawls slowly?",
+    "options": [
+      "American lobster",
+      "Sand tiger shark",
+      "Northern sea star"
+    ],
+    "answer": "Northern sea star"
   },
   {
-    "q": "Which fish is known for its bioluminescent lure?",
-    "options": ["Anglerfish", "Lionfish", "Grouper"],
-    "answer": "Anglerfish"
+    "q": "Which animal likes to eat clams and mussels?",
+    "options": [
+      "Comb jelly",
+      "American lobster",
+      "Northern sea star"
+    ],
+    "answer": "Northern sea star"
   },
   {
-    "q": "Baleen whales use what to filter food from water?",
-    "options": ["Baleen plates", "Teeth", "Gills"],
-    "answer": "Baleen plates"
+    "q": "Which animal around Long Island has a clear bell with four circles?",
+    "options": [
+      "Moon jelly",
+      "Tautog (blackfish)",
+      "Longfin squid"
+    ],
+    "answer": "Moon jelly"
   },
   {
-    "q": "Which crustacean has one claw much larger than the other?",
-    "options": ["Fiddler crab", "Lobster", "Krill"],
-    "answer": "Fiddler crab"
+    "q": "Which animal often lives in Long Island bays and ocean?",
+    "options": [
+      "Mummichog",
+      "American lobster",
+      "Moon jelly"
+    ],
+    "answer": "Moon jelly"
   },
   {
-    "q": "Squid move quickly by what method?",
-    "options": ["Jet propulsion", "Crawling", "Tail flapping"],
-    "answer": "Jet propulsion"
+    "q": "Which animal floats and gently pulses?",
+    "options": [
+      "Moon jelly",
+      "Menhaden (bunker)",
+      "Little skate"
+    ],
+    "answer": "Moon jelly"
   },
   {
-    "q": "What is the largest animal on Earth?",
-    "options": ["Blue whale", "Giant squid", "Whale shark"],
-    "answer": "Blue whale"
+    "q": "Which animal likes to eat tiny plankton?",
+    "options": [
+      "Moon jelly",
+      "Hermit crab",
+      "Sand tiger shark"
+    ],
+    "answer": "Moon jelly"
   },
   {
-    "q": "What does a fish's lateral line detect?",
-    "options": ["Light", "Vibrations", "Taste"],
-    "answer": "Vibrations"
+    "q": "Which animal around Long Island has a rainbow shimmer from tiny hairs?",
+    "options": [
+      "Comb jelly",
+      "Common periwinkle",
+      "Horseshoe crab"
+    ],
+    "answer": "Comb jelly"
   },
   {
-    "q": "Which algae live symbiotically inside coral?",
-    "options": ["Zooxanthellae", "Kelp", "Diatoms"],
-    "answer": "Zooxanthellae"
+    "q": "Which animal often lives in Long Island bays and ocean?",
+    "options": [
+      "Bay scallop",
+      "Common periwinkle",
+      "Comb jelly"
+    ],
+    "answer": "Comb jelly"
   },
   {
-    "q": "Which marine mammal has the thickest blubber?",
-    "options": ["Sea otter", "Elephant seal", "Manatee"],
-    "answer": "Elephant seal"
+    "q": "Which animal rows with tiny hairs?",
+    "options": [
+      "Kemp's ridley sea turtle",
+      "Sea anemone",
+      "Comb jelly"
+    ],
+    "answer": "Comb jelly"
   },
   {
-    "q": "Large blooms of phytoplankton are called what?",
-    "options": ["Red tides", "Dead zones", "Thermoclines"],
-    "answer": "Red tides"
+    "q": "Which animal likes to eat small plankton?",
+    "options": [
+      "Menhaden (bunker)",
+      "Comb jelly",
+      "Black sea bass"
+    ],
+    "answer": "Comb jelly"
   },
   {
-    "q": "Sea stars move using what structure?",
-    "options": ["Tube feet", "Fins", "Tentacles"],
-    "answer": "Tube feet"
+    "q": "Which animal around Long Island has a shiny silver stripe?",
+    "options": [
+      "Cownose ray",
+      "Longfin squid",
+      "Atlantic silverside"
+    ],
+    "answer": "Atlantic silverside"
   },
   {
-    "q": "Nutrient-rich water rising to the surface is called what?",
-    "options": ["Upwelling", "Downwelling", "Surfacing"],
-    "answer": "Upwelling"
+    "q": "Which animal often lives in shores and bays around Long Island?",
+    "options": [
+      "Black sea bass",
+      "Harbor seal",
+      "Atlantic silverside"
+    ],
+    "answer": "Atlantic silverside"
   },
   {
-    "q": "Which shark has a hammer-shaped head?",
-    "options": ["Hammerhead shark", "Tiger shark", "Lemon shark"],
-    "answer": "Hammerhead shark"
+    "q": "Which animal swims in big groups?",
+    "options": [
+      "Northern puffer (blowfish)",
+      "Humpback whale",
+      "Atlantic silverside"
+    ],
+    "answer": "Atlantic silverside"
   },
   {
-    "q": "The ocean floor is referred to as which zone?",
-    "options": ["Pelagic", "Benthic", "Littoral"],
-    "answer": "Benthic"
+    "q": "Which animal likes to eat tiny plankton?",
+    "options": [
+      "Atlantic silverside",
+      "Kemp's ridley sea turtle",
+      "Striped bass"
+    ],
+    "answer": "Atlantic silverside"
   },
   {
-    "q": "What do parrotfish primarily eat?",
-    "options": ["Algae", "Plankton", "Fish"],
-    "answer": "Algae"
+    "q": "Which animal around Long Island has swims in huge schools?",
+    "options": [
+      "Comb jelly",
+      "Menhaden (bunker)",
+      "Blue crab"
+    ],
+    "answer": "Menhaden (bunker)"
   },
   {
-    "q": "Which whale is known for singing complex songs?",
-    "options": ["Humpback whale", "Gray whale", "Beluga whale"],
+    "q": "Which animal often lives in Long Island bays and ocean?",
+    "options": [
+      "Menhaden (bunker)",
+      "Fluke (summer flounder)",
+      "Smooth dogfish"
+    ],
+    "answer": "Menhaden (bunker)"
+  },
+  {
+    "q": "Which animal swims together with many fish?",
+    "options": [
+      "Green sea turtle",
+      "Sandbar shark",
+      "Menhaden (bunker)"
+    ],
+    "answer": "Menhaden (bunker)"
+  },
+  {
+    "q": "Which animal likes to eat plankton?",
+    "options": [
+      "Menhaden (bunker)",
+      "Cownose ray",
+      "Winter flounder"
+    ],
+    "answer": "Menhaden (bunker)"
+  },
+  {
+    "q": "Which animal around Long Island has dark stripes on its sides?",
+    "options": [
+      "Bottlenose dolphin",
+      "Atlantic silverside",
+      "Striped bass"
+    ],
+    "answer": "Striped bass"
+  },
+  {
+    "q": "Which animal often lives in bays and ocean off Long Island?",
+    "options": [
+      "American eel",
+      "Harbor seal",
+      "Striped bass"
+    ],
+    "answer": "Striped bass"
+  },
+  {
+    "q": "Which animal swims fast to catch prey?",
+    "options": [
+      "Loggerhead sea turtle",
+      "Bottlenose dolphin",
+      "Striped bass"
+    ],
+    "answer": "Striped bass"
+  },
+  {
+    "q": "Which animal likes to eat smaller fish?",
+    "options": [
+      "Striped bass",
+      "Northern sea star",
+      "Sea anemone"
+    ],
+    "answer": "Striped bass"
+  },
+  {
+    "q": "Which animal around Long Island has both eyes on one side of its head?",
+    "options": [
+      "Fluke (summer flounder)",
+      "Atlantic silverside",
+      "Sandbar shark"
+    ],
+    "answer": "Fluke (summer flounder)"
+  },
+  {
+    "q": "Which animal often lives in sandy bottom near Long Island?",
+    "options": [
+      "Fluke (summer flounder)",
+      "Atlantic silverside",
+      "Atlantic oyster"
+    ],
+    "answer": "Fluke (summer flounder)"
+  },
+  {
+    "q": "Which animal lies flat and can bury in sand?",
+    "options": [
+      "Fluke (summer flounder)",
+      "Sea anemone",
+      "Bottlenose dolphin"
+    ],
+    "answer": "Fluke (summer flounder)"
+  },
+  {
+    "q": "Which animal likes to eat shrimp and small fish?",
+    "options": [
+      "Fluke (summer flounder)",
+      "Little skate",
+      "Green sea turtle"
+    ],
+    "answer": "Fluke (summer flounder)"
+  },
+  {
+    "q": "Which animal around Long Island has a flat body?",
+    "options": [
+      "Striped bass",
+      "Loggerhead sea turtle",
+      "Winter flounder"
+    ],
+    "answer": "Winter flounder"
+  },
+  {
+    "q": "Which animal often lives in estuaries around Long Island?",
+    "options": [
+      "Winter flounder",
+      "Humpback whale",
+      "Tautog (blackfish)"
+    ],
+    "answer": "Winter flounder"
+  },
+  {
+    "q": "Which animal rests on the bottom?",
+    "options": [
+      "Tautog (blackfish)",
+      "Striped bass",
+      "Winter flounder"
+    ],
+    "answer": "Winter flounder"
+  },
+  {
+    "q": "Which animal likes to eat worms and small clams?",
+    "options": [
+      "Menhaden (bunker)",
+      "Winter flounder",
+      "Northern sea star"
+    ],
+    "answer": "Winter flounder"
+  },
+  {
+    "q": "Which animal around Long Island has a dark body?",
+    "options": [
+      "Atlantic silverside",
+      "American eel",
+      "Black sea bass"
+    ],
+    "answer": "Black sea bass"
+  },
+  {
+    "q": "Which animal often lives in rocky reefs near Long Island?",
+    "options": [
+      "Black sea bass",
+      "American lobster",
+      "Bottlenose dolphin"
+    ],
+    "answer": "Black sea bass"
+  },
+  {
+    "q": "Which animal swims near rocks and reefs?",
+    "options": [
+      "Hard clam (quahog)",
+      "Black sea bass",
+      "Tautog (blackfish)"
+    ],
+    "answer": "Black sea bass"
+  },
+  {
+    "q": "Which animal likes to eat crabs and small fish?",
+    "options": [
+      "Northern puffer (blowfish)",
+      "Bottlenose dolphin",
+      "Black sea bass"
+    ],
+    "answer": "Black sea bass"
+  },
+  {
+    "q": "Which animal around Long Island has thick lips and strong teeth?",
+    "options": [
+      "Winter flounder",
+      "Smooth dogfish",
+      "Tautog (blackfish)"
+    ],
+    "answer": "Tautog (blackfish)"
+  },
+  {
+    "q": "Which animal often lives in rocky reefs near Long Island?",
+    "options": [
+      "Little skate",
+      "Tautog (blackfish)",
+      "Loggerhead sea turtle"
+    ],
+    "answer": "Tautog (blackfish)"
+  },
+  {
+    "q": "Which animal swims close to rocks?",
+    "options": [
+      "Common periwinkle",
+      "Winter flounder",
+      "Tautog (blackfish)"
+    ],
+    "answer": "Tautog (blackfish)"
+  },
+  {
+    "q": "Which animal likes to eat crabs and mussels?",
+    "options": [
+      "Bottlenose dolphin",
+      "Kemp's ridley sea turtle",
+      "Tautog (blackfish)"
+    ],
+    "answer": "Tautog (blackfish)"
+  },
+  {
+    "q": "Which animal around Long Island has a hard, rough shell?",
+    "options": [
+      "Bottlenose dolphin",
+      "Horseshoe crab",
+      "Atlantic oyster"
+    ],
+    "answer": "Atlantic oyster"
+  },
+  {
+    "q": "Which animal often lives in oyster reefs in Long Island bays?",
+    "options": [
+      "American lobster",
+      "Atlantic oyster",
+      "Black sea bass"
+    ],
+    "answer": "Atlantic oyster"
+  },
+  {
+    "q": "Which animal stays in one place?",
+    "options": [
+      "Longfin squid",
+      "Atlantic oyster",
+      "Bottlenose dolphin"
+    ],
+    "answer": "Atlantic oyster"
+  },
+  {
+    "q": "Which animal likes to eat filters water for food?",
+    "options": [
+      "Comb jelly",
+      "Atlantic oyster",
+      "Sand tiger shark"
+    ],
+    "answer": "Atlantic oyster"
+  },
+  {
+    "q": "Which animal around Long Island has a hard round shell?",
+    "options": [
+      "Hard clam (quahog)",
+      "Green sea turtle",
+      "Atlantic oyster"
+    ],
+    "answer": "Hard clam (quahog)"
+  },
+  {
+    "q": "Which animal often lives in sandy Long Island bays?",
+    "options": [
+      "Atlantic silverside",
+      "Hard clam (quahog)",
+      "Sand tiger shark"
+    ],
+    "answer": "Hard clam (quahog)"
+  },
+  {
+    "q": "Which animal burrows in sand?",
+    "options": [
+      "Tautog (blackfish)",
+      "Green sea turtle",
+      "Hard clam (quahog)"
+    ],
+    "answer": "Hard clam (quahog)"
+  },
+  {
+    "q": "Which animal likes to eat filters water for tiny food?",
+    "options": [
+      "Winter flounder",
+      "Hard clam (quahog)",
+      "Northern sea star"
+    ],
+    "answer": "Hard clam (quahog)"
+  },
+  {
+    "q": "Which animal around Long Island has many tiny blue eyes on its edge?",
+    "options": [
+      "Tautog (blackfish)",
+      "Northern puffer (blowfish)",
+      "Bay scallop"
+    ],
+    "answer": "Bay scallop"
+  },
+  {
+    "q": "Which animal often lives in eelgrass beds in Long Island bays?",
+    "options": [
+      "Bay scallop",
+      "Harbor seal",
+      "Horseshoe crab"
+    ],
+    "answer": "Bay scallop"
+  },
+  {
+    "q": "Which animal claps its shells to swim?",
+    "options": [
+      "Moon jelly",
+      "Bay scallop",
+      "Hard clam (quahog)"
+    ],
+    "answer": "Bay scallop"
+  },
+  {
+    "q": "Which animal likes to eat filters water for tiny food?",
+    "options": [
+      "Fluke (summer flounder)",
+      "Green sea turtle",
+      "Bay scallop"
+    ],
+    "answer": "Bay scallop"
+  },
+  {
+    "q": "Which animal around Long Island has a small spiral shell?",
+    "options": [
+      "Comb jelly",
+      "Bottlenose dolphin",
+      "Common periwinkle"
+    ],
+    "answer": "Common periwinkle"
+  },
+  {
+    "q": "Which animal often lives in rocky Long Island shores?",
+    "options": [
+      "Common periwinkle",
+      "Hermit crab",
+      "Sandbar shark"
+    ],
+    "answer": "Common periwinkle"
+  },
+  {
+    "q": "Which animal crawls slowly?",
+    "options": [
+      "Common periwinkle",
+      "Fluke (summer flounder)",
+      "Kemp's ridley sea turtle"
+    ],
+    "answer": "Common periwinkle"
+  },
+  {
+    "q": "Which animal likes to eat algae on rocks?",
+    "options": [
+      "Longfin squid",
+      "Common periwinkle",
+      "Sea anemone"
+    ],
+    "answer": "Common periwinkle"
+  },
+  {
+    "q": "Which animal around Long Island has flippers and a smooth shell?",
+    "options": [
+      "Green sea turtle",
+      "Little skate",
+      "Bay scallop"
+    ],
+    "answer": "Green sea turtle"
+  },
+  {
+    "q": "Which animal often lives in ocean and bays near Long Island in warm months?",
+    "options": [
+      "Green sea turtle",
+      "Sand tiger shark",
+      "Smooth dogfish"
+    ],
+    "answer": "Green sea turtle"
+  },
+  {
+    "q": "Which animal swims with strong flippers?",
+    "options": [
+      "Atlantic silverside",
+      "Kemp's ridley sea turtle",
+      "Green sea turtle"
+    ],
+    "answer": "Green sea turtle"
+  },
+  {
+    "q": "Which animal likes to eat sea plants and algae?",
+    "options": [
+      "Comb jelly",
+      "Green sea turtle",
+      "Menhaden (bunker)"
+    ],
+    "answer": "Green sea turtle"
+  },
+  {
+    "q": "Which animal around Long Island has a big head and strong jaws?",
+    "options": [
+      "Little skate",
+      "Loggerhead sea turtle",
+      "Sand tiger shark"
+    ],
+    "answer": "Loggerhead sea turtle"
+  },
+  {
+    "q": "Which animal often lives in ocean off Long Island?",
+    "options": [
+      "Fluke (summer flounder)",
+      "Tautog (blackfish)",
+      "Loggerhead sea turtle"
+    ],
+    "answer": "Loggerhead sea turtle"
+  },
+  {
+    "q": "Which animal swims in the ocean?",
+    "options": [
+      "Loggerhead sea turtle",
+      "Green sea turtle",
+      "Menhaden (bunker)"
+    ],
+    "answer": "Loggerhead sea turtle"
+  },
+  {
+    "q": "Which animal likes to eat crabs and snails?",
+    "options": [
+      "Little skate",
+      "Loggerhead sea turtle",
+      "Blue crab"
+    ],
+    "answer": "Loggerhead sea turtle"
+  },
+  {
+    "q": "Which animal around Long Island has a small sea turtle?",
+    "options": [
+      "Kemp's ridley sea turtle",
+      "Humpback whale",
+      "Smooth dogfish"
+    ],
+    "answer": "Kemp's ridley sea turtle"
+  },
+  {
+    "q": "Which animal often lives in near Long Island in summer?",
+    "options": [
+      "Northern sea star",
+      "Winter flounder",
+      "Kemp's ridley sea turtle"
+    ],
+    "answer": "Kemp's ridley sea turtle"
+  },
+  {
+    "q": "Which animal swims with flippers?",
+    "options": [
+      "Comb jelly",
+      "Kemp's ridley sea turtle",
+      "Sandbar shark"
+    ],
+    "answer": "Kemp's ridley sea turtle"
+  },
+  {
+    "q": "Which animal likes to eat crabs?",
+    "options": [
+      "Hard clam (quahog)",
+      "Bottlenose dolphin",
+      "Kemp's ridley sea turtle"
+    ],
+    "answer": "Kemp's ridley sea turtle"
+  },
+  {
+    "q": "Which animal around Long Island has whiskers and flippers?",
+    "options": [
+      "Green sea turtle",
+      "Harbor seal",
+      "Moon jelly"
+    ],
+    "answer": "Harbor seal"
+  },
+  {
+    "q": "Which animal often lives in winter beaches and rocks around Long Island?",
+    "options": [
+      "Bottlenose dolphin",
+      "Harbor seal",
+      "Cownose ray"
+    ],
+    "answer": "Harbor seal"
+  },
+  {
+    "q": "Which animal swims and scoots on land?",
+    "options": [
+      "Harbor seal",
+      "Hermit crab",
+      "Bottlenose dolphin"
+    ],
+    "answer": "Harbor seal"
+  },
+  {
+    "q": "Which animal likes to eat fish?",
+    "options": [
+      "Cownose ray",
+      "Harbor seal",
+      "Winter flounder"
+    ],
+    "answer": "Harbor seal"
+  },
+  {
+    "q": "Which animal around Long Island has a beak-like mouth and a blowhole?",
+    "options": [
+      "Winter flounder",
+      "Bottlenose dolphin",
+      "Hard clam (quahog)"
+    ],
+    "answer": "Bottlenose dolphin"
+  },
+  {
+    "q": "Which animal often lives in ocean off Long Island?",
+    "options": [
+      "Northern sea star",
+      "Bottlenose dolphin",
+      "Sand tiger shark"
+    ],
+    "answer": "Bottlenose dolphin"
+  },
+  {
+    "q": "Which animal jumps and swims fast?",
+    "options": [
+      "Smooth dogfish",
+      "Bottlenose dolphin",
+      "Sand tiger shark"
+    ],
+    "answer": "Bottlenose dolphin"
+  },
+  {
+    "q": "Which animal likes to eat fish?",
+    "options": [
+      "Sandbar shark",
+      "Kemp's ridley sea turtle",
+      "Bottlenose dolphin"
+    ],
+    "answer": "Bottlenose dolphin"
+  },
+  {
+    "q": "Which animal around Long Island has big tail flukes?",
+    "options": [
+      "Blue crab",
+      "Menhaden (bunker)",
+      "Humpback whale"
+    ],
     "answer": "Humpback whale"
   },
   {
-    "q": "What is the largest invertebrate in the ocean?",
-    "options": ["Giant squid", "Colossal crab", "Sea spider"],
-    "answer": "Giant squid"
-  },
-  {
-    "q": "What is the stationary stage of a jellyfish called?",
-    "options": ["Polyp", "Medusa", "Larva"],
-    "answer": "Polyp"
-  },
-  {
-    "q": "Which nutrient often limits ocean productivity?",
-    "options": ["Nitrogen", "Iron", "Sodium"],
-    "answer": "Nitrogen"
-  },
-  {
-    "q": "What adaptation helps dolphins conserve oxygen while diving?",
-    "options": ["Slow heart rate", "Extra gills", "Webbed fins"],
-    "answer": "Slow heart rate"
-  },
-  {
-    "q": "Which fish produces a protective mucus cocoon at night?",
-    "options": ["Parrotfish", "Tuna", "Salmon"],
-    "answer": "Parrotfish"
-  },
-  {
-    "q": "What is another common name for a manatee?",
-    "options": ["Sea cow", "Sea wolf", "Sea horse"],
-    "answer": "Sea cow"
-  },
-  {
-    "q": "Which ocean layer lies between 200 and 1000 meters deep?",
-    "options": ["Mesopelagic zone", "Epipelagic zone", "Bathyal zone"],
-    "answer": "Mesopelagic zone"
-  },
-  {
-    "q": "What causes ocean tides on Earth?",
-    "options": ["Moon's gravity", "Wind", "Earth's core"],
-    "answer": "Moon's gravity"
-  },
-  {
-    "q": "Which animal can regenerate lost arms?",
-    "options": ["Sea star", "Shark", "Seal"],
-    "answer": "Sea star"
-  },
-  {
-    "q": "What is the main food of baleen whales?",
-    "options": ["Krill", "Seaweed", "Fish"],
-    "answer": "Krill"
-  },
-  {
-    "q": "Which reef fish often changes from female to male?",
-    "options": ["Parrotfish", "Tuna", "Anchovy"],
-    "answer": "Parrotfish"
-  },
-  {
-    "q": "Average ocean salinity is about how many parts per thousand?",
-    "options": ["35 ppt", "5 ppt", "70 ppt"],
-    "answer": "35 ppt"
-  },
-  {
-    "q": "Which marine plant forms underwater meadows?",
-    "options": ["Seagrass", "Kelp", "Mangrove"],
-    "answer": "Seagrass"
-  },
-  {
-    "q": "Dinoflagellates are responsible for what harmful event?",
-    "options": ["Harmful algal blooms", "Coral spawning", "Upwelling"],
-    "answer": "Harmful algal blooms"
-  },
-  {
-    "q": "Which fish has a long dorsal fin that looks like a sail?",
-    "options": ["Sailfish", "Guppy", "Flounder"],
-    "answer": "Sailfish"
-  },
-  {
-    "q": "What is the main purpose of a turtle's carapace?",
-    "options": ["Protection", "Eating", "Swimming"],
-    "answer": "Protection"
-  },
-  {
-    "q": "Which invertebrates have stinging cells called nematocysts?",
-    "options": ["Jellyfish", "Sponges", "Worms"],
-    "answer": "Jellyfish"
-  },
-  {
-    "q": "What is the deepest known ocean trench?",
-    "options": ["Mariana Trench", "Tonga Trench", "Peru-Chile Trench"],
-    "answer": "Mariana Trench"
-  },
-  {
-    "q": "Which fish cleans parasites from other fish?",
-    "options": ["Cleaner wrasse", "Barracuda", "Snapper"],
-    "answer": "Cleaner wrasse"
-  },
-  {
-    "q": "Which marine mammal has tusks?",
-    "options": ["Walrus", "Dugong", "Dolphin"],
-    "answer": "Walrus"
-  },
-  {
-    "q": "Tiny animals that drift with currents are called what?",
-    "options": ["Zooplankton", "Jellyfish", "Krill"],
-    "answer": "Zooplankton"
-  },
-  {
-    "q": "What type of reef forms a ring around a lagoon?",
-    "options": ["Atoll", "Barrier reef", "Fringing reef"],
-    "answer": "Atoll"
-  },
-  {
-    "q": "Sea anemones and corals belong to which phylum?",
-    "options": ["Cnidaria", "Arthropoda", "Echinodermata"],
-    "answer": "Cnidaria"
-  },
-  {
-    "q": "Corals expelling algae due to stress is called what?",
-    "options": ["Bleaching", "Spawning", "Upwelling"],
-    "answer": "Bleaching"
-  },
-  {
-    "q": "Jellyfish bodies are composed mostly of what?",
-    "options": ["Water", "Protein", "Salt"],
-    "answer": "Water"
-  },
-  {
-    "q": "What do sea turtles use to excrete excess salt?",
-    "options": ["Salt glands", "Lungs", "Kidneys"],
-    "answer": "Salt glands"
-  },
-  {
-    "q": "Which marine mammal has a triangular dorsal fin?",
-    "options": ["Orca", "Manatee", "Seal"],
-    "answer": "Orca"
-  },
-  {
-    "q": "Which fish uses electric organs to stun prey?",
-    "options": ["Electric ray", "Swordfish", "Tarpon"],
-    "answer": "Electric ray"
-  },
-  {
-    "q": "What is a common use of bioluminescence in deep-sea fish?",
-    "options": ["Attract prey", "Digest food", "Make oxygen"],
-    "answer": "Attract prey"
-  },
-  {
-    "q": "Which muscles allow bivalves to close their shells?",
-    "options": ["Adductor muscles", "Flexor muscles", "Circular muscles"],
-    "answer": "Adductor muscles"
-  },
-  {
-    "q": "Which cephalopod has a rigid internal cuttlebone?",
-    "options": ["Cuttlefish", "Octopus", "Nautilus"],
-    "answer": "Cuttlefish"
-  },
-  {
-    "q": "What is the major current that circles Antarctica called?",
+    "q": "Which animal often lives in ocean off Long Island?",
     "options": [
-      "Antarctic Circumpolar Current",
-      "Gulf Stream",
-      "Kuroshio Current"
+      "Kemp's ridley sea turtle",
+      "Green sea turtle",
+      "Humpback whale"
     ],
-    "answer": "Antarctic Circumpolar Current"
+    "answer": "Humpback whale"
   },
   {
-    "q": "Which whale has a long spiral tusk?",
-    "options": ["Narwhal", "Beluga", "Pilot whale"],
-    "answer": "Narwhal"
-  },
-  {
-    "q": "Organisms that drift with ocean currents are known as what?",
-    "options": ["Plankton", "Nekton", "Benthos"],
-    "answer": "Plankton"
-  },
-  {
-    "q": "Sea stars move and feed using what system?",
+    "q": "Which animal dives deep and blows spray?",
     "options": [
-      "Water vascular system",
-      "Respiratory system",
-      "Digestive system"
+      "Bay scallop",
+      "Humpback whale",
+      "Horseshoe crab"
     ],
-    "answer": "Water vascular system"
+    "answer": "Humpback whale"
   },
   {
-    "q": "Active swimmers like fish and squids are called what?",
-    "options": ["Nekton", "Plankton", "Benthos"],
-    "answer": "Nekton"
+    "q": "Which animal likes to eat small fish like bunker?",
+    "options": [
+      "Bay scallop",
+      "Winter flounder",
+      "Humpback whale"
+    ],
+    "answer": "Humpback whale"
   },
   {
-    "q": "Which crustacean cleans parasites at reef stations?",
-    "options": ["Cleaner shrimp", "Hermit crab", "Lobster"],
-    "answer": "Cleaner shrimp"
+    "q": "Which animal around Long Island has pointy teeth that stick out?",
+    "options": [
+      "Hard clam (quahog)",
+      "Hermit crab",
+      "Sand tiger shark"
+    ],
+    "answer": "Sand tiger shark"
   },
   {
-    "q": "Which ocean zone has high pressure and near-freezing temperatures?",
-    "options": ["Hadal zone", "Neritic zone", "Pelagic zone"],
-    "answer": "Hadal zone"
+    "q": "Which animal often lives in coastal ocean near Long Island?",
+    "options": [
+      "Cownose ray",
+      "Black sea bass",
+      "Sand tiger shark"
+    ],
+    "answer": "Sand tiger shark"
   },
   {
-    "q": "What proteins protect some polar fish from freezing?",
-    "options": ["Antifreeze proteins", "Hemoglobin", "Keratin"],
-    "answer": "Antifreeze proteins"
+    "q": "Which animal slow swimmer?",
+    "options": [
+      "Atlantic oyster",
+      "Loggerhead sea turtle",
+      "Sand tiger shark"
+    ],
+    "answer": "Sand tiger shark"
   },
   {
-    "q": "Which small crustaceans are a major food source for whales?",
-    "options": ["Krill", "Copepods", "Shrimp"],
-    "answer": "Krill"
+    "q": "Which animal likes to eat fish?",
+    "options": [
+      "Harbor seal",
+      "Bay scallop",
+      "Sand tiger shark"
+    ],
+    "answer": "Sand tiger shark"
   },
   {
-    "q": "Which shark can survive in both fresh and salt water?",
-    "options": ["Bull shark", "Nurse shark", "Reef shark"],
-    "answer": "Bull shark"
+    "q": "Which animal around Long Island has a small shark with smooth skin?",
+    "options": [
+      "Smooth dogfish",
+      "Northern puffer (blowfish)",
+      "Green sea turtle"
+    ],
+    "answer": "Smooth dogfish"
   },
   {
-    "q": "What gas fills the swim bladder of many fish?",
-    "options": ["Oxygen", "Carbon dioxide", "Nitrogen"],
-    "answer": "Oxygen"
+    "q": "Which animal often lives in Long Island bays and ocean?",
+    "options": [
+      "Green sea turtle",
+      "Smooth dogfish",
+      "American eel"
+    ],
+    "answer": "Smooth dogfish"
   },
   {
-    "q": "What is the process of shedding an old exoskeleton called?",
-    "options": ["Molting", "Spawning", "Blooming"],
-    "answer": "Molting"
+    "q": "Which animal swims near the bottom?",
+    "options": [
+      "Little skate",
+      "Northern sea star",
+      "Smooth dogfish"
+    ],
+    "answer": "Smooth dogfish"
   },
   {
-    "q": "Which marine reptile has a tail flattened for swimming?",
-    "options": ["Sea snake", "Iguana", "Crocodile"],
-    "answer": "Sea snake"
+    "q": "Which animal likes to eat crabs?",
+    "options": [
+      "Smooth dogfish",
+      "Green sea turtle",
+      "Menhaden (bunker)"
+    ],
+    "answer": "Smooth dogfish"
   },
   {
-    "q": "What is the coastal zone alternately exposed and covered by tides?",
-    "options": ["Intertidal zone", "Abyssal zone", "Pelagic zone"],
-    "answer": "Intertidal zone"
+    "q": "Which animal around Long Island has a tall dorsal fin on its back?",
+    "options": [
+      "Sandbar shark",
+      "Moon jelly",
+      "Green sea turtle"
+    ],
+    "answer": "Sandbar shark"
   },
   {
-    "q": "Which organism creates pearls?",
-    "options": ["Oyster", "Starfish", "Jellyfish"],
-    "answer": "Oyster"
+    "q": "Which animal often lives in coastal ocean near Long Island?",
+    "options": [
+      "Sandbar shark",
+      "Common periwinkle",
+      "Winter flounder"
+    ],
+    "answer": "Sandbar shark"
   },
   {
-    "q": "What is the fastest swimming fish in the ocean?",
-    "options": ["Sailfish", "Mackerel", "Grouper"],
-    "answer": "Sailfish"
+    "q": "Which animal swims in shallow coastal water?",
+    "options": [
+      "Loggerhead sea turtle",
+      "Sandbar shark",
+      "Longfin squid"
+    ],
+    "answer": "Sandbar shark"
   },
   {
-    "q": "Which fish can glide above the water surface?",
-    "options": ["Flying fish", "Catfish", "Cod"],
-    "answer": "Flying fish"
+    "q": "Which animal likes to eat fish?",
+    "options": [
+      "Little skate",
+      "American lobster",
+      "Sandbar shark"
+    ],
+    "answer": "Sandbar shark"
   },
   {
-    "q": "What is the study of fish called?",
-    "options": ["Ichthyology", "Ornithology", "Botany"],
-    "answer": "Ichthyology"
+    "q": "Which animal around Long Island has a diamond-shaped body?",
+    "options": [
+      "Hard clam (quahog)",
+      "Loggerhead sea turtle",
+      "Little skate"
+    ],
+    "answer": "Little skate"
   },
   {
-    "q": "Which marine organism uses a radula to scrape food?",
-    "options": ["Sea snail", "Sea star", "Sea cucumber"],
-    "answer": "Sea snail"
+    "q": "Which animal often lives in sandy bottom near Long Island?",
+    "options": [
+      "Northern puffer (blowfish)",
+      "Little skate",
+      "Longfin squid"
+    ],
+    "answer": "Little skate"
   },
   {
-    "q": "Which animal can rapidly change color for camouflage?",
-    "options": ["Cuttlefish", "Shark", "Sea turtle"],
-    "answer": "Cuttlefish"
+    "q": "Which animal glides along the bottom?",
+    "options": [
+      "Bay scallop",
+      "Menhaden (bunker)",
+      "Little skate"
+    ],
+    "answer": "Little skate"
   },
   {
-    "q": "Which predator often visits cleaning stations to remove parasites?",
-    "options": ["Moray eel", "Herring", "Sunfish"],
-    "answer": "Moray eel"
+    "q": "Which animal likes to eat worms and small crabs?",
+    "options": [
+      "Blue crab",
+      "Atlantic oyster",
+      "Little skate"
+    ],
+    "answer": "Little skate"
   },
   {
-    "q": "What part of a clam produces its shell?",
-    "options": ["Mantle", "Gill", "Foot"],
-    "answer": "Mantle"
+    "q": "Which animal around Long Island has wing-like fins?",
+    "options": [
+      "Cownose ray",
+      "Sea anemone",
+      "Longfin squid"
+    ],
+    "answer": "Cownose ray"
   },
   {
-    "q": "Which sea turtle has a leathery shell?",
-    "options": ["Leatherback", "Loggerhead", "Hawksbill"],
-    "answer": "Leatherback"
+    "q": "Which animal often lives in nearshore ocean in summer near Long Island?",
+    "options": [
+      "Menhaden (bunker)",
+      "Hard clam (quahog)",
+      "Cownose ray"
+    ],
+    "answer": "Cownose ray"
   },
   {
-    "q": "What do spiracles on rays allow them to do?",
-    "options": ["Breathe while buried", "See in the dark", "Hear better"],
-    "answer": "Breathe while buried"
+    "q": "Which animal flaps like a bird underwater?",
+    "options": [
+      "Mummichog",
+      "Bottlenose dolphin",
+      "Cownose ray"
+    ],
+    "answer": "Cownose ray"
   },
   {
-    "q": "What is the largest species of ray?",
-    "options": ["Manta ray", "Stingray", "Skate"],
-    "answer": "Manta ray"
+    "q": "Which animal likes to eat clams?",
+    "options": [
+      "Cownose ray",
+      "Kemp's ridley sea turtle",
+      "Hard clam (quahog)"
+    ],
+    "answer": "Cownose ray"
   },
   {
-    "q": "Which marine mammal can hold its breath for over two hours?",
-    "options": ["Sperm whale", "Sea lion", "Otter"],
-    "answer": "Sperm whale"
+    "q": "Which animal around Long Island has ten arms and ink?",
+    "options": [
+      "Atlantic oyster",
+      "Mummichog",
+      "Longfin squid"
+    ],
+    "answer": "Longfin squid"
   },
   {
-    "q": "What is the larval stage of crabs called?",
-    "options": ["Zoea", "Nauplius", "Planula"],
-    "answer": "Zoea"
+    "q": "Which animal often lives in ocean waters off Long Island?",
+    "options": [
+      "Hermit crab",
+      "Longfin squid",
+      "Northern puffer (blowfish)"
+    ],
+    "answer": "Longfin squid"
   },
   {
-    "q": "What is the term for the area where a river meets the sea?",
-    "options": ["Estuary", "Reef", "Trench"],
-    "answer": "Estuary"
+    "q": "Which animal jets through the water?",
+    "options": [
+      "Sand tiger shark",
+      "Longfin squid",
+      "Green sea turtle"
+    ],
+    "answer": "Longfin squid"
   },
   {
-    "q": "Which shark is known for its tiger-like stripes and broad diet?",
-    "options": ["Tiger shark", "Goblin shark", "Angel shark"],
-    "answer": "Tiger shark"
+    "q": "Which animal likes to eat fish?",
+    "options": [
+      "Horseshoe crab",
+      "Bottlenose dolphin",
+      "Longfin squid"
+    ],
+    "answer": "Longfin squid"
   },
   {
-    "q": "What is the jaw structure of a sea urchin called?",
-    "options": ["Aristotle's lantern", "Radula", "Beak"],
-    "answer": "Aristotle's lantern"
+    "q": "Which animal around Long Island has can puff up like a ball?",
+    "options": [
+      "Hard clam (quahog)",
+      "Horseshoe crab",
+      "Northern puffer (blowfish)"
+    ],
+    "answer": "Northern puffer (blowfish)"
   },
   {
-    "q": "Which fish has venomous spines and a lion-like appearance?",
-    "options": ["Lionfish", "Clownfish", "Goby"],
-    "answer": "Lionfish"
+    "q": "Which animal often lives in Long Island bays?",
+    "options": [
+      "Hermit crab",
+      "Smooth dogfish",
+      "Northern puffer (blowfish)"
+    ],
+    "answer": "Northern puffer (blowfish)"
   },
   {
-    "q": "What is the region of floating seaweed in the Atlantic called?",
-    "options": ["Sargasso Sea", "Red Sea", "Dead Sea"],
-    "answer": "Sargasso Sea"
+    "q": "Which animal swims slowly?",
+    "options": [
+      "Northern puffer (blowfish)",
+      "Comb jelly",
+      "Northern sea star"
+    ],
+    "answer": "Northern puffer (blowfish)"
   },
   {
-    "q": "Seals, sea lions, and walruses belong to which group?",
-    "options": ["Pinnipeds", "Cetaceans", "Sirenians"],
-    "answer": "Pinnipeds"
+    "q": "Which animal likes to eat crabs and snails?",
+    "options": [
+      "Northern puffer (blowfish)",
+      "Blue crab",
+      "Bay scallop"
+    ],
+    "answer": "Northern puffer (blowfish)"
   },
   {
-    "q": "Which microorganisms form chalky shells that become limestone?",
-    "options": ["Coccolithophores", "Diatoms", "Radiolarians"],
-    "answer": "Coccolithophores"
+    "q": "Which animal around Long Island has a long, slippery body?",
+    "options": [
+      "Sand tiger shark",
+      "American eel",
+      "Sea anemone"
+    ],
+    "answer": "American eel"
   },
   {
-    "q": "The relationship between cleaner fish and client fish is an example of what?",
-    "options": ["Mutualism", "Parasitism", "Commensalism"],
-    "answer": "Mutualism"
+    "q": "Which animal often lives in bays and estuaries on Long Island?",
+    "options": [
+      "Moon jelly",
+      "American eel",
+      "Hard clam (quahog)"
+    ],
+    "answer": "American eel"
+  },
+  {
+    "q": "Which animal slithers through the water?",
+    "options": [
+      "Kemp's ridley sea turtle",
+      "American eel",
+      "Hard clam (quahog)"
+    ],
+    "answer": "American eel"
+  },
+  {
+    "q": "Which animal likes to eat worms and small fish?",
+    "options": [
+      "American eel",
+      "Longfin squid",
+      "Tautog (blackfish)"
+    ],
+    "answer": "American eel"
+  },
+  {
+    "q": "Which animal around Long Island has soft tentacles like flower petals?",
+    "options": [
+      "Smooth dogfish",
+      "Harbor seal",
+      "Sea anemone"
+    ],
+    "answer": "Sea anemone"
+  },
+  {
+    "q": "Which animal often lives in rocks and docks around Long Island?",
+    "options": [
+      "Sea anemone",
+      "Atlantic oyster",
+      "Longfin squid"
+    ],
+    "answer": "Sea anemone"
+  },
+  {
+    "q": "Which animal mostly stays in one place?",
+    "options": [
+      "Sand tiger shark",
+      "Atlantic silverside",
+      "Sea anemone"
+    ],
+    "answer": "Sea anemone"
+  },
+  {
+    "q": "Which animal likes to eat tiny animals that drift by?",
+    "options": [
+      "Sea anemone",
+      "Comb jelly",
+      "Sandbar shark"
+    ],
+    "answer": "Sea anemone"
+  },
+  {
+    "q": "Which animal around Long Island has a small, tough fish?",
+    "options": [
+      "Cownose ray",
+      "Little skate",
+      "Mummichog"
+    ],
+    "answer": "Mummichog"
+  },
+  {
+    "q": "Which animal often lives in salt marsh creeks on Long Island?",
+    "options": [
+      "Menhaden (bunker)",
+      "Mummichog",
+      "Common periwinkle"
+    ],
+    "answer": "Mummichog"
+  },
+  {
+    "q": "Which animal swims in groups in shallow water?",
+    "options": [
+      "Black sea bass",
+      "Hard clam (quahog)",
+      "Mummichog"
+    ],
+    "answer": "Mummichog"
+  },
+  {
+    "q": "Which animal likes to eat insects and tiny animals?",
+    "options": [
+      "Bay scallop",
+      "Mummichog",
+      "American lobster"
+    ],
+    "answer": "Mummichog"
+  },
+  {
+    "q": "Which animal uses its tail to flip over?",
+    "options": [
+      "Black sea bass",
+      "Comb jelly",
+      "Horseshoe crab"
+    ],
+    "answer": "Horseshoe crab"
+  },
+  {
+    "q": "Which animal can swim using paddle-shaped back legs?",
+    "options": [
+      "Mummichog",
+      "Blue crab",
+      "Horseshoe crab"
+    ],
+    "answer": "Blue crab"
+  },
+  {
+    "q": "Which animal borrows shells instead of making its own?",
+    "options": [
+      "Longfin squid",
+      "Hermit crab",
+      "Kemp's ridley sea turtle"
+    ],
+    "answer": "Hermit crab"
+  },
+  {
+    "q": "Which animal has two claws, one crusher and one pincher?",
+    "options": [
+      "Sand tiger shark",
+      "American lobster",
+      "Comb jelly"
+    ],
+    "answer": "American lobster"
+  },
+  {
+    "q": "Which animal can grow back a lost arm?",
+    "options": [
+      "Green sea turtle",
+      "Northern sea star",
+      "Longfin squid"
+    ],
+    "answer": "Northern sea star"
+  },
+  {
+    "q": "Which animal has a soft, squishy body?",
+    "options": [
+      "Harbor seal",
+      "Mummichog",
+      "Moon jelly"
+    ],
+    "answer": "Moon jelly"
+  },
+  {
+    "q": "Which animal can glow in the dark water?",
+    "options": [
+      "Comb jelly",
+      "Atlantic oyster",
+      "Bay scallop"
+    ],
+    "answer": "Comb jelly"
+  },
+  {
+    "q": "Which animal is an important food for bigger fish?",
+    "options": [
+      "Cownose ray",
+      "Atlantic silverside",
+      "Little skate"
+    ],
+    "answer": "Atlantic silverside"
+  },
+  {
+    "q": "Which animal is also called bunker in New York?",
+    "options": [
+      "Green sea turtle",
+      "Bay scallop",
+      "Menhaden (bunker)"
+    ],
+    "answer": "Menhaden (bunker)"
+  },
+  {
+    "q": "Which animal is a popular fish for anglers?",
+    "options": [
+      "Comb jelly",
+      "Bottlenose dolphin",
+      "Striped bass"
+    ],
+    "answer": "Striped bass"
+  },
+  {
+    "q": "Which animal changes color to match the sand?",
+    "options": [
+      "Longfin squid",
+      "Fluke (summer flounder)",
+      "Humpback whale"
+    ],
+    "answer": "Fluke (summer flounder)"
+  },
+  {
+    "q": "Which animal spends time in cooler water?",
+    "options": [
+      "Kemp's ridley sea turtle",
+      "Winter flounder",
+      "Tautog (blackfish)"
+    ],
+    "answer": "Winter flounder"
+  },
+  {
+    "q": "Which animal likes to hide around wrecks and reefs?",
+    "options": [
+      "Sandbar shark",
+      "Common periwinkle",
+      "Black sea bass"
+    ],
+    "answer": "Black sea bass"
+  },
+  {
+    "q": "Which animal uses strong teeth to crush shells?",
+    "options": [
+      "Bottlenose dolphin",
+      "Mummichog",
+      "Tautog (blackfish)"
+    ],
+    "answer": "Tautog (blackfish)"
+  },
+  {
+    "q": "Which animal helps keep the bay water clean?",
+    "options": [
+      "Green sea turtle",
+      "Menhaden (bunker)",
+      "Atlantic oyster"
+    ],
+    "answer": "Atlantic oyster"
+  },
+  {
+    "q": "Which animal is also called a quahog?",
+    "options": [
+      "Bay scallop",
+      "Winter flounder",
+      "Hard clam (quahog)"
+    ],
+    "answer": "Hard clam (quahog)"
+  },
+  {
+    "q": "Which animal can swim by clapping its shells?",
+    "options": [
+      "Bay scallop",
+      "Moon jelly",
+      "Atlantic oyster"
+    ],
+    "answer": "Bay scallop"
+  },
+  {
+    "q": "Which animal sticks to rocks when waves crash?",
+    "options": [
+      "Common periwinkle",
+      "Fluke (summer flounder)",
+      "Harbor seal"
+    ],
+    "answer": "Common periwinkle"
+  },
+  {
+    "q": "Which animal breathes air with lungs?",
+    "options": [
+      "Green sea turtle",
+      "Atlantic silverside",
+      "Bay scallop"
+    ],
+    "answer": "Green sea turtle"
+  },
+  {
+    "q": "Which animal can bite through hard shells?",
+    "options": [
+      "Sand tiger shark",
+      "Loggerhead sea turtle",
+      "Green sea turtle"
+    ],
+    "answer": "Loggerhead sea turtle"
+  },
+  {
+    "q": "Which animal is one of the smaller sea turtles?",
+    "options": [
+      "Fluke (summer flounder)",
+      "Kemp's ridley sea turtle",
+      "Bay scallop"
+    ],
+    "answer": "Kemp's ridley sea turtle"
+  },
+  {
+    "q": "Which animal rests on rocks and sandbars in winter?",
+    "options": [
+      "Smooth dogfish",
+      "Bottlenose dolphin",
+      "Harbor seal"
+    ],
+    "answer": "Harbor seal"
+  },
+  {
+    "q": "Which animal uses a blowhole to breathe air?",
+    "options": [
+      "Northern puffer (blowfish)",
+      "Bottlenose dolphin",
+      "Kemp's ridley sea turtle"
+    ],
+    "answer": "Bottlenose dolphin"
+  },
+  {
+    "q": "Which animal can splash with its huge tail?",
+    "options": [
+      "Blue crab",
+      "Humpback whale",
+      "Loggerhead sea turtle"
+    ],
+    "answer": "Humpback whale"
+  },
+  {
+    "q": "Which animal looks scary but usually swims calmly?",
+    "options": [
+      "Menhaden (bunker)",
+      "Kemp's ridley sea turtle",
+      "Sand tiger shark"
+    ],
+    "answer": "Sand tiger shark"
+  },
+  {
+    "q": "Which animal is common in local bays?",
+    "options": [
+      "Smooth dogfish",
+      "Winter flounder",
+      "Striped bass"
+    ],
+    "answer": "Smooth dogfish"
+  },
+  {
+    "q": "Which animal has a very big back fin?",
+    "options": [
+      "Cownose ray",
+      "American lobster",
+      "Sandbar shark"
+    ],
+    "answer": "Sandbar shark"
+  },
+  {
+    "q": "Which animal lays eggs called mermaid’s purses?",
+    "options": [
+      "Harbor seal",
+      "Loggerhead sea turtle",
+      "Little skate"
+    ],
+    "answer": "Little skate"
+  },
+  {
+    "q": "Which animal travels in groups called schools?",
+    "options": [
+      "American lobster",
+      "Kemp's ridley sea turtle",
+      "Cownose ray"
+    ],
+    "answer": "Cownose ray"
+  },
+  {
+    "q": "Which animal can spray ink to hide?",
+    "options": [
+      "Longfin squid",
+      "Northern puffer (blowfish)",
+      "Fluke (summer flounder)"
+    ],
+    "answer": "Longfin squid"
+  },
+  {
+    "q": "Which animal puffs up when scared?",
+    "options": [
+      "Blue crab",
+      "Smooth dogfish",
+      "Northern puffer (blowfish)"
+    ],
+    "answer": "Northern puffer (blowfish)"
+  },
+  {
+    "q": "Which animal looks like a snake but is a fish?",
+    "options": [
+      "Bay scallop",
+      "American eel",
+      "American lobster"
+    ],
+    "answer": "American eel"
+  },
+  {
+    "q": "Which animal looks like a plant but is an animal?",
+    "options": [
+      "Bay scallop",
+      "Atlantic silverside",
+      "Sea anemone"
+    ],
+    "answer": "Sea anemone"
+  },
+  {
+    "q": "Which animal can live in water that changes a lot?",
+    "options": [
+      "Black sea bass",
+      "Green sea turtle",
+      "Mummichog"
+    ],
+    "answer": "Mummichog"
+  },
+  {
+    "q": "Which animal off Long Island can spray ink to hide?",
+    "options": [
+      "Longfin squid",
+      "Comb jelly",
+      "Striped bass"
+    ],
+    "answer": "Longfin squid"
+  },
+  {
+    "q": "Which flat fish hides in the sand near Long Island?",
+    "options": [
+      "Common periwinkle",
+      "Fluke (summer flounder)",
+      "Black sea bass"
+    ],
+    "answer": "Fluke (summer flounder)"
+  },
+  {
+    "q": "Which small fish with a silver stripe is common on Long Island beaches?",
+    "options": [
+      "Mummichog",
+      "Black sea bass",
+      "Atlantic silverside"
+    ],
+    "answer": "Atlantic silverside"
+  },
+  {
+    "q": "Which big animal off Long Island splashes a huge tail?",
+    "options": [
+      "Humpback whale",
+      "Longfin squid",
+      "Cownose ray"
+    ],
+    "answer": "Humpback whale"
+  },
+  {
+    "q": "Which crab in Long Island bays can swim with paddle back legs?",
+    "options": [
+      "Sea anemone",
+      "Blue crab",
+      "Bottlenose dolphin"
+    ],
+    "answer": "Blue crab"
+  },
+  {
+    "q": "Which animal helps keep Long Island bays clean by filtering water?",
+    "options": [
+      "Sand tiger shark",
+      "Atlantic oyster",
+      "Winter flounder"
+    ],
+    "answer": "Atlantic oyster"
+  },
+  {
+    "q": "Which fish in Long Island bays can puff up like a ball?",
+    "options": [
+      "Loggerhead sea turtle",
+      "Kemp's ridley sea turtle",
+      "Northern puffer (blowfish)"
+    ],
+    "answer": "Northern puffer (blowfish)"
+  },
+  {
+    "q": "Which animal lays eggs called mermaid’s purses?",
+    "options": [
+      "Little skate",
+      "Kemp's ridley sea turtle",
+      "Sea anemone"
+    ],
+    "answer": "Little skate"
+  },
+  {
+    "q": "Which animal has both eyes on one side of its head?",
+    "options": [
+      "Atlantic oyster",
+      "Mummichog",
+      "Fluke (summer flounder)"
+    ],
+    "answer": "Fluke (summer flounder)"
+  },
+  {
+    "q": "Which animal has a long tail spike and a hard shell on Long Island beaches?",
+    "options": [
+      "Menhaden (bunker)",
+      "Sea anemone",
+      "Horseshoe crab"
+    ],
+    "answer": "Horseshoe crab"
+  },
+  {
+    "q": "Which shark near Long Island has a very tall back fin?",
+    "options": [
+      "Atlantic silverside",
+      "Sandbar shark",
+      "Fluke (summer flounder)"
+    ],
+    "answer": "Sandbar shark"
+  },
+  {
+    "q": "Which small shark in Long Island bays has smooth skin?",
+    "options": [
+      "Tautog (blackfish)",
+      "American lobster",
+      "Smooth dogfish"
+    ],
+    "answer": "Smooth dogfish"
+  },
+  {
+    "q": "Which ray near Long Island has wing-like fins that flap?",
+    "options": [
+      "American eel",
+      "Winter flounder",
+      "Cownose ray"
+    ],
+    "answer": "Cownose ray"
+  },
+  {
+    "q": "Which animal has soft tentacles and looks like a flower but is an animal?",
+    "options": [
+      "Sea anemone",
+      "Green sea turtle",
+      "Humpback whale"
+    ],
+    "answer": "Sea anemone"
+  },
+  {
+    "q": "Which animal rests on rocks and sandbars in winter around Long Island?",
+    "options": [
+      "Cownose ray",
+      "Longfin squid",
+      "Harbor seal"
+    ],
+    "answer": "Harbor seal"
+  },
+  {
+    "q": "Which animal breathes air through a blowhole and lives off Long Island?",
+    "options": [
+      "Bottlenose dolphin",
+      "Longfin squid",
+      "Tautog (blackfish)"
+    ],
+    "answer": "Bottlenose dolphin"
+  },
+  {
+    "q": "Which fish has dark stripes on its sides near Long Island?",
+    "options": [
+      "Striped bass",
+      "Harbor seal",
+      "Tautog (blackfish)"
+    ],
+    "answer": "Striped bass"
+  },
+  {
+    "q": "Which fish is also called bunker in New York?",
+    "options": [
+      "Menhaden (bunker)",
+      "Winter flounder",
+      "Bottlenose dolphin"
+    ],
+    "answer": "Menhaden (bunker)"
+  },
+  {
+    "q": "Which shell animal can swim by clapping its shells?",
+    "options": [
+      "Common periwinkle",
+      "Bay scallop",
+      "Sandbar shark"
+    ],
+    "answer": "Bay scallop"
+  },
+  {
+    "q": "Which animal uses strong teeth to crush shells near rocks?",
+    "options": [
+      "Kemp's ridley sea turtle",
+      "Tautog (blackfish)",
+      "Common periwinkle"
+    ],
+    "answer": "Tautog (blackfish)"
+  },
+  {
+    "q": "Which animal is a small, tough fish in Long Island marsh creeks?",
+    "options": [
+      "Mummichog",
+      "Loggerhead sea turtle",
+      "Northern puffer (blowfish)"
+    ],
+    "answer": "Mummichog"
+  },
+  {
+    "q": "Which animal crawls slowly with five arms near Long Island?",
+    "options": [
+      "Hard clam (quahog)",
+      "Little skate",
+      "Northern sea star"
+    ],
+    "answer": "Northern sea star"
+  },
+  {
+    "q": "Which animal rows with tiny hairs and can glow?",
+    "options": [
+      "Comb jelly",
+      "American eel",
+      "Smooth dogfish"
+    ],
+    "answer": "Comb jelly"
+  },
+  {
+    "q": "Which jelly has a clear bell with four circles?",
+    "options": [
+      "Mummichog",
+      "Smooth dogfish",
+      "Moon jelly"
+    ],
+    "answer": "Moon jelly"
+  },
+  {
+    "q": "Which animal has a beak-like mouth and jumps from the water?",
+    "options": [
+      "Sand tiger shark",
+      "Bottlenose dolphin",
+      "Smooth dogfish"
+    ],
+    "answer": "Bottlenose dolphin"
+  },
+  {
+    "q": "Which animal has two big claws and lives on a rocky bottom?",
+    "options": [
+      "Horseshoe crab",
+      "American lobster",
+      "Humpback whale"
+    ],
+    "answer": "American lobster"
+  },
+  {
+    "q": "Which shell animal is also called a quahog?",
+    "options": [
+      "Sandbar shark",
+      "Hermit crab",
+      "Hard clam (quahog)"
+    ],
+    "answer": "Hard clam (quahog)"
+  },
+  {
+    "q": "Which fish slithers like a snake but is a fish?",
+    "options": [
+      "American eel",
+      "Atlantic silverside",
+      "Hard clam (quahog)"
+    ],
+    "answer": "American eel"
+  },
+  {
+    "q": "Which crab borrows shells instead of making its own?",
+    "options": [
+      "Sand tiger shark",
+      "Bottlenose dolphin",
+      "Hermit crab"
+    ],
+    "answer": "Hermit crab"
+  },
+  {
+    "q": "Which animal sticks to rocks with a small spiral shell?",
+    "options": [
+      "Common periwinkle",
+      "Cownose ray",
+      "Atlantic silverside"
+    ],
+    "answer": "Common periwinkle"
   }
 ]
