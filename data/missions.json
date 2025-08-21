@@ -1,9 +1,9 @@
 {
   "missions": [
     {
-      "name": "Reef Rampage",
-      "description": "Octomurk’s feeding frenzy threatens the reef. Dodge his thrashing limbs and strike back before he swallows the ocean whole.",
+      "name": "Octomurk",
       "reward": 5,
+      "rating": "easy",
       "enemy": {
         "name": "Octomurk",
         "hp": 50,
@@ -12,25 +12,25 @@
       }
     },
     {
-      "name": "Shark Showdown",
-      "description": "Ironjaw the reef shark won’t back down. Outsmart his lunges and prove that brains can beat brawn beneath the waves.",
-      "reward": 5,
+      "name": "Clawspike",
+      "reward": 10,
+      "rating": "medium",
       "enemy": {
-        "name": "Ironjaw",
-        "hp": 75,
+        "name": "Clawspike",
+        "hp": 50,
         "attack": 25,
-        "sprite": "../images/test.png"
+        "sprite": "../images/clawspike.png"
       }
     },
     {
-      "name": "Whirlpool Wrath",
-      "description": "Leviathan, the ancient whale-serpent, summons storms and whirlpools to guard his dominion. Outswim the current, confront the beast, and calm the raging seas.",
-      "reward": 10,
+      "name": "Sharksmash",
+      "reward": 15,
+      "rating": "hard",
       "enemy": {
-        "name": "Leviathan",
+        "name": "Sharksmash",
         "hp": 100,
-        "attack": 25,
-        "sprite": "../images/octomurk.png"
+        "attack": 50,
+        "sprite": "../images/sharksmash.png"
       }
     }
   ]

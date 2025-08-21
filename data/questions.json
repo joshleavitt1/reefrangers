@@ -1,1802 +1,1802 @@
 [
   {
-    "q": "Which animal around Long Island has a hard shell and a long tail spike?",
+    "q": "Which ocean animal has the largest animal on Earth?",
     "options": [
-      "Menhaden (bunker)",
-      "Sand tiger shark",
-      "Horseshoe crab"
+      "Orca",
+      "Blue whale",
+      "Walrus"
     ],
-    "answer": "Horseshoe crab"
+    "answer": "Blue whale"
   },
   {
-    "q": "Which animal often lives in sandy Long Island beaches?",
+    "q": "What does the Blue whale like to eat?",
     "options": [
-      "Horseshoe crab",
-      "Sand tiger shark",
-      "Winter flounder"
+      "Lobster",
+      "Dolphin",
+      "Blue whale"
     ],
-    "answer": "Horseshoe crab"
+    "answer": "Blue whale"
   },
   {
-    "q": "Which animal walks on many legs?",
+    "q": "Which animal can sing very loud songs?",
     "options": [
-      "Horseshoe crab",
-      "Striped bass",
-      "Green sea turtle"
+      "Penguin",
+      "Polar bear",
+      "Blue whale"
     ],
-    "answer": "Horseshoe crab"
+    "answer": "Blue whale"
   },
   {
-    "q": "Which animal likes to eat worms and small clams?",
+    "q": "Where can you find the Blue whale?",
     "options": [
-      "Common periwinkle",
-      "Horseshoe crab",
-      "Longfin squid"
+      "Manta ray",
+      "Blue whale",
+      "Sea otter"
     ],
-    "answer": "Horseshoe crab"
+    "answer": "Blue whale"
   },
   {
-    "q": "Which animal around Long Island has two strong claws and blue legs?",
+    "q": "Which ocean animal has sharp teeth?",
     "options": [
-      "Blue crab",
-      "Bay scallop",
-      "Fluke (summer flounder)"
+      "Manatee",
+      "Great white shark",
+      "Sea otter"
     ],
-    "answer": "Blue crab"
+    "answer": "Great white shark"
   },
   {
-    "q": "Which animal often lives in bays and marshes around Long Island?",
+    "q": "What does the Great white shark like to eat?",
     "options": [
-      "Black sea bass",
-      "Atlantic oyster",
-      "Blue crab"
+      "Albatross",
+      "Great white shark",
+      "Polar bear"
     ],
-    "answer": "Blue crab"
+    "answer": "Great white shark"
   },
   {
-    "q": "Which animal swims sideways with paddle back legs?",
+    "q": "Which animal is a fast swimmer?",
     "options": [
-      "Blue crab",
-      "Cownose ray",
-      "Winter flounder"
+      "Polar bear",
+      "Jellyfish",
+      "Great white shark"
     ],
-    "answer": "Blue crab"
+    "answer": "Great white shark"
   },
   {
-    "q": "Which animal likes to eat small fish and plants?",
+    "q": "Where can you find the Great white shark?",
     "options": [
-      "Hard clam (quahog)",
-      "Blue crab",
-      "Fluke (summer flounder)"
+      "Penguin",
+      "Great white shark",
+      "Starfish"
     ],
-    "answer": "Blue crab"
+    "answer": "Great white shark"
   },
   {
-    "q": "Which animal around Long Island has lives in an empty snail shell?",
+    "q": "Which ocean animal has bright orange with white stripes?",
     "options": [
-      "Striped bass",
-      "Atlantic oyster",
-      "Hermit crab"
+      "Clownfish",
+      "Dolphin",
+      "Pufferfish"
     ],
-    "answer": "Hermit crab"
+    "answer": "Clownfish"
   },
   {
-    "q": "Which animal often lives in tidal pools on Long Island?",
+    "q": "What does the Clownfish like to eat?",
     "options": [
-      "Sandbar shark",
-      "Blue crab",
-      "Hermit crab"
+      "Clownfish",
+      "Beluga whale",
+      "Dolphin"
     ],
-    "answer": "Hermit crab"
+    "answer": "Clownfish"
   },
   {
-    "q": "Which animal walks and hides in its shell?",
+    "q": "Which animal hides in stinging tentacles?",
     "options": [
-      "Winter flounder",
-      "Longfin squid",
-      "Hermit crab"
+      "Seal",
+      "Sea otter",
+      "Clownfish"
     ],
-    "answer": "Hermit crab"
+    "answer": "Clownfish"
   },
   {
-    "q": "Which animal likes to eat bits of plants and tiny animals?",
+    "q": "Where can you find the Clownfish?",
     "options": [
-      "Hermit crab",
-      "Sandbar shark",
-      "Sand tiger shark"
+      "Seahorse",
+      "Beluga whale",
+      "Clownfish"
     ],
-    "answer": "Hermit crab"
+    "answer": "Clownfish"
   },
   {
-    "q": "Which animal around Long Island has two big claws?",
+    "q": "Which ocean animal has a hard shell and flippers?",
     "options": [
-      "Longfin squid",
-      "American lobster",
-      "Common periwinkle"
+      "Walrus",
+      "Jellyfish",
+      "Sea turtle"
     ],
-    "answer": "American lobster"
+    "answer": "Sea turtle"
   },
   {
-    "q": "Which animal often lives in rocky ocean bottom off Long Island?",
+    "q": "What does the Sea turtle like to eat?",
     "options": [
-      "American lobster",
-      "Harbor seal",
-      "Cownose ray"
+      "Whale shark",
+      "Sea turtle",
+      "Electric eel"
     ],
-    "answer": "American lobster"
+    "answer": "Sea turtle"
   },
   {
-    "q": "Which animal walks and can swim backward?",
+    "q": "Which animal travels thousands of miles?",
     "options": [
-      "Black sea bass",
-      "Winter flounder",
-      "American lobster"
+      "Manatee",
+      "Sea turtle",
+      "Beluga whale"
     ],
-    "answer": "American lobster"
+    "answer": "Sea turtle"
   },
   {
-    "q": "Which animal likes to eat fish and clams?",
+    "q": "Where can you find the Sea turtle?",
     "options": [
-      "American lobster",
-      "Humpback whale",
-      "Sand tiger shark"
+      "Jellyfish",
+      "Sea turtle",
+      "Squid"
     ],
-    "answer": "American lobster"
+    "answer": "Sea turtle"
   },
   {
-    "q": "Which animal around Long Island has five arms?",
+    "q": "Which ocean animal has a blowhole on top of its head?",
     "options": [
-      "Loggerhead sea turtle",
-      "Cownose ray",
-      "Northern sea star"
+      "Sea otter",
+      "Polar bear",
+      "Dolphin"
     ],
-    "answer": "Northern sea star"
+    "answer": "Dolphin"
   },
   {
-    "q": "Which animal often lives in rocky bottoms near Long Island?",
+    "q": "What does the Dolphin like to eat?",
     "options": [
-      "Atlantic oyster",
-      "Northern sea star",
-      "Longfin squid"
+      "Lobster",
+      "Dolphin",
+      "Pufferfish"
     ],
-    "answer": "Northern sea star"
+    "answer": "Dolphin"
   },
   {
-    "q": "Which animal crawls slowly?",
+    "q": "Which animal jumps and plays in the waves?",
     "options": [
-      "American lobster",
-      "Sand tiger shark",
-      "Northern sea star"
+      "Sea snake",
+      "Penguin",
+      "Dolphin"
     ],
-    "answer": "Northern sea star"
+    "answer": "Dolphin"
   },
   {
-    "q": "Which animal likes to eat clams and mussels?",
+    "q": "Where can you find the Dolphin?",
     "options": [
-      "Comb jelly",
-      "American lobster",
-      "Northern sea star"
+      "Clownfish",
+      "Octopus",
+      "Dolphin"
     ],
-    "answer": "Northern sea star"
+    "answer": "Dolphin"
   },
   {
-    "q": "Which animal around Long Island has a clear bell with four circles?",
+    "q": "Which ocean animal has eight arms?",
     "options": [
-      "Moon jelly",
-      "Tautog (blackfish)",
-      "Longfin squid"
+      "Whale shark",
+      "Octopus",
+      "Orca"
     ],
-    "answer": "Moon jelly"
+    "answer": "Octopus"
   },
   {
-    "q": "Which animal often lives in Long Island bays and ocean?",
+    "q": "What does the Octopus like to eat?",
     "options": [
-      "Mummichog",
-      "American lobster",
-      "Moon jelly"
+      "Walrus",
+      "Lobster",
+      "Octopus"
     ],
-    "answer": "Moon jelly"
+    "answer": "Octopus"
   },
   {
-    "q": "Which animal floats and gently pulses?",
+    "q": "Which animal can squirt ink to hide?",
     "options": [
-      "Moon jelly",
-      "Menhaden (bunker)",
-      "Little skate"
+      "Electric eel",
+      "Octopus",
+      "Squid"
     ],
-    "answer": "Moon jelly"
+    "answer": "Octopus"
   },
   {
-    "q": "Which animal likes to eat tiny plankton?",
+    "q": "Where can you find the Octopus?",
     "options": [
-      "Moon jelly",
-      "Hermit crab",
-      "Sand tiger shark"
+      "Beluga whale",
+      "Octopus",
+      "Sea otter"
     ],
-    "answer": "Moon jelly"
+    "answer": "Octopus"
   },
   {
-    "q": "Which animal around Long Island has a rainbow shimmer from tiny hairs?",
+    "q": "Which ocean animal has soft, see-through body?",
     "options": [
-      "Comb jelly",
-      "Common periwinkle",
-      "Horseshoe crab"
+      "Blue whale",
+      "Sea cucumber",
+      "Jellyfish"
     ],
-    "answer": "Comb jelly"
+    "answer": "Jellyfish"
   },
   {
-    "q": "Which animal often lives in Long Island bays and ocean?",
+    "q": "What does the Jellyfish like to eat?",
     "options": [
-      "Bay scallop",
-      "Common periwinkle",
-      "Comb jelly"
+      "Clownfish",
+      "Sea otter",
+      "Jellyfish"
     ],
-    "answer": "Comb jelly"
+    "answer": "Jellyfish"
   },
   {
-    "q": "Which animal rows with tiny hairs?",
+    "q": "Which animal can sting with tentacles?",
     "options": [
-      "Kemp's ridley sea turtle",
-      "Sea anemone",
-      "Comb jelly"
+      "Jellyfish",
+      "Seal",
+      "Seahorse"
     ],
-    "answer": "Comb jelly"
+    "answer": "Jellyfish"
   },
   {
-    "q": "Which animal likes to eat small plankton?",
+    "q": "Where can you find the Jellyfish?",
     "options": [
-      "Menhaden (bunker)",
-      "Comb jelly",
-      "Black sea bass"
+      "Jellyfish",
+      "Great white shark",
+      "Clownfish"
     ],
-    "answer": "Comb jelly"
+    "answer": "Jellyfish"
   },
   {
-    "q": "Which animal around Long Island has a shiny silver stripe?",
+    "q": "Which ocean animal has five arms?",
     "options": [
-      "Cownose ray",
-      "Longfin squid",
-      "Atlantic silverside"
+      "Walrus",
+      "Dolphin",
+      "Starfish"
     ],
-    "answer": "Atlantic silverside"
+    "answer": "Starfish"
   },
   {
-    "q": "Which animal often lives in shores and bays around Long Island?",
+    "q": "What does the Starfish like to eat?",
     "options": [
-      "Black sea bass",
-      "Harbor seal",
-      "Atlantic silverside"
+      "Starfish",
+      "Penguin",
+      "Coral"
     ],
-    "answer": "Atlantic silverside"
+    "answer": "Starfish"
   },
   {
-    "q": "Which animal swims in big groups?",
+    "q": "Which animal can grow back arms?",
     "options": [
-      "Northern puffer (blowfish)",
-      "Humpback whale",
-      "Atlantic silverside"
+      "Starfish",
+      "Beluga whale",
+      "Coral"
     ],
-    "answer": "Atlantic silverside"
+    "answer": "Starfish"
   },
   {
-    "q": "Which animal likes to eat tiny plankton?",
+    "q": "Where can you find the Starfish?",
     "options": [
-      "Atlantic silverside",
-      "Kemp's ridley sea turtle",
-      "Striped bass"
+      "Electric eel",
+      "Starfish",
+      "Great white shark"
     ],
-    "answer": "Atlantic silverside"
+    "answer": "Starfish"
   },
   {
-    "q": "Which animal around Long Island has swims in huge schools?",
+    "q": "Which ocean animal has a curly tail?",
     "options": [
-      "Comb jelly",
-      "Menhaden (bunker)",
-      "Blue crab"
+      "Sea snake",
+      "Seahorse",
+      "Manta ray"
     ],
-    "answer": "Menhaden (bunker)"
+    "answer": "Seahorse"
   },
   {
-    "q": "Which animal often lives in Long Island bays and ocean?",
+    "q": "What does the Seahorse like to eat?",
     "options": [
-      "Menhaden (bunker)",
-      "Fluke (summer flounder)",
-      "Smooth dogfish"
+      "Seahorse",
+      "Whale shark",
+      "Dolphin"
     ],
-    "answer": "Menhaden (bunker)"
+    "answer": "Seahorse"
   },
   {
-    "q": "Which animal swims together with many fish?",
+    "q": "Which animal the dad carries the babies?",
     "options": [
-      "Green sea turtle",
-      "Sandbar shark",
-      "Menhaden (bunker)"
+      "Lobster",
+      "Seahorse",
+      "Starfish"
     ],
-    "answer": "Menhaden (bunker)"
+    "answer": "Seahorse"
   },
   {
-    "q": "Which animal likes to eat plankton?",
+    "q": "Where can you find the Seahorse?",
     "options": [
-      "Menhaden (bunker)",
-      "Cownose ray",
-      "Winter flounder"
+      "Dolphin",
+      "Sea snake",
+      "Seahorse"
     ],
-    "answer": "Menhaden (bunker)"
+    "answer": "Seahorse"
   },
   {
-    "q": "Which animal around Long Island has dark stripes on its sides?",
+    "q": "Which ocean animal has a black and white body?",
     "options": [
-      "Bottlenose dolphin",
-      "Atlantic silverside",
-      "Striped bass"
+      "Swordfish",
+      "Seal",
+      "Penguin"
     ],
-    "answer": "Striped bass"
+    "answer": "Penguin"
   },
   {
-    "q": "Which animal often lives in bays and ocean off Long Island?",
+    "q": "What does the Penguin like to eat?",
     "options": [
-      "American eel",
-      "Harbor seal",
-      "Striped bass"
+      "Penguin",
+      "Orca",
+      "Sea cucumber"
     ],
-    "answer": "Striped bass"
+    "answer": "Penguin"
   },
   {
-    "q": "Which animal swims fast to catch prey?",
+    "q": "Which animal cannot fly but swims fast?",
     "options": [
-      "Loggerhead sea turtle",
-      "Bottlenose dolphin",
-      "Striped bass"
+      "Octopus",
+      "Penguin",
+      "Orca"
     ],
-    "answer": "Striped bass"
+    "answer": "Penguin"
   },
   {
-    "q": "Which animal likes to eat smaller fish?",
+    "q": "Where can you find the Penguin?",
     "options": [
-      "Striped bass",
-      "Northern sea star",
-      "Sea anemone"
+      "Manatee",
+      "Blue whale",
+      "Penguin"
     ],
-    "answer": "Striped bass"
+    "answer": "Penguin"
   },
   {
-    "q": "Which animal around Long Island has both eyes on one side of its head?",
+    "q": "Which ocean animal has long tusks?",
     "options": [
-      "Fluke (summer flounder)",
-      "Atlantic silverside",
-      "Sandbar shark"
+      "Lobster",
+      "Starfish",
+      "Walrus"
     ],
-    "answer": "Fluke (summer flounder)"
+    "answer": "Walrus"
   },
   {
-    "q": "Which animal often lives in sandy bottom near Long Island?",
+    "q": "What does the Walrus like to eat?",
     "options": [
-      "Fluke (summer flounder)",
-      "Atlantic silverside",
-      "Atlantic oyster"
+      "Walrus",
+      "Squid",
+      "Sea otter"
     ],
-    "answer": "Fluke (summer flounder)"
+    "answer": "Walrus"
   },
   {
-    "q": "Which animal lies flat and can bury in sand?",
+    "q": "Which animal lives on ice and land?",
     "options": [
-      "Fluke (summer flounder)",
-      "Sea anemone",
-      "Bottlenose dolphin"
+      "Electric eel",
+      "Walrus",
+      "Crab"
     ],
-    "answer": "Fluke (summer flounder)"
+    "answer": "Walrus"
   },
   {
-    "q": "Which animal likes to eat shrimp and small fish?",
+    "q": "Where can you find the Walrus?",
     "options": [
-      "Fluke (summer flounder)",
-      "Little skate",
-      "Green sea turtle"
+      "Walrus",
+      "Squid",
+      "Beluga whale"
     ],
-    "answer": "Fluke (summer flounder)"
+    "answer": "Walrus"
   },
   {
-    "q": "Which animal around Long Island has a flat body?",
+    "q": "Which ocean animal has white fur?",
     "options": [
-      "Striped bass",
-      "Loggerhead sea turtle",
-      "Winter flounder"
+      "Whale shark",
+      "Polar bear",
+      "Sea turtle"
     ],
-    "answer": "Winter flounder"
+    "answer": "Polar bear"
   },
   {
-    "q": "Which animal often lives in estuaries around Long Island?",
+    "q": "What does the Polar bear like to eat?",
     "options": [
-      "Winter flounder",
-      "Humpback whale",
-      "Tautog (blackfish)"
+      "Polar bear",
+      "Starfish",
+      "Dolphin"
     ],
-    "answer": "Winter flounder"
+    "answer": "Polar bear"
   },
   {
-    "q": "Which animal rests on the bottom?",
+    "q": "Which animal good swimmer and hunter?",
     "options": [
-      "Tautog (blackfish)",
-      "Striped bass",
-      "Winter flounder"
+      "Octopus",
+      "Albatross",
+      "Polar bear"
     ],
-    "answer": "Winter flounder"
+    "answer": "Polar bear"
   },
   {
-    "q": "Which animal likes to eat worms and small clams?",
+    "q": "Where can you find the Polar bear?",
     "options": [
-      "Menhaden (bunker)",
-      "Winter flounder",
-      "Northern sea star"
+      "Electric eel",
+      "Lobster",
+      "Polar bear"
     ],
-    "answer": "Winter flounder"
+    "answer": "Polar bear"
   },
   {
-    "q": "Which animal around Long Island has a dark body?",
+    "q": "Which ocean animal has a thick fur coat?",
     "options": [
-      "Atlantic silverside",
-      "American eel",
-      "Black sea bass"
+      "Sea otter",
+      "Seal",
+      "Narwhal"
     ],
-    "answer": "Black sea bass"
+    "answer": "Sea otter"
   },
   {
-    "q": "Which animal often lives in rocky reefs near Long Island?",
+    "q": "What does the Sea otter like to eat?",
     "options": [
-      "Black sea bass",
-      "American lobster",
-      "Bottlenose dolphin"
+      "Crab",
+      "Sea otter",
+      "Great white shark"
     ],
-    "answer": "Black sea bass"
+    "answer": "Sea otter"
   },
   {
-    "q": "Which animal swims near rocks and reefs?",
+    "q": "Which animal uses tools like rocks?",
     "options": [
-      "Hard clam (quahog)",
-      "Black sea bass",
-      "Tautog (blackfish)"
+      "Octopus",
+      "Sea otter",
+      "Sea turtle"
     ],
-    "answer": "Black sea bass"
+    "answer": "Sea otter"
   },
   {
-    "q": "Which animal likes to eat crabs and small fish?",
+    "q": "Where can you find the Sea otter?",
     "options": [
-      "Northern puffer (blowfish)",
-      "Bottlenose dolphin",
-      "Black sea bass"
+      "Sea otter",
+      "Manta ray",
+      "Narwhal"
     ],
-    "answer": "Black sea bass"
+    "answer": "Sea otter"
   },
   {
-    "q": "Which animal around Long Island has thick lips and strong teeth?",
+    "q": "Which ocean animal has a hard shell and claws?",
     "options": [
-      "Winter flounder",
-      "Smooth dogfish",
-      "Tautog (blackfish)"
+      "Crab",
+      "Manta ray",
+      "Walrus"
     ],
-    "answer": "Tautog (blackfish)"
+    "answer": "Crab"
   },
   {
-    "q": "Which animal often lives in rocky reefs near Long Island?",
+    "q": "What does the Crab like to eat?",
     "options": [
-      "Little skate",
-      "Tautog (blackfish)",
-      "Loggerhead sea turtle"
+      "Squid",
+      "Albatross",
+      "Crab"
     ],
-    "answer": "Tautog (blackfish)"
+    "answer": "Crab"
   },
   {
-    "q": "Which animal swims close to rocks?",
+    "q": "Which animal walks sideways?",
     "options": [
-      "Common periwinkle",
-      "Winter flounder",
-      "Tautog (blackfish)"
+      "Crab",
+      "Beluga whale",
+      "Manatee"
     ],
-    "answer": "Tautog (blackfish)"
+    "answer": "Crab"
   },
   {
-    "q": "Which animal likes to eat crabs and mussels?",
+    "q": "Where can you find the Crab?",
     "options": [
-      "Bottlenose dolphin",
-      "Kemp's ridley sea turtle",
-      "Tautog (blackfish)"
+      "Sea cucumber",
+      "Crab",
+      "Jellyfish"
     ],
-    "answer": "Tautog (blackfish)"
+    "answer": "Crab"
   },
   {
-    "q": "Which animal around Long Island has a hard, rough shell?",
+    "q": "Which ocean animal has two big claws?",
     "options": [
-      "Bottlenose dolphin",
-      "Horseshoe crab",
-      "Atlantic oyster"
+      "Coral",
+      "Lobster",
+      "Clownfish"
     ],
-    "answer": "Atlantic oyster"
+    "answer": "Lobster"
   },
   {
-    "q": "Which animal often lives in oyster reefs in Long Island bays?",
+    "q": "What does the Lobster like to eat?",
     "options": [
-      "American lobster",
-      "Atlantic oyster",
-      "Black sea bass"
+      "Lobster",
+      "Starfish",
+      "Walrus"
     ],
-    "answer": "Atlantic oyster"
+    "answer": "Lobster"
   },
   {
-    "q": "Which animal stays in one place?",
+    "q": "Which animal hides in rocky cracks?",
     "options": [
-      "Longfin squid",
-      "Atlantic oyster",
-      "Bottlenose dolphin"
+      "Lobster",
+      "Squid",
+      "Crab"
     ],
-    "answer": "Atlantic oyster"
+    "answer": "Lobster"
   },
   {
-    "q": "Which animal likes to eat filters water for food?",
+    "q": "Where can you find the Lobster?",
     "options": [
-      "Comb jelly",
-      "Atlantic oyster",
-      "Sand tiger shark"
+      "Narwhal",
+      "Lobster",
+      "Great white shark"
     ],
-    "answer": "Atlantic oyster"
+    "answer": "Lobster"
   },
   {
-    "q": "Which animal around Long Island has a hard round shell?",
+    "q": "Which ocean animal has ten arms?",
     "options": [
-      "Hard clam (quahog)",
-      "Green sea turtle",
-      "Atlantic oyster"
+      "Orca",
+      "Squid",
+      "Swordfish"
     ],
-    "answer": "Hard clam (quahog)"
+    "answer": "Squid"
   },
   {
-    "q": "Which animal often lives in sandy Long Island bays?",
+    "q": "What does the Squid like to eat?",
     "options": [
-      "Atlantic silverside",
-      "Hard clam (quahog)",
-      "Sand tiger shark"
+      "Manta ray",
+      "Pufferfish",
+      "Squid"
     ],
-    "answer": "Hard clam (quahog)"
+    "answer": "Squid"
   },
   {
-    "q": "Which animal burrows in sand?",
+    "q": "Which animal can change color?",
     "options": [
-      "Tautog (blackfish)",
-      "Green sea turtle",
-      "Hard clam (quahog)"
+      "Electric eel",
+      "Squid",
+      "Dolphin"
     ],
-    "answer": "Hard clam (quahog)"
+    "answer": "Squid"
   },
   {
-    "q": "Which animal likes to eat filters water for tiny food?",
+    "q": "Where can you find the Squid?",
     "options": [
-      "Winter flounder",
-      "Hard clam (quahog)",
-      "Northern sea star"
+      "Squid",
+      "Octopus",
+      "Sea cucumber"
     ],
-    "answer": "Hard clam (quahog)"
+    "answer": "Squid"
   },
   {
-    "q": "Which animal around Long Island has many tiny blue eyes on its edge?",
+    "q": "Which ocean animal has a spotted body?",
     "options": [
-      "Tautog (blackfish)",
-      "Northern puffer (blowfish)",
-      "Bay scallop"
+      "Orca",
+      "Whale shark",
+      "Sea snake"
     ],
-    "answer": "Bay scallop"
+    "answer": "Whale shark"
   },
   {
-    "q": "Which animal often lives in eelgrass beds in Long Island bays?",
+    "q": "What does the Whale shark like to eat?",
     "options": [
-      "Bay scallop",
-      "Harbor seal",
-      "Horseshoe crab"
+      "Starfish",
+      "Whale shark",
+      "Manta ray"
     ],
-    "answer": "Bay scallop"
+    "answer": "Whale shark"
   },
   {
-    "q": "Which animal claps its shells to swim?",
+    "q": "Which animal the biggest shark?",
     "options": [
-      "Moon jelly",
-      "Bay scallop",
-      "Hard clam (quahog)"
+      "Great white shark",
+      "Lobster",
+      "Whale shark"
     ],
-    "answer": "Bay scallop"
+    "answer": "Whale shark"
   },
   {
-    "q": "Which animal likes to eat filters water for tiny food?",
+    "q": "Where can you find the Whale shark?",
     "options": [
-      "Fluke (summer flounder)",
-      "Green sea turtle",
-      "Bay scallop"
+      "Swordfish",
+      "Whale shark",
+      "Narwhal"
     ],
-    "answer": "Bay scallop"
+    "answer": "Whale shark"
   },
   {
-    "q": "Which animal around Long Island has a small spiral shell?",
+    "q": "Which ocean animal has a round body with a paddle tail?",
     "options": [
-      "Comb jelly",
-      "Bottlenose dolphin",
-      "Common periwinkle"
+      "Manatee",
+      "Manta ray",
+      "Narwhal"
     ],
-    "answer": "Common periwinkle"
+    "answer": "Manatee"
   },
   {
-    "q": "Which animal often lives in rocky Long Island shores?",
+    "q": "What does the Manatee like to eat?",
     "options": [
-      "Common periwinkle",
-      "Hermit crab",
-      "Sandbar shark"
+      "Narwhal",
+      "Manatee",
+      "Sea turtle"
     ],
-    "answer": "Common periwinkle"
+    "answer": "Manatee"
   },
   {
-    "q": "Which animal crawls slowly?",
+    "q": "Which animal called a sea cow?",
     "options": [
-      "Common periwinkle",
-      "Fluke (summer flounder)",
-      "Kemp's ridley sea turtle"
+      "Manatee",
+      "Whale shark",
+      "Penguin"
     ],
-    "answer": "Common periwinkle"
+    "answer": "Manatee"
   },
   {
-    "q": "Which animal likes to eat algae on rocks?",
+    "q": "Where can you find the Manatee?",
     "options": [
-      "Longfin squid",
-      "Common periwinkle",
-      "Sea anemone"
+      "Narwhal",
+      "Manatee",
+      "Great white shark"
     ],
-    "answer": "Common periwinkle"
+    "answer": "Manatee"
   },
   {
-    "q": "Which animal around Long Island has flippers and a smooth shell?",
+    "q": "Which ocean animal has flippers?",
     "options": [
-      "Green sea turtle",
-      "Little skate",
-      "Bay scallop"
+      "Beluga whale",
+      "Seal",
+      "Electric eel"
     ],
-    "answer": "Green sea turtle"
+    "answer": "Seal"
   },
   {
-    "q": "Which animal often lives in ocean and bays near Long Island in warm months?",
+    "q": "What does the Seal like to eat?",
     "options": [
-      "Green sea turtle",
-      "Sand tiger shark",
-      "Smooth dogfish"
+      "Seahorse",
+      "Seal",
+      "Sea cucumber"
     ],
-    "answer": "Green sea turtle"
+    "answer": "Seal"
   },
   {
-    "q": "Which animal swims with strong flippers?",
+    "q": "Which animal can dive and hold breath?",
     "options": [
-      "Atlantic silverside",
-      "Kemp's ridley sea turtle",
-      "Green sea turtle"
+      "Octopus",
+      "Seal",
+      "Clownfish"
     ],
-    "answer": "Green sea turtle"
+    "answer": "Seal"
   },
   {
-    "q": "Which animal likes to eat sea plants and algae?",
+    "q": "Where can you find the Seal?",
     "options": [
-      "Comb jelly",
-      "Green sea turtle",
-      "Menhaden (bunker)"
+      "Penguin",
+      "Sea snake",
+      "Seal"
     ],
-    "answer": "Green sea turtle"
+    "answer": "Seal"
   },
   {
-    "q": "Which animal around Long Island has a big head and strong jaws?",
+    "q": "Which ocean animal has a long sharp bill?",
     "options": [
-      "Little skate",
-      "Loggerhead sea turtle",
-      "Sand tiger shark"
+      "Clownfish",
+      "Sea otter",
+      "Swordfish"
     ],
-    "answer": "Loggerhead sea turtle"
+    "answer": "Swordfish"
   },
   {
-    "q": "Which animal often lives in ocean off Long Island?",
+    "q": "What does the Swordfish like to eat?",
     "options": [
-      "Fluke (summer flounder)",
-      "Tautog (blackfish)",
-      "Loggerhead sea turtle"
+      "Pufferfish",
+      "Swordfish",
+      "Manatee"
     ],
-    "answer": "Loggerhead sea turtle"
+    "answer": "Swordfish"
   },
   {
-    "q": "Which animal swims in the ocean?",
+    "q": "Which animal can swim very fast?",
     "options": [
-      "Loggerhead sea turtle",
-      "Green sea turtle",
-      "Menhaden (bunker)"
+      "Sea otter",
+      "Squid",
+      "Swordfish"
     ],
-    "answer": "Loggerhead sea turtle"
+    "answer": "Swordfish"
   },
   {
-    "q": "Which animal likes to eat crabs and snails?",
+    "q": "Where can you find the Swordfish?",
     "options": [
-      "Little skate",
-      "Loggerhead sea turtle",
-      "Blue crab"
+      "Clownfish",
+      "Blue whale",
+      "Swordfish"
     ],
-    "answer": "Loggerhead sea turtle"
+    "answer": "Swordfish"
   },
   {
-    "q": "Which animal around Long Island has a small sea turtle?",
+    "q": "Which ocean animal has hard skeletons that build reefs?",
     "options": [
-      "Kemp's ridley sea turtle",
-      "Humpback whale",
-      "Smooth dogfish"
+      "Great white shark",
+      "Coral",
+      "Electric eel"
     ],
-    "answer": "Kemp's ridley sea turtle"
+    "answer": "Coral"
   },
   {
-    "q": "Which animal often lives in near Long Island in summer?",
+    "q": "What does the Coral like to eat?",
     "options": [
-      "Northern sea star",
-      "Winter flounder",
-      "Kemp's ridley sea turtle"
+      "Manatee",
+      "Beluga whale",
+      "Coral"
     ],
-    "answer": "Kemp's ridley sea turtle"
+    "answer": "Coral"
   },
   {
-    "q": "Which animal swims with flippers?",
+    "q": "Which animal look like plants but are animals?",
     "options": [
-      "Comb jelly",
-      "Kemp's ridley sea turtle",
-      "Sandbar shark"
+      "Coral",
+      "Penguin",
+      "Crab"
     ],
-    "answer": "Kemp's ridley sea turtle"
+    "answer": "Coral"
   },
   {
-    "q": "Which animal likes to eat crabs?",
+    "q": "Where can you find the Coral?",
     "options": [
-      "Hard clam (quahog)",
-      "Bottlenose dolphin",
-      "Kemp's ridley sea turtle"
+      "Pufferfish",
+      "Coral",
+      "Beluga whale"
     ],
-    "answer": "Kemp's ridley sea turtle"
+    "answer": "Coral"
   },
   {
-    "q": "Which animal around Long Island has whiskers and flippers?",
+    "q": "Which ocean animal has a soft, long body?",
     "options": [
-      "Green sea turtle",
-      "Harbor seal",
-      "Moon jelly"
+      "Squid",
+      "Sea cucumber",
+      "Clownfish"
     ],
-    "answer": "Harbor seal"
+    "answer": "Sea cucumber"
   },
   {
-    "q": "Which animal often lives in winter beaches and rocks around Long Island?",
+    "q": "What does the Sea cucumber like to eat?",
     "options": [
-      "Bottlenose dolphin",
-      "Harbor seal",
-      "Cownose ray"
+      "Albatross",
+      "Blue whale",
+      "Sea cucumber"
     ],
-    "answer": "Harbor seal"
+    "answer": "Sea cucumber"
   },
   {
-    "q": "Which animal swims and scoots on land?",
+    "q": "Which animal cleans the ocean floor?",
     "options": [
-      "Harbor seal",
-      "Hermit crab",
-      "Bottlenose dolphin"
+      "Narwhal",
+      "Dolphin",
+      "Sea cucumber"
     ],
-    "answer": "Harbor seal"
+    "answer": "Sea cucumber"
   },
   {
-    "q": "Which animal likes to eat fish?",
+    "q": "Where can you find the Sea cucumber?",
     "options": [
-      "Cownose ray",
-      "Harbor seal",
-      "Winter flounder"
+      "Sea cucumber",
+      "Walrus",
+      "Seahorse"
     ],
-    "answer": "Harbor seal"
+    "answer": "Sea cucumber"
   },
   {
-    "q": "Which animal around Long Island has a beak-like mouth and a blowhole?",
+    "q": "Which ocean animal has giant wing-like fins?",
     "options": [
-      "Winter flounder",
-      "Bottlenose dolphin",
-      "Hard clam (quahog)"
+      "Great white shark",
+      "Manta ray",
+      "Squid"
     ],
-    "answer": "Bottlenose dolphin"
+    "answer": "Manta ray"
   },
   {
-    "q": "Which animal often lives in ocean off Long Island?",
+    "q": "What does the Manta ray like to eat?",
     "options": [
-      "Northern sea star",
-      "Bottlenose dolphin",
-      "Sand tiger shark"
+      "Dolphin",
+      "Penguin",
+      "Manta ray"
     ],
-    "answer": "Bottlenose dolphin"
+    "answer": "Manta ray"
   },
   {
-    "q": "Which animal jumps and swims fast?",
+    "q": "Which animal flies through water like a bird?",
     "options": [
-      "Smooth dogfish",
-      "Bottlenose dolphin",
-      "Sand tiger shark"
+      "Manta ray",
+      "Coral",
+      "Squid"
     ],
-    "answer": "Bottlenose dolphin"
+    "answer": "Manta ray"
   },
   {
-    "q": "Which animal likes to eat fish?",
+    "q": "Where can you find the Manta ray?",
     "options": [
-      "Sandbar shark",
-      "Kemp's ridley sea turtle",
-      "Bottlenose dolphin"
+      "Manta ray",
+      "Beluga whale",
+      "Lobster"
     ],
-    "answer": "Bottlenose dolphin"
+    "answer": "Manta ray"
   },
   {
-    "q": "Which animal around Long Island has big tail flukes?",
+    "q": "Which ocean animal has can make electricity?",
     "options": [
-      "Blue crab",
-      "Menhaden (bunker)",
-      "Humpback whale"
+      "Pufferfish",
+      "Blue whale",
+      "Electric eel"
     ],
-    "answer": "Humpback whale"
+    "answer": "Electric eel"
   },
   {
-    "q": "Which animal often lives in ocean off Long Island?",
+    "q": "What does the Electric eel like to eat?",
     "options": [
-      "Kemp's ridley sea turtle",
-      "Green sea turtle",
-      "Humpback whale"
+      "Coral",
+      "Seahorse",
+      "Electric eel"
     ],
-    "answer": "Humpback whale"
+    "answer": "Electric eel"
   },
   {
-    "q": "Which animal dives deep and blows spray?",
+    "q": "Which animal shocks its prey?",
     "options": [
-      "Bay scallop",
-      "Humpback whale",
-      "Horseshoe crab"
+      "Great white shark",
+      "Electric eel",
+      "Octopus"
     ],
-    "answer": "Humpback whale"
+    "answer": "Electric eel"
   },
   {
-    "q": "Which animal likes to eat small fish like bunker?",
+    "q": "Where can you find the Electric eel?",
     "options": [
-      "Bay scallop",
-      "Winter flounder",
-      "Humpback whale"
+      "Electric eel",
+      "Blue whale",
+      "Whale shark"
     ],
-    "answer": "Humpback whale"
+    "answer": "Electric eel"
   },
   {
-    "q": "Which animal around Long Island has pointy teeth that stick out?",
+    "q": "Which ocean animal has a long tusk?",
     "options": [
-      "Hard clam (quahog)",
-      "Hermit crab",
-      "Sand tiger shark"
+      "Whale shark",
+      "Seahorse",
+      "Narwhal"
     ],
-    "answer": "Sand tiger shark"
+    "answer": "Narwhal"
   },
   {
-    "q": "Which animal often lives in coastal ocean near Long Island?",
+    "q": "What does the Narwhal like to eat?",
     "options": [
-      "Cownose ray",
-      "Black sea bass",
-      "Sand tiger shark"
+      "Penguin",
+      "Great white shark",
+      "Narwhal"
     ],
-    "answer": "Sand tiger shark"
+    "answer": "Narwhal"
   },
   {
-    "q": "Which animal slow swimmer?",
+    "q": "Which animal called the unicorn of the sea?",
     "options": [
-      "Atlantic oyster",
-      "Loggerhead sea turtle",
-      "Sand tiger shark"
+      "Manatee",
+      "Narwhal",
+      "Starfish"
     ],
-    "answer": "Sand tiger shark"
+    "answer": "Narwhal"
   },
   {
-    "q": "Which animal likes to eat fish?",
+    "q": "Where can you find the Narwhal?",
     "options": [
-      "Harbor seal",
-      "Bay scallop",
-      "Sand tiger shark"
+      "Blue whale",
+      "Narwhal",
+      "Great white shark"
     ],
-    "answer": "Sand tiger shark"
+    "answer": "Narwhal"
   },
   {
-    "q": "Which animal around Long Island has a small shark with smooth skin?",
+    "q": "Which ocean animal has can puff up like a ball?",
     "options": [
-      "Smooth dogfish",
-      "Northern puffer (blowfish)",
-      "Green sea turtle"
+      "Lobster",
+      "Pufferfish",
+      "Narwhal"
     ],
-    "answer": "Smooth dogfish"
+    "answer": "Pufferfish"
   },
   {
-    "q": "Which animal often lives in Long Island bays and ocean?",
+    "q": "What does the Pufferfish like to eat?",
     "options": [
-      "Green sea turtle",
-      "Smooth dogfish",
-      "American eel"
+      "Octopus",
+      "Seahorse",
+      "Pufferfish"
     ],
-    "answer": "Smooth dogfish"
+    "answer": "Pufferfish"
   },
   {
-    "q": "Which animal swims near the bottom?",
+    "q": "Which animal is sometimes poisonous?",
     "options": [
-      "Little skate",
-      "Northern sea star",
-      "Smooth dogfish"
+      "Pufferfish",
+      "Narwhal",
+      "Jellyfish"
     ],
-    "answer": "Smooth dogfish"
+    "answer": "Pufferfish"
   },
   {
-    "q": "Which animal likes to eat crabs?",
+    "q": "Where can you find the Pufferfish?",
     "options": [
-      "Smooth dogfish",
-      "Green sea turtle",
-      "Menhaden (bunker)"
+      "Pufferfish",
+      "Jellyfish",
+      "Dolphin"
     ],
-    "answer": "Smooth dogfish"
+    "answer": "Pufferfish"
   },
   {
-    "q": "Which animal around Long Island has a tall dorsal fin on its back?",
+    "q": "Which ocean animal has long thin body?",
     "options": [
-      "Sandbar shark",
-      "Moon jelly",
-      "Green sea turtle"
+      "Sea snake",
+      "Narwhal",
+      "Lobster"
     ],
-    "answer": "Sandbar shark"
+    "answer": "Sea snake"
   },
   {
-    "q": "Which animal often lives in coastal ocean near Long Island?",
+    "q": "What does the Sea snake like to eat?",
     "options": [
-      "Sandbar shark",
-      "Common periwinkle",
-      "Winter flounder"
+      "Electric eel",
+      "Blue whale",
+      "Sea snake"
     ],
-    "answer": "Sandbar shark"
+    "answer": "Sea snake"
   },
   {
-    "q": "Which animal swims in shallow coastal water?",
+    "q": "Which animal is very venomous?",
     "options": [
-      "Loggerhead sea turtle",
-      "Sandbar shark",
-      "Longfin squid"
+      "Octopus",
+      "Great white shark",
+      "Sea snake"
     ],
-    "answer": "Sandbar shark"
+    "answer": "Sea snake"
   },
   {
-    "q": "Which animal likes to eat fish?",
+    "q": "Where can you find the Sea snake?",
     "options": [
-      "Little skate",
-      "American lobster",
-      "Sandbar shark"
+      "Sea snake",
+      "Walrus",
+      "Squid"
     ],
-    "answer": "Sandbar shark"
+    "answer": "Sea snake"
   },
   {
-    "q": "Which animal around Long Island has a diamond-shaped body?",
+    "q": "Which ocean animal has black and white body?",
     "options": [
-      "Hard clam (quahog)",
-      "Loggerhead sea turtle",
-      "Little skate"
+      "Orca",
+      "Clownfish",
+      "Seal"
     ],
-    "answer": "Little skate"
+    "answer": "Orca"
   },
   {
-    "q": "Which animal often lives in sandy bottom near Long Island?",
+    "q": "What does the Orca like to eat?",
     "options": [
-      "Northern puffer (blowfish)",
-      "Little skate",
-      "Longfin squid"
+      "Walrus",
+      "Orca",
+      "Seal"
     ],
-    "answer": "Little skate"
+    "answer": "Orca"
   },
   {
-    "q": "Which animal glides along the bottom?",
+    "q": "Which animal called a killer whale?",
     "options": [
-      "Bay scallop",
-      "Menhaden (bunker)",
-      "Little skate"
+      "Albatross",
+      "Orca",
+      "Pufferfish"
     ],
-    "answer": "Little skate"
+    "answer": "Orca"
   },
   {
-    "q": "Which animal likes to eat worms and small crabs?",
+    "q": "Where can you find the Orca?",
     "options": [
-      "Blue crab",
-      "Atlantic oyster",
-      "Little skate"
+      "Sea cucumber",
+      "Crab",
+      "Orca"
     ],
-    "answer": "Little skate"
+    "answer": "Orca"
   },
   {
-    "q": "Which animal around Long Island has wing-like fins?",
+    "q": "Which ocean animal has white body?",
     "options": [
-      "Cownose ray",
-      "Sea anemone",
-      "Longfin squid"
+      "Sea otter",
+      "Beluga whale",
+      "Walrus"
     ],
-    "answer": "Cownose ray"
+    "answer": "Beluga whale"
   },
   {
-    "q": "Which animal often lives in nearshore ocean in summer near Long Island?",
+    "q": "What does the Beluga whale like to eat?",
     "options": [
-      "Menhaden (bunker)",
-      "Hard clam (quahog)",
-      "Cownose ray"
+      "Sea cucumber",
+      "Narwhal",
+      "Beluga whale"
     ],
-    "answer": "Cownose ray"
+    "answer": "Beluga whale"
   },
   {
-    "q": "Which animal flaps like a bird underwater?",
+    "q": "Which animal can make many sounds?",
     "options": [
-      "Mummichog",
-      "Bottlenose dolphin",
-      "Cownose ray"
+      "Beluga whale",
+      "Crab",
+      "Manatee"
     ],
-    "answer": "Cownose ray"
+    "answer": "Beluga whale"
   },
   {
-    "q": "Which animal likes to eat clams?",
+    "q": "Where can you find the Beluga whale?",
     "options": [
-      "Cownose ray",
-      "Kemp's ridley sea turtle",
-      "Hard clam (quahog)"
+      "Dolphin",
+      "Beluga whale",
+      "Sea turtle"
     ],
-    "answer": "Cownose ray"
+    "answer": "Beluga whale"
   },
   {
-    "q": "Which animal around Long Island has ten arms and ink?",
+    "q": "Which ocean animal has very long wings?",
     "options": [
-      "Atlantic oyster",
-      "Mummichog",
-      "Longfin squid"
+      "Lobster",
+      "Sea snake",
+      "Albatross"
     ],
-    "answer": "Longfin squid"
+    "answer": "Albatross"
   },
   {
-    "q": "Which animal often lives in ocean waters off Long Island?",
+    "q": "What does the Albatross like to eat?",
     "options": [
-      "Hermit crab",
-      "Longfin squid",
-      "Northern puffer (blowfish)"
+      "Albatross",
+      "Electric eel",
+      "Pufferfish"
     ],
-    "answer": "Longfin squid"
+    "answer": "Albatross"
   },
   {
-    "q": "Which animal jets through the water?",
+    "q": "Which animal can fly for days?",
     "options": [
-      "Sand tiger shark",
-      "Longfin squid",
-      "Green sea turtle"
+      "Albatross",
+      "Electric eel",
+      "Polar bear"
     ],
-    "answer": "Longfin squid"
+    "answer": "Albatross"
   },
   {
-    "q": "Which animal likes to eat fish?",
+    "q": "Where can you find the Albatross?",
     "options": [
-      "Horseshoe crab",
-      "Bottlenose dolphin",
-      "Longfin squid"
+      "Sea cucumber",
+      "Albatross",
+      "Octopus"
     ],
-    "answer": "Longfin squid"
+    "answer": "Albatross"
   },
   {
-    "q": "Which animal around Long Island has can puff up like a ball?",
+    "q": "Which animal is known as 'Blue whale'?",
     "options": [
-      "Hard clam (quahog)",
-      "Horseshoe crab",
-      "Northern puffer (blowfish)"
+      "Blue whale",
+      "Lobster",
+      "Octopus"
     ],
-    "answer": "Northern puffer (blowfish)"
+    "answer": "Blue whale"
   },
   {
-    "q": "Which animal often lives in Long Island bays?",
+    "q": "Which animal is known as 'Great white shark'?",
     "options": [
-      "Hermit crab",
-      "Smooth dogfish",
-      "Northern puffer (blowfish)"
+      "Sea snake",
+      "Sea cucumber",
+      "Great white shark"
     ],
-    "answer": "Northern puffer (blowfish)"
+    "answer": "Great white shark"
   },
   {
-    "q": "Which animal swims slowly?",
+    "q": "Which animal is known as 'Clownfish'?",
     "options": [
-      "Northern puffer (blowfish)",
-      "Comb jelly",
-      "Northern sea star"
+      "Sea snake",
+      "Clownfish",
+      "Narwhal"
     ],
-    "answer": "Northern puffer (blowfish)"
+    "answer": "Clownfish"
   },
   {
-    "q": "Which animal likes to eat crabs and snails?",
+    "q": "Which animal is known as 'Sea turtle'?",
     "options": [
-      "Northern puffer (blowfish)",
-      "Blue crab",
-      "Bay scallop"
+      "Sea turtle",
+      "Blue whale",
+      "Clownfish"
     ],
-    "answer": "Northern puffer (blowfish)"
+    "answer": "Sea turtle"
   },
   {
-    "q": "Which animal around Long Island has a long, slippery body?",
+    "q": "Which animal is known as 'Dolphin'?",
     "options": [
-      "Sand tiger shark",
-      "American eel",
-      "Sea anemone"
+      "Dolphin",
+      "Jellyfish",
+      "Octopus"
     ],
-    "answer": "American eel"
+    "answer": "Dolphin"
   },
   {
-    "q": "Which animal often lives in bays and estuaries on Long Island?",
+    "q": "Which animal is known as 'Octopus'?",
     "options": [
-      "Moon jelly",
-      "American eel",
-      "Hard clam (quahog)"
+      "Octopus",
+      "Whale shark",
+      "Coral"
     ],
-    "answer": "American eel"
+    "answer": "Octopus"
   },
   {
-    "q": "Which animal slithers through the water?",
+    "q": "Which animal is known as 'Jellyfish'?",
     "options": [
-      "Kemp's ridley sea turtle",
-      "American eel",
-      "Hard clam (quahog)"
+      "Seal",
+      "Albatross",
+      "Jellyfish"
     ],
-    "answer": "American eel"
+    "answer": "Jellyfish"
   },
   {
-    "q": "Which animal likes to eat worms and small fish?",
+    "q": "Which animal is known as 'Starfish'?",
     "options": [
-      "American eel",
-      "Longfin squid",
-      "Tautog (blackfish)"
+      "Crab",
+      "Clownfish",
+      "Starfish"
     ],
-    "answer": "American eel"
+    "answer": "Starfish"
   },
   {
-    "q": "Which animal around Long Island has soft tentacles like flower petals?",
+    "q": "Which animal is known as 'Seahorse'?",
     "options": [
-      "Smooth dogfish",
-      "Harbor seal",
-      "Sea anemone"
+      "Seahorse",
+      "Sea otter",
+      "Narwhal"
     ],
-    "answer": "Sea anemone"
+    "answer": "Seahorse"
   },
   {
-    "q": "Which animal often lives in rocks and docks around Long Island?",
+    "q": "Which animal is known as 'Penguin'?",
     "options": [
-      "Sea anemone",
-      "Atlantic oyster",
-      "Longfin squid"
+      "Walrus",
+      "Penguin",
+      "Beluga whale"
     ],
-    "answer": "Sea anemone"
+    "answer": "Penguin"
   },
   {
-    "q": "Which animal mostly stays in one place?",
+    "q": "Which animal is known as 'Walrus'?",
     "options": [
-      "Sand tiger shark",
-      "Atlantic silverside",
-      "Sea anemone"
+      "Manta ray",
+      "Walrus",
+      "Penguin"
     ],
-    "answer": "Sea anemone"
+    "answer": "Walrus"
   },
   {
-    "q": "Which animal likes to eat tiny animals that drift by?",
+    "q": "Which animal is known as 'Polar bear'?",
     "options": [
-      "Sea anemone",
-      "Comb jelly",
-      "Sandbar shark"
+      "Jellyfish",
+      "Polar bear",
+      "Pufferfish"
     ],
-    "answer": "Sea anemone"
+    "answer": "Polar bear"
   },
   {
-    "q": "Which animal around Long Island has a small, tough fish?",
+    "q": "Which animal is known as 'Sea otter'?",
     "options": [
-      "Cownose ray",
-      "Little skate",
-      "Mummichog"
+      "Sea otter",
+      "Narwhal",
+      "Lobster"
     ],
-    "answer": "Mummichog"
+    "answer": "Sea otter"
   },
   {
-    "q": "Which animal often lives in salt marsh creeks on Long Island?",
+    "q": "Which animal is known as 'Crab'?",
     "options": [
-      "Menhaden (bunker)",
-      "Mummichog",
-      "Common periwinkle"
+      "Manatee",
+      "Crab",
+      "Octopus"
     ],
-    "answer": "Mummichog"
+    "answer": "Crab"
   },
   {
-    "q": "Which animal swims in groups in shallow water?",
+    "q": "Which animal is known as 'Lobster'?",
     "options": [
-      "Black sea bass",
-      "Hard clam (quahog)",
-      "Mummichog"
+      "Sea turtle",
+      "Lobster",
+      "Clownfish"
     ],
-    "answer": "Mummichog"
+    "answer": "Lobster"
   },
   {
-    "q": "Which animal likes to eat insects and tiny animals?",
+    "q": "Which animal is known as 'Squid'?",
     "options": [
-      "Bay scallop",
-      "Mummichog",
-      "American lobster"
+      "Sea cucumber",
+      "Squid",
+      "Sea turtle"
     ],
-    "answer": "Mummichog"
+    "answer": "Squid"
   },
   {
-    "q": "Which animal uses its tail to flip over?",
+    "q": "Which animal is known as 'Whale shark'?",
     "options": [
-      "Black sea bass",
-      "Comb jelly",
-      "Horseshoe crab"
+      "Whale shark",
+      "Sea snake",
+      "Crab"
     ],
-    "answer": "Horseshoe crab"
+    "answer": "Whale shark"
   },
   {
-    "q": "Which animal can swim using paddle-shaped back legs?",
+    "q": "Which animal is known as 'Manatee'?",
     "options": [
-      "Mummichog",
-      "Blue crab",
-      "Horseshoe crab"
+      "Manatee",
+      "Orca",
+      "Squid"
     ],
-    "answer": "Blue crab"
+    "answer": "Manatee"
   },
   {
-    "q": "Which animal borrows shells instead of making its own?",
+    "q": "Which animal is known as 'Seal'?",
     "options": [
-      "Longfin squid",
-      "Hermit crab",
-      "Kemp's ridley sea turtle"
+      "Orca",
+      "Seal",
+      "Sea cucumber"
     ],
-    "answer": "Hermit crab"
+    "answer": "Seal"
   },
   {
-    "q": "Which animal has two claws, one crusher and one pincher?",
+    "q": "Which animal is known as 'Swordfish'?",
     "options": [
-      "Sand tiger shark",
-      "American lobster",
-      "Comb jelly"
+      "Orca",
+      "Swordfish",
+      "Seahorse"
     ],
-    "answer": "American lobster"
+    "answer": "Swordfish"
   },
   {
-    "q": "Which animal can grow back a lost arm?",
+    "q": "Which animal is known as 'Coral'?",
     "options": [
-      "Green sea turtle",
-      "Northern sea star",
-      "Longfin squid"
+      "Narwhal",
+      "Coral",
+      "Seal"
     ],
-    "answer": "Northern sea star"
+    "answer": "Coral"
   },
   {
-    "q": "Which animal has a soft, squishy body?",
+    "q": "Which animal is known as 'Sea cucumber'?",
     "options": [
-      "Harbor seal",
-      "Mummichog",
-      "Moon jelly"
+      "Jellyfish",
+      "Blue whale",
+      "Sea cucumber"
     ],
-    "answer": "Moon jelly"
+    "answer": "Sea cucumber"
   },
   {
-    "q": "Which animal can glow in the dark water?",
+    "q": "Which animal is known as 'Manta ray'?",
     "options": [
-      "Comb jelly",
-      "Atlantic oyster",
-      "Bay scallop"
+      "Manta ray",
+      "Dolphin",
+      "Blue whale"
     ],
-    "answer": "Comb jelly"
+    "answer": "Manta ray"
   },
   {
-    "q": "Which animal is an important food for bigger fish?",
+    "q": "Which animal is known as 'Electric eel'?",
     "options": [
-      "Cownose ray",
-      "Atlantic silverside",
-      "Little skate"
+      "Sea snake",
+      "Electric eel",
+      "Sea turtle"
     ],
-    "answer": "Atlantic silverside"
+    "answer": "Electric eel"
   },
   {
-    "q": "Which animal is also called bunker in New York?",
+    "q": "Which animal is known as 'Narwhal'?",
     "options": [
-      "Green sea turtle",
-      "Bay scallop",
-      "Menhaden (bunker)"
+      "Beluga whale",
+      "Lobster",
+      "Narwhal"
     ],
-    "answer": "Menhaden (bunker)"
+    "answer": "Narwhal"
   },
   {
-    "q": "Which animal is a popular fish for anglers?",
+    "q": "Which animal is known as 'Pufferfish'?",
     "options": [
-      "Comb jelly",
-      "Bottlenose dolphin",
-      "Striped bass"
+      "Squid",
+      "Pufferfish",
+      "Narwhal"
     ],
-    "answer": "Striped bass"
+    "answer": "Pufferfish"
   },
   {
-    "q": "Which animal changes color to match the sand?",
+    "q": "Which animal is known as 'Sea snake'?",
     "options": [
-      "Longfin squid",
-      "Fluke (summer flounder)",
-      "Humpback whale"
+      "Jellyfish",
+      "Orca",
+      "Sea snake"
     ],
-    "answer": "Fluke (summer flounder)"
+    "answer": "Sea snake"
   },
   {
-    "q": "Which animal spends time in cooler water?",
+    "q": "Which animal is known as 'Orca'?",
     "options": [
-      "Kemp's ridley sea turtle",
-      "Winter flounder",
-      "Tautog (blackfish)"
+      "Orca",
+      "Swordfish",
+      "Lobster"
     ],
-    "answer": "Winter flounder"
+    "answer": "Orca"
   },
   {
-    "q": "Which animal likes to hide around wrecks and reefs?",
+    "q": "Which animal is known as 'Beluga whale'?",
     "options": [
-      "Sandbar shark",
-      "Common periwinkle",
-      "Black sea bass"
+      "Narwhal",
+      "Crab",
+      "Beluga whale"
     ],
-    "answer": "Black sea bass"
+    "answer": "Beluga whale"
   },
   {
-    "q": "Which animal uses strong teeth to crush shells?",
+    "q": "Which animal is known as 'Albatross'?",
     "options": [
-      "Bottlenose dolphin",
-      "Mummichog",
-      "Tautog (blackfish)"
+      "Starfish",
+      "Albatross",
+      "Coral"
     ],
-    "answer": "Tautog (blackfish)"
+    "answer": "Albatross"
   },
   {
-    "q": "Which animal helps keep the bay water clean?",
+    "q": "Which animal is known as 'Blue whale'?",
     "options": [
-      "Green sea turtle",
-      "Menhaden (bunker)",
-      "Atlantic oyster"
+      "Octopus",
+      "Blue whale",
+      "Penguin"
     ],
-    "answer": "Atlantic oyster"
+    "answer": "Blue whale"
   },
   {
-    "q": "Which animal is also called a quahog?",
+    "q": "Which animal is known as 'Great white shark'?",
     "options": [
-      "Bay scallop",
-      "Winter flounder",
-      "Hard clam (quahog)"
+      "Great white shark",
+      "Seal",
+      "Pufferfish"
     ],
-    "answer": "Hard clam (quahog)"
+    "answer": "Great white shark"
   },
   {
-    "q": "Which animal can swim by clapping its shells?",
+    "q": "Which animal is known as 'Clownfish'?",
     "options": [
-      "Bay scallop",
-      "Moon jelly",
-      "Atlantic oyster"
+      "Manta ray",
+      "Clownfish",
+      "Swordfish"
     ],
-    "answer": "Bay scallop"
+    "answer": "Clownfish"
   },
   {
-    "q": "Which animal sticks to rocks when waves crash?",
+    "q": "Which animal is known as 'Sea turtle'?",
     "options": [
-      "Common periwinkle",
-      "Fluke (summer flounder)",
-      "Harbor seal"
+      "Sea otter",
+      "Narwhal",
+      "Sea turtle"
     ],
-    "answer": "Common periwinkle"
+    "answer": "Sea turtle"
   },
   {
-    "q": "Which animal breathes air with lungs?",
+    "q": "Which animal is known as 'Dolphin'?",
     "options": [
-      "Green sea turtle",
-      "Atlantic silverside",
-      "Bay scallop"
+      "Dolphin",
+      "Starfish",
+      "Clownfish"
     ],
-    "answer": "Green sea turtle"
+    "answer": "Dolphin"
   },
   {
-    "q": "Which animal can bite through hard shells?",
+    "q": "Which animal is known as 'Octopus'?",
     "options": [
-      "Sand tiger shark",
-      "Loggerhead sea turtle",
-      "Green sea turtle"
+      "Electric eel",
+      "Clownfish",
+      "Octopus"
     ],
-    "answer": "Loggerhead sea turtle"
+    "answer": "Octopus"
   },
   {
-    "q": "Which animal is one of the smaller sea turtles?",
+    "q": "Which animal is known as 'Jellyfish'?",
     "options": [
-      "Fluke (summer flounder)",
-      "Kemp's ridley sea turtle",
-      "Bay scallop"
+      "Jellyfish",
+      "Electric eel",
+      "Coral"
     ],
-    "answer": "Kemp's ridley sea turtle"
+    "answer": "Jellyfish"
   },
   {
-    "q": "Which animal rests on rocks and sandbars in winter?",
+    "q": "Which animal is known as 'Starfish'?",
     "options": [
-      "Smooth dogfish",
-      "Bottlenose dolphin",
-      "Harbor seal"
+      "Starfish",
+      "Swordfish",
+      "Narwhal"
     ],
-    "answer": "Harbor seal"
+    "answer": "Starfish"
   },
   {
-    "q": "Which animal uses a blowhole to breathe air?",
+    "q": "Which animal is known as 'Seahorse'?",
     "options": [
-      "Northern puffer (blowfish)",
-      "Bottlenose dolphin",
-      "Kemp's ridley sea turtle"
+      "Clownfish",
+      "Seahorse",
+      "Beluga whale"
     ],
-    "answer": "Bottlenose dolphin"
+    "answer": "Seahorse"
   },
   {
-    "q": "Which animal can splash with its huge tail?",
+    "q": "Which animal is known as 'Penguin'?",
     "options": [
-      "Blue crab",
-      "Humpback whale",
-      "Loggerhead sea turtle"
+      "Walrus",
+      "Penguin",
+      "Coral"
     ],
-    "answer": "Humpback whale"
+    "answer": "Penguin"
   },
   {
-    "q": "Which animal looks scary but usually swims calmly?",
+    "q": "Which animal is known as 'Walrus'?",
     "options": [
-      "Menhaden (bunker)",
-      "Kemp's ridley sea turtle",
-      "Sand tiger shark"
+      "Walrus",
+      "Whale shark",
+      "Dolphin"
     ],
-    "answer": "Sand tiger shark"
+    "answer": "Walrus"
   },
   {
-    "q": "Which animal is common in local bays?",
+    "q": "Which animal is known as 'Polar bear'?",
     "options": [
-      "Smooth dogfish",
-      "Winter flounder",
-      "Striped bass"
+      "Dolphin",
+      "Polar bear",
+      "Sea snake"
     ],
-    "answer": "Smooth dogfish"
+    "answer": "Polar bear"
   },
   {
-    "q": "Which animal has a very big back fin?",
+    "q": "Which animal is known as 'Sea otter'?",
     "options": [
-      "Cownose ray",
-      "American lobster",
-      "Sandbar shark"
+      "Pufferfish",
+      "Sea otter",
+      "Sea turtle"
     ],
-    "answer": "Sandbar shark"
+    "answer": "Sea otter"
   },
   {
-    "q": "Which animal lays eggs called mermaid’s purses?",
+    "q": "Which animal is known as 'Crab'?",
     "options": [
-      "Harbor seal",
-      "Loggerhead sea turtle",
-      "Little skate"
+      "Coral",
+      "Pufferfish",
+      "Crab"
     ],
-    "answer": "Little skate"
+    "answer": "Crab"
   },
   {
-    "q": "Which animal travels in groups called schools?",
+    "q": "Which animal is known as 'Lobster'?",
     "options": [
-      "American lobster",
-      "Kemp's ridley sea turtle",
-      "Cownose ray"
+      "Lobster",
+      "Electric eel",
+      "Starfish"
     ],
-    "answer": "Cownose ray"
+    "answer": "Lobster"
   },
   {
-    "q": "Which animal can spray ink to hide?",
+    "q": "Which animal is known as 'Squid'?",
     "options": [
-      "Longfin squid",
-      "Northern puffer (blowfish)",
-      "Fluke (summer flounder)"
+      "Starfish",
+      "Clownfish",
+      "Squid"
     ],
-    "answer": "Longfin squid"
+    "answer": "Squid"
   },
   {
-    "q": "Which animal puffs up when scared?",
+    "q": "Which animal is known as 'Whale shark'?",
     "options": [
-      "Blue crab",
-      "Smooth dogfish",
-      "Northern puffer (blowfish)"
+      "Sea turtle",
+      "Lobster",
+      "Whale shark"
     ],
-    "answer": "Northern puffer (blowfish)"
+    "answer": "Whale shark"
   },
   {
-    "q": "Which animal looks like a snake but is a fish?",
+    "q": "Which animal is known as 'Manatee'?",
     "options": [
-      "Bay scallop",
-      "American eel",
-      "American lobster"
+      "Squid",
+      "Clownfish",
+      "Manatee"
     ],
-    "answer": "American eel"
+    "answer": "Manatee"
   },
   {
-    "q": "Which animal looks like a plant but is an animal?",
+    "q": "Which animal is known as 'Seal'?",
     "options": [
-      "Bay scallop",
-      "Atlantic silverside",
-      "Sea anemone"
+      "Octopus",
+      "Seal",
+      "Seahorse"
     ],
-    "answer": "Sea anemone"
+    "answer": "Seal"
   },
   {
-    "q": "Which animal can live in water that changes a lot?",
+    "q": "Which animal is known as 'Swordfish'?",
     "options": [
-      "Black sea bass",
-      "Green sea turtle",
-      "Mummichog"
+      "Octopus",
+      "Orca",
+      "Swordfish"
     ],
-    "answer": "Mummichog"
+    "answer": "Swordfish"
   },
   {
-    "q": "Which animal off Long Island can spray ink to hide?",
+    "q": "Which animal is known as 'Coral'?",
     "options": [
-      "Longfin squid",
-      "Comb jelly",
-      "Striped bass"
+      "Coral",
+      "Jellyfish",
+      "Seahorse"
     ],
-    "answer": "Longfin squid"
+    "answer": "Coral"
   },
   {
-    "q": "Which flat fish hides in the sand near Long Island?",
+    "q": "Which animal is known as 'Sea cucumber'?",
     "options": [
-      "Common periwinkle",
-      "Fluke (summer flounder)",
-      "Black sea bass"
+      "Sea cucumber",
+      "Beluga whale",
+      "Penguin"
     ],
-    "answer": "Fluke (summer flounder)"
+    "answer": "Sea cucumber"
   },
   {
-    "q": "Which small fish with a silver stripe is common on Long Island beaches?",
+    "q": "Which animal is known as 'Manta ray'?",
     "options": [
-      "Mummichog",
-      "Black sea bass",
-      "Atlantic silverside"
+      "Beluga whale",
+      "Manta ray",
+      "Penguin"
     ],
-    "answer": "Atlantic silverside"
+    "answer": "Manta ray"
   },
   {
-    "q": "Which big animal off Long Island splashes a huge tail?",
+    "q": "Which animal is known as 'Electric eel'?",
     "options": [
-      "Humpback whale",
-      "Longfin squid",
-      "Cownose ray"
+      "Albatross",
+      "Electric eel",
+      "Sea turtle"
     ],
-    "answer": "Humpback whale"
+    "answer": "Electric eel"
   },
   {
-    "q": "Which crab in Long Island bays can swim with paddle back legs?",
+    "q": "Which animal is known as 'Narwhal'?",
     "options": [
-      "Sea anemone",
-      "Blue crab",
-      "Bottlenose dolphin"
+      "Sea cucumber",
+      "Orca",
+      "Narwhal"
     ],
-    "answer": "Blue crab"
+    "answer": "Narwhal"
   },
   {
-    "q": "Which animal helps keep Long Island bays clean by filtering water?",
+    "q": "Which animal is known as 'Pufferfish'?",
     "options": [
-      "Sand tiger shark",
-      "Atlantic oyster",
-      "Winter flounder"
+      "Pufferfish",
+      "Albatross",
+      "Jellyfish"
     ],
-    "answer": "Atlantic oyster"
+    "answer": "Pufferfish"
   },
   {
-    "q": "Which fish in Long Island bays can puff up like a ball?",
+    "q": "Which animal is known as 'Sea snake'?",
     "options": [
-      "Loggerhead sea turtle",
-      "Kemp's ridley sea turtle",
-      "Northern puffer (blowfish)"
+      "Sea snake",
+      "Crab",
+      "Manatee"
     ],
-    "answer": "Northern puffer (blowfish)"
+    "answer": "Sea snake"
   },
   {
-    "q": "Which animal lays eggs called mermaid’s purses?",
+    "q": "Which animal is known as 'Orca'?",
     "options": [
-      "Little skate",
-      "Kemp's ridley sea turtle",
-      "Sea anemone"
+      "Sea cucumber",
+      "Orca",
+      "Swordfish"
     ],
-    "answer": "Little skate"
+    "answer": "Orca"
   },
   {
-    "q": "Which animal has both eyes on one side of its head?",
+    "q": "Which animal is known as 'Beluga whale'?",
     "options": [
-      "Atlantic oyster",
-      "Mummichog",
-      "Fluke (summer flounder)"
+      "Blue whale",
+      "Walrus",
+      "Beluga whale"
     ],
-    "answer": "Fluke (summer flounder)"
+    "answer": "Beluga whale"
   },
   {
-    "q": "Which animal has a long tail spike and a hard shell on Long Island beaches?",
+    "q": "Which animal is known as 'Albatross'?",
     "options": [
-      "Menhaden (bunker)",
-      "Sea anemone",
-      "Horseshoe crab"
+      "Dolphin",
+      "Lobster",
+      "Albatross"
     ],
-    "answer": "Horseshoe crab"
+    "answer": "Albatross"
   },
   {
-    "q": "Which shark near Long Island has a very tall back fin?",
+    "q": "Which animal is known as 'Blue whale'?",
     "options": [
-      "Atlantic silverside",
-      "Sandbar shark",
-      "Fluke (summer flounder)"
+      "Blue whale",
+      "Whale shark",
+      "Penguin"
     ],
-    "answer": "Sandbar shark"
+    "answer": "Blue whale"
   },
   {
-    "q": "Which small shark in Long Island bays has smooth skin?",
+    "q": "Which animal is known as 'Great white shark'?",
     "options": [
-      "Tautog (blackfish)",
-      "American lobster",
-      "Smooth dogfish"
+      "Blue whale",
+      "Great white shark",
+      "Orca"
     ],
-    "answer": "Smooth dogfish"
+    "answer": "Great white shark"
   },
   {
-    "q": "Which ray near Long Island has wing-like fins that flap?",
+    "q": "Which animal is known as 'Clownfish'?",
     "options": [
-      "American eel",
-      "Winter flounder",
-      "Cownose ray"
+      "Manatee",
+      "Dolphin",
+      "Clownfish"
     ],
-    "answer": "Cownose ray"
+    "answer": "Clownfish"
   },
   {
-    "q": "Which animal has soft tentacles and looks like a flower but is an animal?",
+    "q": "Which animal is known as 'Sea turtle'?",
     "options": [
-      "Sea anemone",
-      "Green sea turtle",
-      "Humpback whale"
+      "Clownfish",
+      "Sea turtle",
+      "Sea otter"
     ],
-    "answer": "Sea anemone"
+    "answer": "Sea turtle"
   },
   {
-    "q": "Which animal rests on rocks and sandbars in winter around Long Island?",
+    "q": "Which animal is known as 'Dolphin'?",
     "options": [
-      "Cownose ray",
-      "Longfin squid",
-      "Harbor seal"
+      "Dolphin",
+      "Sea otter",
+      "Polar bear"
     ],
-    "answer": "Harbor seal"
+    "answer": "Dolphin"
   },
   {
-    "q": "Which animal breathes air through a blowhole and lives off Long Island?",
+    "q": "Which animal is known as 'Octopus'?",
     "options": [
-      "Bottlenose dolphin",
-      "Longfin squid",
-      "Tautog (blackfish)"
+      "Octopus",
+      "Pufferfish",
+      "Beluga whale"
     ],
-    "answer": "Bottlenose dolphin"
+    "answer": "Octopus"
   },
   {
-    "q": "Which fish has dark stripes on its sides near Long Island?",
+    "q": "Which animal is known as 'Jellyfish'?",
     "options": [
-      "Striped bass",
-      "Harbor seal",
-      "Tautog (blackfish)"
+      "Jellyfish",
+      "Lobster",
+      "Sea cucumber"
     ],
-    "answer": "Striped bass"
+    "answer": "Jellyfish"
   },
   {
-    "q": "Which fish is also called bunker in New York?",
+    "q": "Which animal is known as 'Starfish'?",
     "options": [
-      "Menhaden (bunker)",
-      "Winter flounder",
-      "Bottlenose dolphin"
+      "Pufferfish",
+      "Starfish",
+      "Great white shark"
     ],
-    "answer": "Menhaden (bunker)"
+    "answer": "Starfish"
   },
   {
-    "q": "Which shell animal can swim by clapping its shells?",
+    "q": "Which animal is known as 'Seahorse'?",
     "options": [
-      "Common periwinkle",
-      "Bay scallop",
-      "Sandbar shark"
+      "Starfish",
+      "Great white shark",
+      "Seahorse"
     ],
-    "answer": "Bay scallop"
+    "answer": "Seahorse"
   },
   {
-    "q": "Which animal uses strong teeth to crush shells near rocks?",
+    "q": "Which animal is known as 'Penguin'?",
     "options": [
-      "Kemp's ridley sea turtle",
-      "Tautog (blackfish)",
-      "Common periwinkle"
+      "Penguin",
+      "Coral",
+      "Albatross"
     ],
-    "answer": "Tautog (blackfish)"
+    "answer": "Penguin"
   },
   {
-    "q": "Which animal is a small, tough fish in Long Island marsh creeks?",
+    "q": "Which animal is known as 'Walrus'?",
     "options": [
-      "Mummichog",
-      "Loggerhead sea turtle",
-      "Northern puffer (blowfish)"
+      "Walrus",
+      "Polar bear",
+      "Crab"
     ],
-    "answer": "Mummichog"
+    "answer": "Walrus"
   },
   {
-    "q": "Which animal crawls slowly with five arms near Long Island?",
+    "q": "Which animal is known as 'Polar bear'?",
     "options": [
-      "Hard clam (quahog)",
-      "Little skate",
-      "Northern sea star"
+      "Crab",
+      "Polar bear",
+      "Great white shark"
     ],
-    "answer": "Northern sea star"
+    "answer": "Polar bear"
   },
   {
-    "q": "Which animal rows with tiny hairs and can glow?",
+    "q": "Which animal is known as 'Sea otter'?",
     "options": [
-      "Comb jelly",
-      "American eel",
-      "Smooth dogfish"
+      "Walrus",
+      "Sea otter",
+      "Lobster"
     ],
-    "answer": "Comb jelly"
+    "answer": "Sea otter"
   },
   {
-    "q": "Which jelly has a clear bell with four circles?",
+    "q": "Which animal is known as 'Crab'?",
     "options": [
-      "Mummichog",
-      "Smooth dogfish",
-      "Moon jelly"
+      "Crab",
+      "Blue whale",
+      "Jellyfish"
     ],
-    "answer": "Moon jelly"
+    "answer": "Crab"
   },
   {
-    "q": "Which animal has a beak-like mouth and jumps from the water?",
+    "q": "Which animal is known as 'Lobster'?",
     "options": [
-      "Sand tiger shark",
-      "Bottlenose dolphin",
-      "Smooth dogfish"
+      "Lobster",
+      "Clownfish",
+      "Coral"
     ],
-    "answer": "Bottlenose dolphin"
+    "answer": "Lobster"
   },
   {
-    "q": "Which animal has two big claws and lives on a rocky bottom?",
+    "q": "Which animal is known as 'Squid'?",
     "options": [
-      "Horseshoe crab",
-      "American lobster",
-      "Humpback whale"
+      "Squid",
+      "Sea cucumber",
+      "Manatee"
     ],
-    "answer": "American lobster"
+    "answer": "Squid"
   },
   {
-    "q": "Which shell animal is also called a quahog?",
+    "q": "Which animal is known as 'Whale shark'?",
     "options": [
-      "Sandbar shark",
-      "Hermit crab",
-      "Hard clam (quahog)"
+      "Sea cucumber",
+      "Seahorse",
+      "Whale shark"
     ],
-    "answer": "Hard clam (quahog)"
+    "answer": "Whale shark"
   },
   {
-    "q": "Which fish slithers like a snake but is a fish?",
+    "q": "Which animal is known as 'Manatee'?",
     "options": [
-      "American eel",
-      "Atlantic silverside",
-      "Hard clam (quahog)"
+      "Manatee",
+      "Beluga whale",
+      "Polar bear"
     ],
-    "answer": "American eel"
+    "answer": "Manatee"
   },
   {
-    "q": "Which crab borrows shells instead of making its own?",
+    "q": "Which animal is known as 'Seal'?",
     "options": [
-      "Sand tiger shark",
-      "Bottlenose dolphin",
-      "Hermit crab"
+      "Seal",
+      "Dolphin",
+      "Coral"
     ],
-    "answer": "Hermit crab"
+    "answer": "Seal"
   },
   {
-    "q": "Which animal sticks to rocks with a small spiral shell?",
+    "q": "Which animal is known as 'Swordfish'?",
     "options": [
-      "Common periwinkle",
-      "Cownose ray",
-      "Atlantic silverside"
+      "Swordfish",
+      "Manta ray",
+      "Albatross"
     ],
-    "answer": "Common periwinkle"
+    "answer": "Swordfish"
   }
 ]
