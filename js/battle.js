@@ -27,10 +27,13 @@ const playerCreature =
     : defaultCreature;
 const PLAYER_VICTORY_SRC =
   playerCreature.sprite?.normal || "../images/shellfin.png";
+const maxHp = playerCreature.hp;
+const currentHp =
+  typeof playerCreature.currentHp === "number" ? playerCreature.currentHp : maxHp;
 const player = {
   name: playerCreature.name,
-  hp: playerCreature.hp,
-  maxHp: playerCreature.hp,
+  hp: currentHp,
+  maxHp: maxHp,
   move: { name: "Attack", power: playerCreature.attack },
 };
 const enemy = {
@@ -123,11 +126,16 @@ function animateAttack(attacker) {
 // Phase A: linger both creatures visible for LINGER_BOTH_MS (no layout changes)
 // Phase B: show ONLY winner, centered with "Winner" banner; swap sprite if player wins
 function endBattle(winner) {
+  if (user && user.creatures && user.creatures[0]) {
+    user.creatures[0].currentHp = player.hp;
+    updateCurrentUser({ creatures: user.creatures });
+  }
   if (typeof isGameOver !== "undefined" && isGameOver) return;
   if (typeof isGameOver === "undefined") window.isGameOver = true;
   else isGameOver = true;
 
   const LINGER = typeof LINGER_BOTH_MS !== "undefined" ? LINGER_BOTH_MS : 1200;
+  const isTreasure = currentMission && currentMission.name === "Treasure";
 
   // Close any open modal
   const modal = document.getElementById("modal");
@@ -138,7 +146,7 @@ function endBattle(winner) {
   );
   const winnerIsPlayer = winner === player;
 
-  // Phase A: linger briefly with both creatures visible
+  // Phase A: linger briefly with both creatures visible (skip for treasure)
   setTimeout(() => {
     const battleRoot = document.getElementById("battle");
     const battlefield = document.getElementById("battlefield");
@@ -156,7 +164,11 @@ function endBattle(winner) {
     // Banner
     const banner = document.createElement("h1");
     banner.className = "end-banner";
-    banner.textContent = winnerIsPlayer ? "Victory!" : "Defeat";
+    banner.textContent = isTreasure
+      ? "Treasure"
+      : winnerIsPlayer
+        ? "Victory!"
+        : "Defeat";
 
     // Sprite wrapper
     const spriteWrapper = document.createElement("div");
@@ -166,20 +178,26 @@ function endBattle(winner) {
     const originalSprite = winnerEl?.querySelector(".fish-sprite");
     const sprite = document.createElement("img");
     sprite.className = "end-sprite";
-    sprite.alt = winnerIsPlayer ? player.name : enemy.name;
-    sprite.src = winnerIsPlayer
-      ? PLAYER_VICTORY_SRC
-      : originalSprite?.getAttribute("src") || "";
+    sprite.alt = isTreasure
+      ? "Treasure"
+      : winnerIsPlayer
+        ? player.name
+        : enemy.name;
+    sprite.src = isTreasure
+      ? currentMission?.sprite || "../images/treasure.png"
+      : winnerIsPlayer
+        ? PLAYER_VICTORY_SRC
+        : originalSprite?.getAttribute("src") || "";
 
     spriteWrapper.appendChild(sprite);
 
     // Dynamic button
     const button = document.createElement("button");
-    button.className = "button end-button"; // base button style with auto width
+    button.className = "end-button";
     const reward = currentMission?.reward || 0;
     button.textContent = winnerIsPlayer
       ? `Claim 🐚 ${reward} Seashell${reward === 1 ? "" : "s"}`
-      : "Try Again";
+      : "Back to Missions";
     button.addEventListener("click", () => {
       if (winnerIsPlayer) {
         if (currentMission && user) {
@@ -202,11 +220,11 @@ function endBattle(winner) {
         }
         sessionStorage.removeItem("currentMission");
         sessionStorage.removeItem("currentMissionIndex");
-        window.location.href = "home.html";
+        window.location.href = "mission.html";
       } else {
         sessionStorage.removeItem("currentMission");
-        // Restart the battle cleanly (rebuilds battlefield we removed)
-        window.location.reload();
+        sessionStorage.removeItem("currentMissionIndex");
+        window.location.href = "mission.html";
       }
     });
 
@@ -220,7 +238,7 @@ function endBattle(winner) {
     requestAnimationFrame(() => {
       victoryBox.classList.add("show");
     });
-  }, LINGER);
+  }, isTreasure ? 0 : LINGER);
 }
 
 // ====== Turn Flow ======
@@ -242,6 +260,10 @@ function enemyTurn() {
   animateAttack(enemy);
   setTimeout(() => {
     player.hp = Math.max(0, player.hp - enemy.move.power);
+    if (user && user.creatures && user.creatures[0]) {
+      user.creatures[0].currentHp = player.hp;
+      updateCurrentUser({ creatures: user.creatures });
+    }
     animateHP("player", () => {
       if (player.hp <= 0) {
         endBattle(enemy);
@@ -342,9 +364,18 @@ async function initGame() {
       enemy.maxHp = e.hp;
       enemy.move.power = e.attack;
       if (e.sprite) enemy.sprite = e.sprite;
+    } else if (currentMission && currentMission.sprite) {
+      enemy.name = currentMission.name;
+      enemy.sprite = currentMission.sprite;
     }
   } catch (err) {
     console.error("Failed to load missions:", err);
+  }
+
+  // If mission has no enemy (e.g., Treasure), show reward immediately
+  if (!currentMission || !currentMission.enemy) {
+    endBattle(player);
+    return;
   }
 
   const playerNameEl = document.getElementById("player-name");
