@@ -63,6 +63,8 @@
           const c = user.creatures[0];
           const nameEl = document.getElementById("creature-name");
           if (nameEl) nameEl.textContent = c.name;
+          const hpEl = document.getElementById("creature-hp");
+          if (hpEl) hpEl.style.width = "50%";
           const statsEl = document.getElementById("creature-stats");
           if (statsEl)
             statsEl.textContent = `HP: ${c.hp}/${c.hp} | ATK: ${c.attack}`;
