@@ -181,6 +181,40 @@ body.mission #creature-container {
   height: auto;
 }
 
+/* Mission spawn bubble */
+.mission-bubble {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: float 3s ease-in-out infinite;
+  position: absolute;
+  cursor: pointer;
+}
+
+.mission-bubble.spawn {
+  animation: pop-in 0.3s ease-out forwards,
+    float 3s ease-in-out infinite 0.3s;
+}
+
+.mission-bubble img {
+  width: calc(100% - 48px);
+  height: calc(100% - 48px);
+  padding: 24px;
+  object-fit: contain;
+}
+
+@keyframes pop-in {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 @keyframes float {
   0%,
   100% {
