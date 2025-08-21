@@ -58,7 +58,6 @@ body {
 }
 
 .name-hp-box {
-  background: rgba(0, 0, 0, 0.2);
   color: #ffffff;
   padding: 16px 16px;
   text-align: left;
@@ -99,14 +98,6 @@ img.fish-sprite {
   transition: transform 0.5s, filter 0.5s;
   cursor: pointer;
   margin-top: 8px;
-}
-
-img.fish-sprite:hover {
-  transform: scale(1.05);
-}
-
-img.fish-sprite:hover {
-  transform: scale(1.05);
 }
 
 .intro-overlay {
