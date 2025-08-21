@@ -20,7 +20,11 @@
       </div>
 
       <!-- Creature -->
-      <div id="creature-info"></div>
+      <div id="creature-info" class="apple-glass">
+        <div id="creature-name"></div>
+        <div class="hp-bar"><div id="creature-hp" class="hp-fill"></div></div>
+        <div id="creature-stats" class="stats"></div>
+      </div>
       <div id="creature-container">
         <img src="../images/shellfin.png" alt="Creature Sprite" />
       </div>
@@ -61,8 +65,13 @@
           `🐚 ${user.seashells} Seashells`;
         if (user.creatures && user.creatures.length > 0) {
           const c = user.creatures[0];
-          const infoEl = document.getElementById("creature-info");
-          if (infoEl) infoEl.textContent = c.name;
+          const nameEl = document.getElementById("creature-name");
+          if (nameEl) nameEl.textContent = c.name;
+          const hpEl = document.getElementById("creature-hp");
+          if (hpEl) hpEl.style.width = "100%";
+          const statsEl = document.getElementById("creature-stats");
+          if (statsEl)
+            statsEl.textContent = `HP: ${c.hp}/${c.hp} | ATK: ${c.attack}`;
           const imgEl = document.querySelector("#creature-container img");
           if (imgEl && c.sprite && c.sprite.normal)
             imgEl.src = c.sprite.normal;
