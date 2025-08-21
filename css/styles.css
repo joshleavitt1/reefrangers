@@ -156,26 +156,33 @@ body.mission #creature-container {
 }
 
 /* Navigation */
-#nav {
+.nav-row {
   display: flex;
-  justify-content: space-between;
-  padding: 12px 0px;
   width: 100%;
+  gap: 16px; /* spacing between the two blocks */
+}
+
+.nav-block {
+  flex: 1; /* each block takes equal width */
+  display: flex;
+  justify-content: center;
+  padding: 12px 0;
+  border-radius: 8px;
 }
 
 .nav-item {
-  flex: 1;
-  display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 8px;
+  display: flex;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
   font-size: 16px;
   cursor: pointer;
-  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
-  text-decoration: none;
-  color: inherit;
-  gap: 6px; /* 👈 this adds consistent space between emoji and label */
+  gap: 6px; /* spacing between emoji + label */
+  text-shadow: 4px 4px 4px rgba(0,0,0,0.2);
 }
+
 
 .nav-item span.emoji {
   font-size: 32px;
