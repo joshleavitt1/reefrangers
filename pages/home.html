@@ -65,6 +65,8 @@
           const nameEl = document.getElementById("creature-name");
           if (nameEl) nameEl.textContent = c.name;
           const hpEl = document.getElementById("creature-hp");
+          currentHp = typeof c.currentHp === "number" ? c.currentHp : c.hp;
+          if (hpEl) hpEl.style.width = (currentHp / c.hp) * 100 + "%";
           const statsEl = document.getElementById("creature-stats");
           currentHp = typeof c.currentHp === "number" ? c.currentHp : c.hp;
           if (hpEl) hpEl.style.width = (currentHp / c.hp) * 100 + "%";
@@ -82,6 +84,10 @@
             if (statsEl)
               statsEl.textContent = `HP: ${currentHp}/${c.hp} | ATK: ${c.attack}`;
           }
+        }
+        if (currentHp !== null && currentHp <= 0 && seashells !== 0) {
+          seashells = 0;
+          updateCurrentUser({ seashells });
         }
         document.getElementById("seashells").textContent =
           `🐚 ${seashells} Seashells`;

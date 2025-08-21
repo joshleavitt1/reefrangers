@@ -274,6 +274,7 @@ function enemyTurn() {
     } else {
       persistPlayerHp();
     }
+    persistPlayerHp(player.hp <= 0 ? { seashells: 0 } : undefined);
     animateHP("player", () => {
       if (player.hp <= 0) {
         endBattle(enemy);
