@@ -185,6 +185,9 @@ body.mission #creature-container {
 .mission-bubble {
   width: 120px;
   height: 120px;
+=======
+  width: 130px;
+  height: 130px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -211,6 +214,16 @@ body.mission #creature-container {
   100% {
     transform: scale(1);
   }
+=======
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.mission-bubble img {
+  width: 130px;
+  height: auto;
 }
 
 @keyframes float {

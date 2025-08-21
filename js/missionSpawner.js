@@ -47,7 +47,7 @@
       const maxTop = app.clientHeight - size;
       bubble.style.left = `${Math.random() * maxLeft}px`;
       bubble.style.top = `${Math.random() * maxTop}px`;
-
+      bubble.className = "apple-glass mission-bubble";
       const img = document.createElement("img");
       const sprite = mission.enemy ? mission.enemy.sprite : mission.sprite;
       img.src = sprite;
