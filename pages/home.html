@@ -68,11 +68,22 @@
           currentHp = typeof c.currentHp === "number" ? c.currentHp : c.hp;
           if (hpEl) hpEl.style.width = (currentHp / c.hp) * 100 + "%";
           const statsEl = document.getElementById("creature-stats");
+          currentHp = typeof c.currentHp === "number" ? c.currentHp : c.hp;
+          if (hpEl) hpEl.style.width = (currentHp / c.hp) * 100 + "%";
           if (statsEl)
             statsEl.textContent = `HP: ${currentHp}/${c.hp} | ATK: ${c.attack}`;
           const imgEl = document.querySelector("#creature-container img");
           if (imgEl && c.sprite && c.sprite.normal)
             imgEl.src = c.sprite.normal;
+          if (currentHp <= 0) {
+            c.currentHp = c.hp;
+            seashells = 0;
+            updateCurrentUser({ seashells, creatures: user.creatures });
+            currentHp = c.hp;
+            if (hpEl) hpEl.style.width = "100%";
+            if (statsEl)
+              statsEl.textContent = `HP: ${currentHp}/${c.hp} | ATK: ${c.attack}`;
+          }
         }
         if (currentHp !== null && currentHp <= 0 && seashells !== 0) {
           seashells = 0;
