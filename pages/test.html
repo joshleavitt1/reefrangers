@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Island Map Test</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <style>
+      html, body, #app {
+        height: 100%;
+        margin: 0;
+      }
+      #map {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(#0e4d92, #176cb0);
+        overflow: hidden;
+      }
+      #island {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 200px;
+        height: 200px;
+        background: radial-gradient(circle at center, #e0c068 0%, #c2a455 60%, #b28a32 100%);
+        border-radius: 50%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      }
+      .spawn-point {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 20px;
+        height: 20px;
+        background: #ff4d4d;
+        border-radius: 50%;
+        box-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <div id="map">
+        <div id="island">
+          <div class="spawn-point"></div>
+        </div>
+      </div>
+    </div>
+    <script src="../js/bubbles.js"></script>
+  </body>
+</html>
