@@ -22,7 +22,6 @@ body {
   height: 560px;
   position: relative;
   overflow: hidden;
-  background: rgba(0, 0, 0, 0.2);
   border-radius: 8px;
   color: white;
   backdrop-filter: blur(4px);
