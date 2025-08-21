@@ -381,6 +381,12 @@ async function initGame() {
     playerSpriteEl.src = playerCreature.sprite.battle;
   }
 
+  // Auto-win if mission has no enemy (e.g., Treasure)
+  if (!currentMission || !currentMission.enemy) {
+    setTimeout(() => endBattle(player), 1000);
+    return;
+  }
+
   // Initial HP state
   updateHP();
 
