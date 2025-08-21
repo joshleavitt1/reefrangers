@@ -1,5 +1,6 @@
 // missionSpawner.js
 // Spawns a random mission first after 5s, then every 30s.
+// Spawns a random mission every 30 seconds.
 
 (async function () {
   document.addEventListener("DOMContentLoaded", async () => {
@@ -35,6 +36,8 @@
 
       const bubbles = app.querySelectorAll(".mission-bubble");
       if (bubbles.length >= 3) bubbles[0].remove();
+      const existing = document.querySelector(".mission-bubble");
+      if (existing) existing.remove();
 
       const mission = pickMission();
       if (!mission) return;
@@ -47,7 +50,7 @@
       const maxTop = app.clientHeight - size;
       bubble.style.left = `${Math.random() * maxLeft}px`;
       bubble.style.top = `${Math.random() * maxTop}px`;
-
+      bubble.className = "apple-glass mission-bubble";
       const img = document.createElement("img");
       const sprite = mission.enemy ? mission.enemy.sprite : mission.sprite;
       img.src = sprite;
@@ -68,5 +71,7 @@
       spawnMission();
       setInterval(spawnMission, 30000);
     }, 5000);
+    spawnMission();
+    setInterval(spawnMission, 30000);
   });
 })();
