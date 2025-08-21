@@ -1,1802 +1,902 @@
 [
   {
-    "q": "Which ocean animal has the largest animal on Earth?",
+    "q": "What do blue whales mostly eat?",
     "options": [
-      "Orca",
-      "Blue whale",
-      "Walrus"
+      "Krill",
+      "Seaweed",
+      "Small fish"
     ],
-    "answer": "Blue whale"
+    "answer": "Krill"
   },
   {
-    "q": "What does the Blue whale like to eat?",
+    "q": "Dolphins are what kind of animal?",
     "options": [
-      "Lobster",
-      "Dolphin",
-      "Blue whale"
+      "Mammals",
+      "Fish",
+      "Reptiles"
     ],
-    "answer": "Blue whale"
+    "answer": "Mammals"
   },
   {
-    "q": "Which animal can sing very loud songs?",
+    "q": "A shark\u2019s skeleton is made mostly of what?",
     "options": [
-      "Penguin",
-      "Polar bear",
-      "Blue whale"
+      "Cartilage",
+      "Bone",
+      "Metal"
     ],
-    "answer": "Blue whale"
+    "answer": "Cartilage"
   },
   {
-    "q": "Where can you find the Blue whale?",
+    "q": "Sea turtles breathe using what?",
     "options": [
-      "Manta ray",
-      "Blue whale",
-      "Sea otter"
+      "Lungs",
+      "Gills",
+      "Skin"
     ],
-    "answer": "Blue whale"
+    "answer": "Lungs"
   },
   {
-    "q": "Which ocean animal has sharp teeth?",
+    "q": "What is a baby fish called?",
     "options": [
-      "Manatee",
-      "Great white shark",
-      "Sea otter"
+      "Fry",
+      "Pup",
+      "Chick"
     ],
-    "answer": "Great white shark"
+    "answer": "Fry"
   },
   {
-    "q": "What does the Great white shark like to eat?",
+    "q": "What do octopuses squirt to escape?",
     "options": [
-      "Albatross",
-      "Great white shark",
-      "Polar bear"
+      "Ink",
+      "Slime",
+      "Bubbles"
     ],
-    "answer": "Great white shark"
+    "answer": "Ink"
   },
   {
-    "q": "Which animal is a fast swimmer?",
+    "q": "What are coral reefs built by?",
     "options": [
-      "Polar bear",
+      "Tiny animals called polyps",
+      "Plants",
+      "Rocks"
+    ],
+    "answer": "Tiny animals called polyps"
+  },
+  {
+    "q": "Which seahorse parent carries the babies in a pouch?",
+    "options": [
+      "Father seahorse",
+      "Mother seahorse",
+      "Both parents"
+    ],
+    "answer": "Father seahorse"
+  },
+  {
+    "q": "What helps most fish breathe?",
+    "options": [
+      "Gills",
+      "Lungs",
+      "Beaks"
+    ],
+    "answer": "Gills"
+  },
+  {
+    "q": "What is a group of fish called?",
+    "options": [
+      "School",
+      "Pack",
+      "Flock"
+    ],
+    "answer": "School"
+  },
+  {
+    "q": "What do penguins mostly eat?",
+    "options": [
+      "Fish",
+      "Grass",
+      "Nuts"
+    ],
+    "answer": "Fish"
+  },
+  {
+    "q": "Which is the largest ocean?",
+    "options": [
+      "Pacific Ocean",
+      "Atlantic Ocean",
+      "Indian Ocean"
+    ],
+    "answer": "Pacific Ocean"
+  },
+  {
+    "q": "Which animal has five arms and can regrow them?",
+    "options": [
+      "Sea star",
+      "Crab",
+      "Eel"
+    ],
+    "answer": "Sea star"
+  },
+  {
+    "q": "Jellyfish have long stinging what?",
+    "options": [
+      "Tentacles",
+      "Wings",
+      "Feathers"
+    ],
+    "answer": "Tentacles"
+  },
+  {
+    "q": "What do sea otters use to crack shells?",
+    "options": [
+      "Rocks",
+      "Sticks",
+      "Leaves"
+    ],
+    "answer": "Rocks"
+  },
+  {
+    "q": "What do manatees mostly eat?",
+    "options": [
+      "Seagrass",
+      "Krill",
+      "Insects"
+    ],
+    "answer": "Seagrass"
+  },
+  {
+    "q": "Whales breathe air through a what?",
+    "options": [
+      "Blowhole",
+      "Snorkel",
+      "Beak"
+    ],
+    "answer": "Blowhole"
+  },
+  {
+    "q": "Barnacles stick to what?",
+    "options": [
+      "Rocks and ships",
+      "Air",
+      "Trees"
+    ],
+    "answer": "Rocks and ships"
+  },
+  {
+    "q": "What tiny ocean plants make lots of oxygen?",
+    "options": [
+      "Phytoplankton",
       "Jellyfish",
-      "Great white shark"
+      "Shrimp"
     ],
-    "answer": "Great white shark"
+    "answer": "Phytoplankton"
   },
   {
-    "q": "Where can you find the Great white shark?",
+    "q": "What are tide pools?",
     "options": [
-      "Penguin",
-      "Great white shark",
-      "Starfish"
+      "Small pools of ocean water by the shore",
+      "Deep sea caves",
+      "Rain puddles"
     ],
-    "answer": "Great white shark"
+    "answer": "Small pools of ocean water by the shore"
   },
   {
-    "q": "Which ocean animal has bright orange with white stripes?",
+    "q": "What protects a crab\u2019s body?",
     "options": [
-      "Clownfish",
-      "Dolphin",
-      "Pufferfish"
+      "Shell",
+      "Fur",
+      "Feathers"
     ],
-    "answer": "Clownfish"
+    "answer": "Shell"
   },
   {
-    "q": "What does the Clownfish like to eat?",
+    "q": "A whale shark is actually a what?",
     "options": [
-      "Clownfish",
-      "Beluga whale",
+      "Shark",
+      "Whale",
       "Dolphin"
     ],
-    "answer": "Clownfish"
+    "answer": "Shark"
   },
   {
-    "q": "Which animal hides in stinging tentacles?",
+    "q": "Which fish looks like a tiny horse and swims upright?",
     "options": [
-      "Seal",
-      "Sea otter",
+      "Seahorse",
+      "Swordfish",
+      "Lionfish"
+    ],
+    "answer": "Seahorse"
+  },
+  {
+    "q": "How do clams and mussels eat?",
+    "options": [
+      "They filter water",
+      "They hunt fish",
+      "They chew with teeth"
+    ],
+    "answer": "They filter water"
+  },
+  {
+    "q": "Which ocean zone gets the most sunlight?",
+    "options": [
+      "Sunlight zone",
+      "Twilight zone",
+      "Midnight zone"
+    ],
+    "answer": "Sunlight zone"
+  },
+  {
+    "q": "What helps many fish float up and down?",
+    "options": [
+      "Swim bladder",
+      "Water tank",
+      "Lung bag"
+    ],
+    "answer": "Swim bladder"
+  },
+  {
+    "q": "What keeps dolphins warm?",
+    "options": [
+      "Blubber",
+      "Feathers",
+      "Scales"
+    ],
+    "answer": "Blubber"
+  },
+  {
+    "q": "Sea anemones sting with what?",
+    "options": [
+      "Stinging cells",
+      "Teeth",
+      "Claws"
+    ],
+    "answer": "Stinging cells"
+  },
+  {
+    "q": "What do loggerhead turtles like to eat?",
+    "options": [
+      "Crabs and shellfish",
+      "Bananas",
+      "Grass"
+    ],
+    "answer": "Crabs and shellfish"
+  },
+  {
+    "q": "A coral reef is best described as a what?",
+    "options": [
+      "Home built by tiny animals",
+      "Mountain of sand",
+      "Big piece of ice"
+    ],
+    "answer": "Home built by tiny animals"
+  },
+  {
+    "q": "Which animal has eight arms?",
+    "options": [
+      "Octopus",
+      "Shark",
+      "Dolphin"
+    ],
+    "answer": "Octopus"
+  },
+  {
+    "q": "Which animal blows water from a blowhole?",
+    "options": [
+      "Whale",
+      "Crab",
       "Clownfish"
     ],
+    "answer": "Whale"
+  },
+  {
+    "q": "What is the hard outer layer of a clam called?",
+    "options": [
+      "Shell",
+      "Skin",
+      "Bark"
+    ],
+    "answer": "Shell"
+  },
+  {
+    "q": "What helps a sea star move?",
+    "options": [
+      "Tiny tube feet",
+      "Big legs",
+      "Wings"
+    ],
+    "answer": "Tiny tube feet"
+  },
+  {
+    "q": "Parrotfish mostly scrape and eat what?",
+    "options": [
+      "Algae",
+      "Meat",
+      "Insects"
+    ],
+    "answer": "Algae"
+  },
+  {
+    "q": "What is a predator?",
+    "options": [
+      "An animal that hunts other animals",
+      "An animal that only eats plants",
+      "An animal that lives only in cold places"
+    ],
+    "answer": "An animal that hunts other animals"
+  },
+  {
+    "q": "What is a big underwater forest made of seaweed called?",
+    "options": [
+      "Kelp forest",
+      "Pine forest",
+      "Flower meadow"
+    ],
+    "answer": "Kelp forest"
+  },
+  {
+    "q": "Which ocean is on the east coast of the USA?",
+    "options": [
+      "Atlantic Ocean",
+      "Pacific Ocean",
+      "Indian Ocean"
+    ],
+    "answer": "Atlantic Ocean"
+  },
+  {
+    "q": "Which deep-sea fish can glow in the dark?",
+    "options": [
+      "Anglerfish",
+      "Tuna",
+      "Cowfish"
+    ],
+    "answer": "Anglerfish"
+  },
+  {
+    "q": "What is the sandy place where waves meet the shore called?",
+    "options": [
+      "Beach",
+      "Desert",
+      "Glacier"
+    ],
+    "answer": "Beach"
+  },
+  {
+    "q": "What are baby whales called?",
+    "options": [
+      "Calves",
+      "Chicks",
+      "Tadpoles"
+    ],
+    "answer": "Calves"
+  },
+  {
+    "q": "Which fish lives safely inside sea anemones?",
+    "options": [
+      "Clownfish",
+      "Trout",
+      "Catfish"
+    ],
     "answer": "Clownfish"
   },
   {
-    "q": "Where can you find the Clownfish?",
-    "options": [
-      "Seahorse",
-      "Beluga whale",
-      "Clownfish"
-    ],
-    "answer": "Clownfish"
-  },
-  {
-    "q": "Which ocean animal has a hard shell and flippers?",
-    "options": [
-      "Walrus",
-      "Jellyfish",
-      "Sea turtle"
-    ],
-    "answer": "Sea turtle"
-  },
-  {
-    "q": "What does the Sea turtle like to eat?",
-    "options": [
-      "Whale shark",
-      "Sea turtle",
-      "Electric eel"
-    ],
-    "answer": "Sea turtle"
-  },
-  {
-    "q": "Which animal travels thousands of miles?",
-    "options": [
-      "Manatee",
-      "Sea turtle",
-      "Beluga whale"
-    ],
-    "answer": "Sea turtle"
-  },
-  {
-    "q": "Where can you find the Sea turtle?",
+    "q": "What do leatherback sea turtles mostly eat?",
     "options": [
       "Jellyfish",
-      "Sea turtle",
-      "Squid"
-    ],
-    "answer": "Sea turtle"
-  },
-  {
-    "q": "Which ocean animal has a blowhole on top of its head?",
-    "options": [
-      "Sea otter",
-      "Polar bear",
-      "Dolphin"
-    ],
-    "answer": "Dolphin"
-  },
-  {
-    "q": "What does the Dolphin like to eat?",
-    "options": [
-      "Lobster",
-      "Dolphin",
-      "Pufferfish"
-    ],
-    "answer": "Dolphin"
-  },
-  {
-    "q": "Which animal jumps and plays in the waves?",
-    "options": [
-      "Sea snake",
-      "Penguin",
-      "Dolphin"
-    ],
-    "answer": "Dolphin"
-  },
-  {
-    "q": "Where can you find the Dolphin?",
-    "options": [
-      "Clownfish",
-      "Octopus",
-      "Dolphin"
-    ],
-    "answer": "Dolphin"
-  },
-  {
-    "q": "Which ocean animal has eight arms?",
-    "options": [
-      "Whale shark",
-      "Octopus",
-      "Orca"
-    ],
-    "answer": "Octopus"
-  },
-  {
-    "q": "What does the Octopus like to eat?",
-    "options": [
-      "Walrus",
-      "Lobster",
-      "Octopus"
-    ],
-    "answer": "Octopus"
-  },
-  {
-    "q": "Which animal can squirt ink to hide?",
-    "options": [
-      "Electric eel",
-      "Octopus",
-      "Squid"
-    ],
-    "answer": "Octopus"
-  },
-  {
-    "q": "Where can you find the Octopus?",
-    "options": [
-      "Beluga whale",
-      "Octopus",
-      "Sea otter"
-    ],
-    "answer": "Octopus"
-  },
-  {
-    "q": "Which ocean animal has soft, see-through body?",
-    "options": [
-      "Blue whale",
-      "Sea cucumber",
-      "Jellyfish"
+      "Grass",
+      "Mice"
     ],
     "answer": "Jellyfish"
   },
   {
-    "q": "What does the Jellyfish like to eat?",
+    "q": "What do people use to breathe underwater for a long time?",
     "options": [
-      "Clownfish",
-      "Sea otter",
-      "Jellyfish"
+      "Scuba tank",
+      "Umbrella",
+      "Backpack"
     ],
-    "answer": "Jellyfish"
+    "answer": "Scuba tank"
   },
   {
-    "q": "Which animal can sting with tentacles?",
+    "q": "What is a tide?",
     "options": [
-      "Jellyfish",
-      "Seal",
-      "Seahorse"
+      "The rise and fall of ocean water",
+      "A big storm",
+      "A kind of fish"
     ],
-    "answer": "Jellyfish"
+    "answer": "The rise and fall of ocean water"
   },
   {
-    "q": "Where can you find the Jellyfish?",
+    "q": "What mainly causes tides on Earth?",
     "options": [
-      "Jellyfish",
-      "Great white shark",
-      "Clownfish"
+      "The Moon\u2019s gravity",
+      "The Sun\u2019s heat",
+      "Airplanes"
     ],
-    "answer": "Jellyfish"
+    "answer": "The Moon\u2019s gravity"
   },
   {
-    "q": "Which ocean animal has five arms?",
+    "q": "What should you do with trash at the beach?",
     "options": [
-      "Walrus",
-      "Dolphin",
-      "Starfish"
+      "Put it in a bin",
+      "Bury it in sand",
+      "Throw it in the ocean"
     ],
-    "answer": "Starfish"
+    "answer": "Put it in a bin"
   },
   {
-    "q": "What does the Starfish like to eat?",
+    "q": "How can you help protect coral reefs?",
     "options": [
-      "Starfish",
-      "Penguin",
-      "Coral"
+      "Don\u2019t touch or take pieces",
+      "Stand on them",
+      "Break off souvenirs"
     ],
-    "answer": "Starfish"
+    "answer": "Don\u2019t touch or take pieces"
   },
   {
-    "q": "Which animal can grow back arms?",
-    "options": [
-      "Starfish",
-      "Beluga whale",
-      "Coral"
-    ],
-    "answer": "Starfish"
-  },
-  {
-    "q": "Where can you find the Starfish?",
-    "options": [
-      "Electric eel",
-      "Starfish",
-      "Great white shark"
-    ],
-    "answer": "Starfish"
-  },
-  {
-    "q": "Which ocean animal has a curly tail?",
-    "options": [
-      "Sea snake",
-      "Seahorse",
-      "Manta ray"
-    ],
-    "answer": "Seahorse"
-  },
-  {
-    "q": "What does the Seahorse like to eat?",
-    "options": [
-      "Seahorse",
-      "Whale shark",
-      "Dolphin"
-    ],
-    "answer": "Seahorse"
-  },
-  {
-    "q": "Which animal the dad carries the babies?",
-    "options": [
-      "Lobster",
-      "Seahorse",
-      "Starfish"
-    ],
-    "answer": "Seahorse"
-  },
-  {
-    "q": "Where can you find the Seahorse?",
-    "options": [
-      "Dolphin",
-      "Sea snake",
-      "Seahorse"
-    ],
-    "answer": "Seahorse"
-  },
-  {
-    "q": "Which ocean animal has a black and white body?",
+    "q": "Which fish has a long, pointed 'sword'?",
     "options": [
       "Swordfish",
-      "Seal",
-      "Penguin"
+      "Catfish",
+      "Clownfish"
     ],
-    "answer": "Penguin"
+    "answer": "Swordfish"
   },
   {
-    "q": "What does the Penguin like to eat?",
+    "q": "Which sea mammal sings long songs?",
     "options": [
-      "Penguin",
-      "Orca",
-      "Sea cucumber"
+      "Humpback whale",
+      "Walrus",
+      "Sea lion"
     ],
-    "answer": "Penguin"
+    "answer": "Humpback whale"
   },
   {
-    "q": "Which animal cannot fly but swims fast?",
+    "q": "What do penguins use to slide on ice?",
     "options": [
-      "Octopus",
-      "Penguin",
-      "Orca"
+      "Their bellies",
+      "Their ears",
+      "Their tails"
     ],
-    "answer": "Penguin"
+    "answer": "Their bellies"
   },
   {
-    "q": "Where can you find the Penguin?",
+    "q": "What is the icy region at the south of Earth called?",
+    "options": [
+      "Antarctica",
+      "Arctic",
+      "Desert"
+    ],
+    "answer": "Antarctica"
+  },
+  {
+    "q": "What is plankton?",
+    "options": [
+      "Tiny drifting plants and animals",
+      "Big sharks",
+      "Floating rocks"
+    ],
+    "answer": "Tiny drifting plants and animals"
+  },
+  {
+    "q": "How do filter feeders like whale sharks eat?",
+    "options": [
+      "They strain tiny food from water",
+      "They bite big chunks",
+      "They eat seaweed only"
+    ],
+    "answer": "They strain tiny food from water"
+  },
+  {
+    "q": "What are mangroves?",
+    "options": [
+      "Trees that grow in salty water",
+      "Rocks in deep sea",
+      "Tiny fish"
+    ],
+    "answer": "Trees that grow in salty water"
+  },
+  {
+    "q": "How does a pufferfish avoid being eaten?",
+    "options": [
+      "It puffs up big",
+      "It runs fast",
+      "It flies away"
+    ],
+    "answer": "It puffs up big"
+  },
+  {
+    "q": "Which animal has a long saw-like snout?",
+    "options": [
+      "Sawfish",
+      "Seahorse",
+      "Tuna"
+    ],
+    "answer": "Sawfish"
+  },
+  {
+    "q": "Which animal is called a 'sea cow'?",
     "options": [
       "Manatee",
-      "Blue whale",
-      "Penguin"
+      "Shark",
+      "Eel"
     ],
-    "answer": "Penguin"
+    "answer": "Manatee"
   },
   {
-    "q": "Which ocean animal has long tusks?",
+    "q": "What shape are a dolphin\u2019s tail flukes?",
     "options": [
-      "Lobster",
-      "Starfish",
-      "Walrus"
+      "Horizontal",
+      "Vertical",
+      "Round"
     ],
-    "answer": "Walrus"
+    "answer": "Horizontal"
   },
   {
-    "q": "What does the Walrus like to eat?",
+    "q": "What is the main job of a lifeguard?",
     "options": [
-      "Walrus",
-      "Squid",
-      "Sea otter"
+      "Keep people safe in the water",
+      "Catch fish",
+      "Drive boats"
     ],
-    "answer": "Walrus"
+    "answer": "Keep people safe in the water"
   },
   {
-    "q": "Which animal lives on ice and land?",
+    "q": "Which animal has a shell, claws, and walks sideways?",
     "options": [
-      "Electric eel",
-      "Walrus",
-      "Crab"
-    ],
-    "answer": "Walrus"
-  },
-  {
-    "q": "Where can you find the Walrus?",
-    "options": [
-      "Walrus",
-      "Squid",
-      "Beluga whale"
-    ],
-    "answer": "Walrus"
-  },
-  {
-    "q": "Which ocean animal has white fur?",
-    "options": [
-      "Whale shark",
-      "Polar bear",
-      "Sea turtle"
-    ],
-    "answer": "Polar bear"
-  },
-  {
-    "q": "What does the Polar bear like to eat?",
-    "options": [
-      "Polar bear",
-      "Starfish",
-      "Dolphin"
-    ],
-    "answer": "Polar bear"
-  },
-  {
-    "q": "Which animal good swimmer and hunter?",
-    "options": [
-      "Octopus",
-      "Albatross",
-      "Polar bear"
-    ],
-    "answer": "Polar bear"
-  },
-  {
-    "q": "Where can you find the Polar bear?",
-    "options": [
-      "Electric eel",
-      "Lobster",
-      "Polar bear"
-    ],
-    "answer": "Polar bear"
-  },
-  {
-    "q": "Which ocean animal has a thick fur coat?",
-    "options": [
-      "Sea otter",
+      "Crab",
       "Seal",
-      "Narwhal"
+      "Tuna"
     ],
-    "answer": "Sea otter"
+    "answer": "Crab"
   },
   {
-    "q": "What does the Sea otter like to eat?",
-    "options": [
-      "Crab",
-      "Sea otter",
-      "Great white shark"
-    ],
-    "answer": "Sea otter"
-  },
-  {
-    "q": "Which animal uses tools like rocks?",
+    "q": "Which ocean animal can change color to hide?",
     "options": [
       "Octopus",
-      "Sea otter",
-      "Sea turtle"
-    ],
-    "answer": "Sea otter"
-  },
-  {
-    "q": "Where can you find the Sea otter?",
-    "options": [
-      "Sea otter",
-      "Manta ray",
-      "Narwhal"
-    ],
-    "answer": "Sea otter"
-  },
-  {
-    "q": "Which ocean animal has a hard shell and claws?",
-    "options": [
-      "Crab",
-      "Manta ray",
-      "Walrus"
-    ],
-    "answer": "Crab"
-  },
-  {
-    "q": "What does the Crab like to eat?",
-    "options": [
-      "Squid",
-      "Albatross",
-      "Crab"
-    ],
-    "answer": "Crab"
-  },
-  {
-    "q": "Which animal walks sideways?",
-    "options": [
-      "Crab",
-      "Beluga whale",
+      "Whale",
       "Manatee"
     ],
-    "answer": "Crab"
+    "answer": "Octopus"
   },
   {
-    "q": "Where can you find the Crab?",
+    "q": "What do pelicans use to scoop up fish?",
     "options": [
-      "Sea cucumber",
-      "Crab",
-      "Jellyfish"
+      "A big bill pouch",
+      "Their feet",
+      "Their ears"
     ],
-    "answer": "Crab"
+    "answer": "A big bill pouch"
   },
   {
-    "q": "Which ocean animal has two big claws?",
+    "q": "What is an estuary?",
     "options": [
-      "Coral",
-      "Lobster",
-      "Clownfish"
+      "Where a river meets the ocean",
+      "A deep-sea trench",
+      "A coral island"
     ],
-    "answer": "Lobster"
+    "answer": "Where a river meets the ocean"
   },
   {
-    "q": "What does the Lobster like to eat?",
+    "q": "What do sea urchins have on their bodies?",
     "options": [
-      "Lobster",
-      "Starfish",
-      "Walrus"
+      "Spines",
+      "Feathers",
+      "Fur"
     ],
-    "answer": "Lobster"
+    "answer": "Spines"
   },
   {
-    "q": "Which animal hides in rocky cracks?",
+    "q": "How does a flounder hide on the seafloor?",
     "options": [
-      "Lobster",
-      "Squid",
-      "Crab"
+      "Camouflage",
+      "Loud sounds",
+      "Bright lights"
     ],
-    "answer": "Lobster"
+    "answer": "Camouflage"
   },
   {
-    "q": "Where can you find the Lobster?",
+    "q": "What is overfishing?",
     "options": [
-      "Narwhal",
-      "Lobster",
-      "Great white shark"
+      "Catching too many fish",
+      "Feeding fish too much",
+      "Swimming too fast"
     ],
-    "answer": "Lobster"
+    "answer": "Catching too many fish"
   },
   {
-    "q": "Which ocean animal has ten arms?",
+    "q": "Which animal has tusks and whiskers?",
     "options": [
-      "Orca",
-      "Squid",
-      "Swordfish"
-    ],
-    "answer": "Squid"
-  },
-  {
-    "q": "What does the Squid like to eat?",
-    "options": [
-      "Manta ray",
-      "Pufferfish",
-      "Squid"
-    ],
-    "answer": "Squid"
-  },
-  {
-    "q": "Which animal can change color?",
-    "options": [
-      "Electric eel",
-      "Squid",
-      "Dolphin"
-    ],
-    "answer": "Squid"
-  },
-  {
-    "q": "Where can you find the Squid?",
-    "options": [
-      "Squid",
-      "Octopus",
-      "Sea cucumber"
-    ],
-    "answer": "Squid"
-  },
-  {
-    "q": "Which ocean animal has a spotted body?",
-    "options": [
-      "Orca",
-      "Whale shark",
-      "Sea snake"
-    ],
-    "answer": "Whale shark"
-  },
-  {
-    "q": "What does the Whale shark like to eat?",
-    "options": [
-      "Starfish",
-      "Whale shark",
-      "Manta ray"
-    ],
-    "answer": "Whale shark"
-  },
-  {
-    "q": "Which animal the biggest shark?",
-    "options": [
-      "Great white shark",
-      "Lobster",
-      "Whale shark"
-    ],
-    "answer": "Whale shark"
-  },
-  {
-    "q": "Where can you find the Whale shark?",
-    "options": [
-      "Swordfish",
-      "Whale shark",
-      "Narwhal"
-    ],
-    "answer": "Whale shark"
-  },
-  {
-    "q": "Which ocean animal has a round body with a paddle tail?",
-    "options": [
-      "Manatee",
-      "Manta ray",
-      "Narwhal"
-    ],
-    "answer": "Manatee"
-  },
-  {
-    "q": "What does the Manatee like to eat?",
-    "options": [
-      "Narwhal",
-      "Manatee",
-      "Sea turtle"
-    ],
-    "answer": "Manatee"
-  },
-  {
-    "q": "Which animal called a sea cow?",
-    "options": [
-      "Manatee",
-      "Whale shark",
-      "Penguin"
-    ],
-    "answer": "Manatee"
-  },
-  {
-    "q": "Where can you find the Manatee?",
-    "options": [
-      "Narwhal",
-      "Manatee",
-      "Great white shark"
-    ],
-    "answer": "Manatee"
-  },
-  {
-    "q": "Which ocean animal has flippers?",
-    "options": [
-      "Beluga whale",
-      "Seal",
-      "Electric eel"
-    ],
-    "answer": "Seal"
-  },
-  {
-    "q": "What does the Seal like to eat?",
-    "options": [
-      "Seahorse",
-      "Seal",
-      "Sea cucumber"
-    ],
-    "answer": "Seal"
-  },
-  {
-    "q": "Which animal can dive and hold breath?",
-    "options": [
-      "Octopus",
-      "Seal",
-      "Clownfish"
-    ],
-    "answer": "Seal"
-  },
-  {
-    "q": "Where can you find the Seal?",
-    "options": [
-      "Penguin",
-      "Sea snake",
-      "Seal"
-    ],
-    "answer": "Seal"
-  },
-  {
-    "q": "Which ocean animal has a long sharp bill?",
-    "options": [
-      "Clownfish",
-      "Sea otter",
-      "Swordfish"
-    ],
-    "answer": "Swordfish"
-  },
-  {
-    "q": "What does the Swordfish like to eat?",
-    "options": [
-      "Pufferfish",
-      "Swordfish",
-      "Manatee"
-    ],
-    "answer": "Swordfish"
-  },
-  {
-    "q": "Which animal can swim very fast?",
-    "options": [
-      "Sea otter",
-      "Squid",
-      "Swordfish"
-    ],
-    "answer": "Swordfish"
-  },
-  {
-    "q": "Where can you find the Swordfish?",
-    "options": [
-      "Clownfish",
-      "Blue whale",
-      "Swordfish"
-    ],
-    "answer": "Swordfish"
-  },
-  {
-    "q": "Which ocean animal has hard skeletons that build reefs?",
-    "options": [
-      "Great white shark",
-      "Coral",
-      "Electric eel"
-    ],
-    "answer": "Coral"
-  },
-  {
-    "q": "What does the Coral like to eat?",
-    "options": [
-      "Manatee",
-      "Beluga whale",
-      "Coral"
-    ],
-    "answer": "Coral"
-  },
-  {
-    "q": "Which animal look like plants but are animals?",
-    "options": [
-      "Coral",
-      "Penguin",
-      "Crab"
-    ],
-    "answer": "Coral"
-  },
-  {
-    "q": "Where can you find the Coral?",
-    "options": [
-      "Pufferfish",
-      "Coral",
-      "Beluga whale"
-    ],
-    "answer": "Coral"
-  },
-  {
-    "q": "Which ocean animal has a soft, long body?",
-    "options": [
-      "Squid",
-      "Sea cucumber",
-      "Clownfish"
-    ],
-    "answer": "Sea cucumber"
-  },
-  {
-    "q": "What does the Sea cucumber like to eat?",
-    "options": [
-      "Albatross",
-      "Blue whale",
-      "Sea cucumber"
-    ],
-    "answer": "Sea cucumber"
-  },
-  {
-    "q": "Which animal cleans the ocean floor?",
-    "options": [
-      "Narwhal",
-      "Dolphin",
-      "Sea cucumber"
-    ],
-    "answer": "Sea cucumber"
-  },
-  {
-    "q": "Where can you find the Sea cucumber?",
-    "options": [
-      "Sea cucumber",
       "Walrus",
+      "Dolphin",
       "Seahorse"
     ],
-    "answer": "Sea cucumber"
+    "answer": "Walrus"
   },
   {
-    "q": "Which ocean animal has giant wing-like fins?",
+    "q": "How do seals and sea lions move on land?",
     "options": [
+      "With their flippers",
+      "With paws",
+      "With wings"
+    ],
+    "answer": "With their flippers"
+  },
+  {
+    "q": "Which shark has a hammer-shaped head?",
+    "options": [
+      "Hammerhead shark",
+      "Catfish",
+      "Salmon"
+    ],
+    "answer": "Hammerhead shark"
+  },
+  {
+    "q": "Which animal has no bones and drifts with currents?",
+    "options": [
+      "Jellyfish",
+      "Crab",
+      "Trout"
+    ],
+    "answer": "Jellyfish"
+  },
+  {
+    "q": "Which fish cleans other fish by eating pests?",
+    "options": [
+      "Cleaner wrasse",
       "Great white shark",
-      "Manta ray",
-      "Squid"
+      "Tuna"
     ],
-    "answer": "Manta ray"
+    "answer": "Cleaner wrasse"
   },
   {
-    "q": "What does the Manta ray like to eat?",
+    "q": "What is often the top predator in ocean food chains?",
     "options": [
-      "Dolphin",
-      "Penguin",
-      "Manta ray"
+      "Sharks",
+      "Clams",
+      "Krill"
     ],
-    "answer": "Manta ray"
+    "answer": "Sharks"
   },
   {
-    "q": "Which animal flies through water like a bird?",
+    "q": "Which is the smallest ocean?",
     "options": [
-      "Manta ray",
-      "Coral",
-      "Squid"
+      "Arctic Ocean",
+      "Atlantic Ocean",
+      "Pacific Ocean"
     ],
-    "answer": "Manta ray"
+    "answer": "Arctic Ocean"
   },
   {
-    "q": "Where can you find the Manta ray?",
+    "q": "What is frozen seawater called?",
     "options": [
-      "Manta ray",
-      "Beluga whale",
-      "Lobster"
+      "Sea ice",
+      "Iceberg",
+      "Snowball"
     ],
-    "answer": "Manta ray"
+    "answer": "Sea ice"
   },
   {
-    "q": "Which ocean animal has can make electricity?",
+    "q": "What should you wear to stay safe while boating?",
     "options": [
-      "Pufferfish",
-      "Blue whale",
-      "Electric eel"
+      "Life jacket",
+      "Heavy boots",
+      "Cape"
     ],
-    "answer": "Electric eel"
+    "answer": "Life jacket"
   },
   {
-    "q": "What does the Electric eel like to eat?",
+    "q": "A coral polyp is a tiny what?",
     "options": [
-      "Coral",
+      "Animal",
+      "Plant",
+      "Rock"
+    ],
+    "answer": "Animal"
+  },
+  {
+    "q": "What helps many fish look dark on top and light underneath?",
+    "options": [
+      "Countershading",
+      "Stripes only",
+      "Spots only"
+    ],
+    "answer": "Countershading"
+  },
+  {
+    "q": "What do baleen whales use to eat?",
+    "options": [
+      "Baleen plates",
+      "Sharp teeth",
+      "A long tongue"
+    ],
+    "answer": "Baleen plates"
+  },
+  {
+    "q": "Which fish can make electricity?",
+    "options": [
+      "Electric ray",
+      "Goldfish",
+      "Trout"
+    ],
+    "answer": "Electric ray"
+  },
+  {
+    "q": "Where do clownfish usually live?",
+    "options": [
+      "Coral reefs",
+      "Rivers",
+      "Lakes"
+    ],
+    "answer": "Coral reefs"
+  },
+  {
+    "q": "What can cause coral to turn white (bleach)?",
+    "options": [
+      "Water gets too warm",
+      "Too many whales",
+      "Too much sand"
+    ],
+    "answer": "Water gets too warm"
+  },
+  {
+    "q": "What do sea turtles lay on sandy beaches?",
+    "options": [
+      "Eggs",
+      "Pebbles",
+      "Nuts"
+    ],
+    "answer": "Eggs"
+  },
+  {
+    "q": "How can we help the ocean?",
+    "options": [
+      "Use less plastic",
+      "Litter more",
+      "Catch all the fish"
+    ],
+    "answer": "Use less plastic"
+  },
+  {
+    "q": "What long, thin animal looks like a snake but is a fish?",
+    "options": [
+      "Eel",
       "Seahorse",
-      "Electric eel"
+      "Tuna"
     ],
-    "answer": "Electric eel"
+    "answer": "Eel"
   },
   {
-    "q": "Which animal shocks its prey?",
+    "q": "Which animal has a hard shell and ten legs?",
     "options": [
-      "Great white shark",
-      "Electric eel",
-      "Octopus"
+      "Crab",
+      "Dolphin",
+      "Whale"
     ],
-    "answer": "Electric eel"
+    "answer": "Crab"
   },
   {
-    "q": "Where can you find the Electric eel?",
+    "q": "What does a herbivore eat?",
     "options": [
-      "Electric eel",
-      "Blue whale",
-      "Whale shark"
+      "Plants",
+      "Meat",
+      "Rocks"
     ],
-    "answer": "Electric eel"
+    "answer": "Plants"
   },
   {
-    "q": "Which ocean animal has a long tusk?",
+    "q": "Which bright orange fish has white stripes?",
+    "options": [
+      "Clownfish",
+      "Salmon",
+      "Tuna"
+    ],
+    "answer": "Clownfish"
+  },
+  {
+    "q": "What are baby sharks called?",
+    "options": [
+      "Pups",
+      "Cubs",
+      "Calves"
+    ],
+    "answer": "Pups"
+  },
+  {
+    "q": "What is the biggest fish in the sea?",
     "options": [
       "Whale shark",
-      "Seahorse",
-      "Narwhal"
+      "Blue whale",
+      "Great white shark"
+    ],
+    "answer": "Whale shark"
+  },
+  {
+    "q": "Which ocean zone is very dark?",
+    "options": [
+      "Midnight zone",
+      "Sunlight zone",
+      "Shallow zone"
+    ],
+    "answer": "Midnight zone"
+  },
+  {
+    "q": "What home does a hermit crab carry?",
+    "options": [
+      "A borrowed shell",
+      "A tent",
+      "A cave"
+    ],
+    "answer": "A borrowed shell"
+  },
+  {
+    "q": "Which whale has a long spiral tooth like a horn?",
+    "options": [
+      "Narwhal",
+      "Orca",
+      "Dolphin"
     ],
     "answer": "Narwhal"
   },
   {
-    "q": "What does the Narwhal like to eat?",
+    "q": "What is a baby sea turtle\u2019s first journey?",
     "options": [
-      "Penguin",
-      "Great white shark",
-      "Narwhal"
+      "From the nest to the ocean",
+      "From the ocean to a tree",
+      "From the nest to a mountain"
     ],
-    "answer": "Narwhal"
+    "answer": "From the nest to the ocean"
   },
   {
-    "q": "Which animal called the unicorn of the sea?",
+    "q": "Which animal can make a pearl?",
     "options": [
-      "Manatee",
-      "Narwhal",
-      "Starfish"
-    ],
-    "answer": "Narwhal"
-  },
-  {
-    "q": "Where can you find the Narwhal?",
-    "options": [
-      "Blue whale",
-      "Narwhal",
-      "Great white shark"
-    ],
-    "answer": "Narwhal"
-  },
-  {
-    "q": "Which ocean animal has can puff up like a ball?",
-    "options": [
-      "Lobster",
-      "Pufferfish",
-      "Narwhal"
-    ],
-    "answer": "Pufferfish"
-  },
-  {
-    "q": "What does the Pufferfish like to eat?",
-    "options": [
-      "Octopus",
+      "Oyster",
       "Seahorse",
-      "Pufferfish"
-    ],
-    "answer": "Pufferfish"
-  },
-  {
-    "q": "Which animal is sometimes poisonous?",
-    "options": [
-      "Pufferfish",
-      "Narwhal",
-      "Jellyfish"
-    ],
-    "answer": "Pufferfish"
-  },
-  {
-    "q": "Where can you find the Pufferfish?",
-    "options": [
-      "Pufferfish",
-      "Jellyfish",
-      "Dolphin"
-    ],
-    "answer": "Pufferfish"
-  },
-  {
-    "q": "Which ocean animal has long thin body?",
-    "options": [
-      "Sea snake",
-      "Narwhal",
-      "Lobster"
-    ],
-    "answer": "Sea snake"
-  },
-  {
-    "q": "What does the Sea snake like to eat?",
-    "options": [
-      "Electric eel",
-      "Blue whale",
-      "Sea snake"
-    ],
-    "answer": "Sea snake"
-  },
-  {
-    "q": "Which animal is very venomous?",
-    "options": [
-      "Octopus",
-      "Great white shark",
-      "Sea snake"
-    ],
-    "answer": "Sea snake"
-  },
-  {
-    "q": "Where can you find the Sea snake?",
-    "options": [
-      "Sea snake",
-      "Walrus",
-      "Squid"
-    ],
-    "answer": "Sea snake"
-  },
-  {
-    "q": "Which ocean animal has black and white body?",
-    "options": [
-      "Orca",
-      "Clownfish",
-      "Seal"
-    ],
-    "answer": "Orca"
-  },
-  {
-    "q": "What does the Orca like to eat?",
-    "options": [
-      "Walrus",
-      "Orca",
-      "Seal"
-    ],
-    "answer": "Orca"
-  },
-  {
-    "q": "Which animal called a killer whale?",
-    "options": [
-      "Albatross",
-      "Orca",
-      "Pufferfish"
-    ],
-    "answer": "Orca"
-  },
-  {
-    "q": "Where can you find the Orca?",
-    "options": [
-      "Sea cucumber",
-      "Crab",
-      "Orca"
-    ],
-    "answer": "Orca"
-  },
-  {
-    "q": "Which ocean animal has white body?",
-    "options": [
-      "Sea otter",
-      "Beluga whale",
-      "Walrus"
-    ],
-    "answer": "Beluga whale"
-  },
-  {
-    "q": "What does the Beluga whale like to eat?",
-    "options": [
-      "Sea cucumber",
-      "Narwhal",
-      "Beluga whale"
-    ],
-    "answer": "Beluga whale"
-  },
-  {
-    "q": "Which animal can make many sounds?",
-    "options": [
-      "Beluga whale",
-      "Crab",
-      "Manatee"
-    ],
-    "answer": "Beluga whale"
-  },
-  {
-    "q": "Where can you find the Beluga whale?",
-    "options": [
-      "Dolphin",
-      "Beluga whale",
-      "Sea turtle"
-    ],
-    "answer": "Beluga whale"
-  },
-  {
-    "q": "Which ocean animal has very long wings?",
-    "options": [
-      "Lobster",
-      "Sea snake",
-      "Albatross"
-    ],
-    "answer": "Albatross"
-  },
-  {
-    "q": "What does the Albatross like to eat?",
-    "options": [
-      "Albatross",
-      "Electric eel",
-      "Pufferfish"
-    ],
-    "answer": "Albatross"
-  },
-  {
-    "q": "Which animal can fly for days?",
-    "options": [
-      "Albatross",
-      "Electric eel",
-      "Polar bear"
-    ],
-    "answer": "Albatross"
-  },
-  {
-    "q": "Where can you find the Albatross?",
-    "options": [
-      "Sea cucumber",
-      "Albatross",
       "Octopus"
     ],
-    "answer": "Albatross"
+    "answer": "Oyster"
   },
   {
-    "q": "Which animal is known as 'Blue whale'?",
+    "q": "What is the safest way to watch marine animals?",
     "options": [
-      "Blue whale",
-      "Lobster",
-      "Octopus"
+      "From a distance",
+      "Touch them",
+      "Chase them"
     ],
-    "answer": "Blue whale"
+    "answer": "From a distance"
   },
   {
-    "q": "Which animal is known as 'Great white shark'?",
+    "q": "Which ocean is on the west coast of the USA?",
     "options": [
-      "Sea snake",
-      "Sea cucumber",
-      "Great white shark"
+      "Pacific Ocean",
+      "Atlantic Ocean",
+      "Arctic Ocean"
     ],
-    "answer": "Great white shark"
+    "answer": "Pacific Ocean"
   },
   {
-    "q": "Which animal is known as 'Clownfish'?",
+    "q": "What do sea snakes breathe with?",
     "options": [
-      "Sea snake",
-      "Clownfish",
-      "Narwhal"
+      "Lungs",
+      "Gills",
+      "Skin only"
     ],
-    "answer": "Clownfish"
+    "answer": "Lungs"
   },
   {
-    "q": "Which animal is known as 'Sea turtle'?",
+    "q": "Which animal has flippers and barks loudly on rocks?",
     "options": [
-      "Sea turtle",
-      "Blue whale",
-      "Clownfish"
-    ],
-    "answer": "Sea turtle"
-  },
-  {
-    "q": "Which animal is known as 'Dolphin'?",
-    "options": [
-      "Dolphin",
-      "Jellyfish",
-      "Octopus"
-    ],
-    "answer": "Dolphin"
-  },
-  {
-    "q": "Which animal is known as 'Octopus'?",
-    "options": [
-      "Octopus",
-      "Whale shark",
-      "Coral"
-    ],
-    "answer": "Octopus"
-  },
-  {
-    "q": "Which animal is known as 'Jellyfish'?",
-    "options": [
-      "Seal",
-      "Albatross",
-      "Jellyfish"
-    ],
-    "answer": "Jellyfish"
-  },
-  {
-    "q": "Which animal is known as 'Starfish'?",
-    "options": [
-      "Crab",
-      "Clownfish",
-      "Starfish"
-    ],
-    "answer": "Starfish"
-  },
-  {
-    "q": "Which animal is known as 'Seahorse'?",
-    "options": [
-      "Seahorse",
-      "Sea otter",
-      "Narwhal"
-    ],
-    "answer": "Seahorse"
-  },
-  {
-    "q": "Which animal is known as 'Penguin'?",
-    "options": [
-      "Walrus",
-      "Penguin",
-      "Beluga whale"
-    ],
-    "answer": "Penguin"
-  },
-  {
-    "q": "Which animal is known as 'Walrus'?",
-    "options": [
-      "Manta ray",
-      "Walrus",
-      "Penguin"
-    ],
-    "answer": "Walrus"
-  },
-  {
-    "q": "Which animal is known as 'Polar bear'?",
-    "options": [
-      "Jellyfish",
-      "Polar bear",
-      "Pufferfish"
-    ],
-    "answer": "Polar bear"
-  },
-  {
-    "q": "Which animal is known as 'Sea otter'?",
-    "options": [
-      "Sea otter",
-      "Narwhal",
-      "Lobster"
-    ],
-    "answer": "Sea otter"
-  },
-  {
-    "q": "Which animal is known as 'Crab'?",
-    "options": [
-      "Manatee",
-      "Crab",
-      "Octopus"
-    ],
-    "answer": "Crab"
-  },
-  {
-    "q": "Which animal is known as 'Lobster'?",
-    "options": [
-      "Sea turtle",
-      "Lobster",
-      "Clownfish"
-    ],
-    "answer": "Lobster"
-  },
-  {
-    "q": "Which animal is known as 'Squid'?",
-    "options": [
-      "Sea cucumber",
-      "Squid",
-      "Sea turtle"
-    ],
-    "answer": "Squid"
-  },
-  {
-    "q": "Which animal is known as 'Whale shark'?",
-    "options": [
-      "Whale shark",
-      "Sea snake",
-      "Crab"
-    ],
-    "answer": "Whale shark"
-  },
-  {
-    "q": "Which animal is known as 'Manatee'?",
-    "options": [
-      "Manatee",
-      "Orca",
-      "Squid"
-    ],
-    "answer": "Manatee"
-  },
-  {
-    "q": "Which animal is known as 'Seal'?",
-    "options": [
-      "Orca",
-      "Seal",
-      "Sea cucumber"
-    ],
-    "answer": "Seal"
-  },
-  {
-    "q": "Which animal is known as 'Swordfish'?",
-    "options": [
-      "Orca",
-      "Swordfish",
+      "Sea lion",
+      "Tuna",
       "Seahorse"
     ],
-    "answer": "Swordfish"
+    "answer": "Sea lion"
   },
   {
-    "q": "Which animal is known as 'Coral'?",
+    "q": "What do crabs and lobsters have instead of bones?",
     "options": [
-      "Narwhal",
-      "Coral",
-      "Seal"
+      "Exoskeleton",
+      "Feathers",
+      "Glass"
     ],
-    "answer": "Coral"
-  },
-  {
-    "q": "Which animal is known as 'Sea cucumber'?",
-    "options": [
-      "Jellyfish",
-      "Blue whale",
-      "Sea cucumber"
-    ],
-    "answer": "Sea cucumber"
-  },
-  {
-    "q": "Which animal is known as 'Manta ray'?",
-    "options": [
-      "Manta ray",
-      "Dolphin",
-      "Blue whale"
-    ],
-    "answer": "Manta ray"
-  },
-  {
-    "q": "Which animal is known as 'Electric eel'?",
-    "options": [
-      "Sea snake",
-      "Electric eel",
-      "Sea turtle"
-    ],
-    "answer": "Electric eel"
-  },
-  {
-    "q": "Which animal is known as 'Narwhal'?",
-    "options": [
-      "Beluga whale",
-      "Lobster",
-      "Narwhal"
-    ],
-    "answer": "Narwhal"
-  },
-  {
-    "q": "Which animal is known as 'Pufferfish'?",
-    "options": [
-      "Squid",
-      "Pufferfish",
-      "Narwhal"
-    ],
-    "answer": "Pufferfish"
-  },
-  {
-    "q": "Which animal is known as 'Sea snake'?",
-    "options": [
-      "Jellyfish",
-      "Orca",
-      "Sea snake"
-    ],
-    "answer": "Sea snake"
-  },
-  {
-    "q": "Which animal is known as 'Orca'?",
-    "options": [
-      "Orca",
-      "Swordfish",
-      "Lobster"
-    ],
-    "answer": "Orca"
-  },
-  {
-    "q": "Which animal is known as 'Beluga whale'?",
-    "options": [
-      "Narwhal",
-      "Crab",
-      "Beluga whale"
-    ],
-    "answer": "Beluga whale"
-  },
-  {
-    "q": "Which animal is known as 'Albatross'?",
-    "options": [
-      "Starfish",
-      "Albatross",
-      "Coral"
-    ],
-    "answer": "Albatross"
-  },
-  {
-    "q": "Which animal is known as 'Blue whale'?",
-    "options": [
-      "Octopus",
-      "Blue whale",
-      "Penguin"
-    ],
-    "answer": "Blue whale"
-  },
-  {
-    "q": "Which animal is known as 'Great white shark'?",
-    "options": [
-      "Great white shark",
-      "Seal",
-      "Pufferfish"
-    ],
-    "answer": "Great white shark"
-  },
-  {
-    "q": "Which animal is known as 'Clownfish'?",
-    "options": [
-      "Manta ray",
-      "Clownfish",
-      "Swordfish"
-    ],
-    "answer": "Clownfish"
-  },
-  {
-    "q": "Which animal is known as 'Sea turtle'?",
-    "options": [
-      "Sea otter",
-      "Narwhal",
-      "Sea turtle"
-    ],
-    "answer": "Sea turtle"
-  },
-  {
-    "q": "Which animal is known as 'Dolphin'?",
-    "options": [
-      "Dolphin",
-      "Starfish",
-      "Clownfish"
-    ],
-    "answer": "Dolphin"
-  },
-  {
-    "q": "Which animal is known as 'Octopus'?",
-    "options": [
-      "Electric eel",
-      "Clownfish",
-      "Octopus"
-    ],
-    "answer": "Octopus"
-  },
-  {
-    "q": "Which animal is known as 'Jellyfish'?",
-    "options": [
-      "Jellyfish",
-      "Electric eel",
-      "Coral"
-    ],
-    "answer": "Jellyfish"
-  },
-  {
-    "q": "Which animal is known as 'Starfish'?",
-    "options": [
-      "Starfish",
-      "Swordfish",
-      "Narwhal"
-    ],
-    "answer": "Starfish"
-  },
-  {
-    "q": "Which animal is known as 'Seahorse'?",
-    "options": [
-      "Clownfish",
-      "Seahorse",
-      "Beluga whale"
-    ],
-    "answer": "Seahorse"
-  },
-  {
-    "q": "Which animal is known as 'Penguin'?",
-    "options": [
-      "Walrus",
-      "Penguin",
-      "Coral"
-    ],
-    "answer": "Penguin"
-  },
-  {
-    "q": "Which animal is known as 'Walrus'?",
-    "options": [
-      "Walrus",
-      "Whale shark",
-      "Dolphin"
-    ],
-    "answer": "Walrus"
-  },
-  {
-    "q": "Which animal is known as 'Polar bear'?",
-    "options": [
-      "Dolphin",
-      "Polar bear",
-      "Sea snake"
-    ],
-    "answer": "Polar bear"
-  },
-  {
-    "q": "Which animal is known as 'Sea otter'?",
-    "options": [
-      "Pufferfish",
-      "Sea otter",
-      "Sea turtle"
-    ],
-    "answer": "Sea otter"
-  },
-  {
-    "q": "Which animal is known as 'Crab'?",
-    "options": [
-      "Coral",
-      "Pufferfish",
-      "Crab"
-    ],
-    "answer": "Crab"
-  },
-  {
-    "q": "Which animal is known as 'Lobster'?",
-    "options": [
-      "Lobster",
-      "Electric eel",
-      "Starfish"
-    ],
-    "answer": "Lobster"
-  },
-  {
-    "q": "Which animal is known as 'Squid'?",
-    "options": [
-      "Starfish",
-      "Clownfish",
-      "Squid"
-    ],
-    "answer": "Squid"
-  },
-  {
-    "q": "Which animal is known as 'Whale shark'?",
-    "options": [
-      "Sea turtle",
-      "Lobster",
-      "Whale shark"
-    ],
-    "answer": "Whale shark"
-  },
-  {
-    "q": "Which animal is known as 'Manatee'?",
-    "options": [
-      "Squid",
-      "Clownfish",
-      "Manatee"
-    ],
-    "answer": "Manatee"
-  },
-  {
-    "q": "Which animal is known as 'Seal'?",
-    "options": [
-      "Octopus",
-      "Seal",
-      "Seahorse"
-    ],
-    "answer": "Seal"
-  },
-  {
-    "q": "Which animal is known as 'Swordfish'?",
-    "options": [
-      "Octopus",
-      "Orca",
-      "Swordfish"
-    ],
-    "answer": "Swordfish"
-  },
-  {
-    "q": "Which animal is known as 'Coral'?",
-    "options": [
-      "Coral",
-      "Jellyfish",
-      "Seahorse"
-    ],
-    "answer": "Coral"
-  },
-  {
-    "q": "Which animal is known as 'Sea cucumber'?",
-    "options": [
-      "Sea cucumber",
-      "Beluga whale",
-      "Penguin"
-    ],
-    "answer": "Sea cucumber"
-  },
-  {
-    "q": "Which animal is known as 'Manta ray'?",
-    "options": [
-      "Beluga whale",
-      "Manta ray",
-      "Penguin"
-    ],
-    "answer": "Manta ray"
-  },
-  {
-    "q": "Which animal is known as 'Electric eel'?",
-    "options": [
-      "Albatross",
-      "Electric eel",
-      "Sea turtle"
-    ],
-    "answer": "Electric eel"
-  },
-  {
-    "q": "Which animal is known as 'Narwhal'?",
-    "options": [
-      "Sea cucumber",
-      "Orca",
-      "Narwhal"
-    ],
-    "answer": "Narwhal"
-  },
-  {
-    "q": "Which animal is known as 'Pufferfish'?",
-    "options": [
-      "Pufferfish",
-      "Albatross",
-      "Jellyfish"
-    ],
-    "answer": "Pufferfish"
-  },
-  {
-    "q": "Which animal is known as 'Sea snake'?",
-    "options": [
-      "Sea snake",
-      "Crab",
-      "Manatee"
-    ],
-    "answer": "Sea snake"
-  },
-  {
-    "q": "Which animal is known as 'Orca'?",
-    "options": [
-      "Sea cucumber",
-      "Orca",
-      "Swordfish"
-    ],
-    "answer": "Orca"
-  },
-  {
-    "q": "Which animal is known as 'Beluga whale'?",
-    "options": [
-      "Blue whale",
-      "Walrus",
-      "Beluga whale"
-    ],
-    "answer": "Beluga whale"
-  },
-  {
-    "q": "Which animal is known as 'Albatross'?",
-    "options": [
-      "Dolphin",
-      "Lobster",
-      "Albatross"
-    ],
-    "answer": "Albatross"
-  },
-  {
-    "q": "Which animal is known as 'Blue whale'?",
-    "options": [
-      "Blue whale",
-      "Whale shark",
-      "Penguin"
-    ],
-    "answer": "Blue whale"
-  },
-  {
-    "q": "Which animal is known as 'Great white shark'?",
-    "options": [
-      "Blue whale",
-      "Great white shark",
-      "Orca"
-    ],
-    "answer": "Great white shark"
-  },
-  {
-    "q": "Which animal is known as 'Clownfish'?",
-    "options": [
-      "Manatee",
-      "Dolphin",
-      "Clownfish"
-    ],
-    "answer": "Clownfish"
-  },
-  {
-    "q": "Which animal is known as 'Sea turtle'?",
-    "options": [
-      "Clownfish",
-      "Sea turtle",
-      "Sea otter"
-    ],
-    "answer": "Sea turtle"
-  },
-  {
-    "q": "Which animal is known as 'Dolphin'?",
-    "options": [
-      "Dolphin",
-      "Sea otter",
-      "Polar bear"
-    ],
-    "answer": "Dolphin"
-  },
-  {
-    "q": "Which animal is known as 'Octopus'?",
-    "options": [
-      "Octopus",
-      "Pufferfish",
-      "Beluga whale"
-    ],
-    "answer": "Octopus"
-  },
-  {
-    "q": "Which animal is known as 'Jellyfish'?",
-    "options": [
-      "Jellyfish",
-      "Lobster",
-      "Sea cucumber"
-    ],
-    "answer": "Jellyfish"
-  },
-  {
-    "q": "Which animal is known as 'Starfish'?",
-    "options": [
-      "Pufferfish",
-      "Starfish",
-      "Great white shark"
-    ],
-    "answer": "Starfish"
-  },
-  {
-    "q": "Which animal is known as 'Seahorse'?",
-    "options": [
-      "Starfish",
-      "Great white shark",
-      "Seahorse"
-    ],
-    "answer": "Seahorse"
-  },
-  {
-    "q": "Which animal is known as 'Penguin'?",
-    "options": [
-      "Penguin",
-      "Coral",
-      "Albatross"
-    ],
-    "answer": "Penguin"
-  },
-  {
-    "q": "Which animal is known as 'Walrus'?",
-    "options": [
-      "Walrus",
-      "Polar bear",
-      "Crab"
-    ],
-    "answer": "Walrus"
-  },
-  {
-    "q": "Which animal is known as 'Polar bear'?",
-    "options": [
-      "Crab",
-      "Polar bear",
-      "Great white shark"
-    ],
-    "answer": "Polar bear"
-  },
-  {
-    "q": "Which animal is known as 'Sea otter'?",
-    "options": [
-      "Walrus",
-      "Sea otter",
-      "Lobster"
-    ],
-    "answer": "Sea otter"
-  },
-  {
-    "q": "Which animal is known as 'Crab'?",
-    "options": [
-      "Crab",
-      "Blue whale",
-      "Jellyfish"
-    ],
-    "answer": "Crab"
-  },
-  {
-    "q": "Which animal is known as 'Lobster'?",
-    "options": [
-      "Lobster",
-      "Clownfish",
-      "Coral"
-    ],
-    "answer": "Lobster"
-  },
-  {
-    "q": "Which animal is known as 'Squid'?",
-    "options": [
-      "Squid",
-      "Sea cucumber",
-      "Manatee"
-    ],
-    "answer": "Squid"
-  },
-  {
-    "q": "Which animal is known as 'Whale shark'?",
-    "options": [
-      "Sea cucumber",
-      "Seahorse",
-      "Whale shark"
-    ],
-    "answer": "Whale shark"
-  },
-  {
-    "q": "Which animal is known as 'Manatee'?",
-    "options": [
-      "Manatee",
-      "Beluga whale",
-      "Polar bear"
-    ],
-    "answer": "Manatee"
-  },
-  {
-    "q": "Which animal is known as 'Seal'?",
-    "options": [
-      "Seal",
-      "Dolphin",
-      "Coral"
-    ],
-    "answer": "Seal"
-  },
-  {
-    "q": "Which animal is known as 'Swordfish'?",
-    "options": [
-      "Swordfish",
-      "Manta ray",
-      "Albatross"
-    ],
-    "answer": "Swordfish"
+    "answer": "Exoskeleton"
   }
 ]
