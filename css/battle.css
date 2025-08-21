@@ -339,7 +339,7 @@ img.fish-sprite {
 }
 
 .end-button {
-  width: 100%;
+  width: 260%;
   display: block;
   background: linear-gradient(180deg, #00a6ff, #006aff);
   border: none;
