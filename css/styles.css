@@ -183,6 +183,9 @@ body.mission #creature-container {
 
 /* Mission spawn bubble */
 .mission-bubble {
+  width: 120px;
+  height: 120px;
+=======
   width: 130px;
   height: 130px;
   border-radius: 50%;
@@ -191,6 +194,27 @@ body.mission #creature-container {
   align-items: center;
   animation: float 3s ease-in-out infinite;
   position: absolute;
+  cursor: pointer;
+}
+
+.mission-bubble.spawn {
+  animation: pop-in 0.3s ease-out forwards,
+    float 3s ease-in-out infinite 0.3s;
+}
+
+.mission-bubble img {
+  width: 120px;
+  height: 120px;
+}
+
+@keyframes pop-in {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+=======
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);

@@ -40,8 +40,14 @@
       if (!mission) return;
 
       const bubble = document.createElement("div");
-      bubble.className = "apple-glass mission-bubble";
+      bubble.className = "apple-glass mission-bubble spawn";
 
+      const size = 120;
+      const maxLeft = app.clientWidth - size;
+      const maxTop = app.clientHeight - size;
+      bubble.style.left = `${Math.random() * maxLeft}px`;
+      bubble.style.top = `${Math.random() * maxTop}px`;
+      bubble.className = "apple-glass mission-bubble";
       const img = document.createElement("img");
       const sprite = mission.enemy ? mission.enemy.sprite : mission.sprite;
       img.src = sprite;
