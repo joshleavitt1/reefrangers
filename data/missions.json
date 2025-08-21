@@ -3,7 +3,7 @@
     {
       "name": "Octomurk",
       "reward": 5,
-      "rating": "easy",
+      "spawn": "1,2,3,4,5,6",
       "enemy": {
         "name": "Octomurk",
         "hp": 50,
@@ -14,7 +14,7 @@
     {
       "name": "Clawspike",
       "reward": 10,
-      "rating": "medium",
+      "spawn": "7,8,9,10",
       "enemy": {
         "name": "Clawspike",
         "hp": 50,
@@ -25,13 +25,13 @@
     {
       "name": "Treasure",
       "reward": 10,
-      "rating": "medium",
+      "spawn": "11,12,13,14",
       "sprite": "../images/treasure.png"
       },
     {
       "name": "Sharksmash",
       "reward": 25,
-      "rating": "hard",
+      "spawn": "15,16",
       "enemy": {
         "name": "Sharksmash",
         "hp": 100,
