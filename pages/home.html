@@ -56,7 +56,7 @@
           updateCurrentUser({ signInStreak, lastSignIn });
         }
         document.getElementById("streak").textContent =
-          `🔱 ${signInStreak} Day Streak`;
+          `🏄 ${signInStreak} Day Streak`;
         document.getElementById("seashells").textContent =
           `🐚 ${user.seashells} Seashells`;
         if (user.creatures && user.creatures.length > 0) {
@@ -64,7 +64,7 @@
           const nameEl = document.getElementById("creature-name");
           if (nameEl) nameEl.textContent = c.name;
           const hpEl = document.getElementById("creature-hp");
-          if (hpEl) hpEl.style.width = "50%";
+          if (hpEl) hpEl.style.width = "100%";
           const statsEl = document.getElementById("creature-stats");
           if (statsEl)
             statsEl.textContent = `HP: ${c.hp}/${c.hp} | ATK: ${c.attack}`;
