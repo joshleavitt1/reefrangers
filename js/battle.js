@@ -186,11 +186,11 @@ function endBattle(winner) {
 
     // Dynamic button
     const button = document.createElement("button");
-    button.className = "button end-button"; // base button style with auto width
+    button.className = "end-button";
     const reward = currentMission?.reward || 0;
     button.textContent = winnerIsPlayer
       ? `Claim 🐚 ${reward} Seashell${reward === 1 ? "" : "s"}`
-      : "Try Again";
+      : "Back to Missions";
     button.addEventListener("click", () => {
       if (winnerIsPlayer) {
         if (currentMission && user) {
@@ -213,11 +213,11 @@ function endBattle(winner) {
         }
         sessionStorage.removeItem("currentMission");
         sessionStorage.removeItem("currentMissionIndex");
-        window.location.href = "home.html";
+        window.location.href = "mission.html";
       } else {
         sessionStorage.removeItem("currentMission");
-        // Restart the battle cleanly (rebuilds battlefield we removed)
-        window.location.reload();
+        sessionStorage.removeItem("currentMissionIndex");
+        window.location.href = "mission.html";
       }
     });
 
