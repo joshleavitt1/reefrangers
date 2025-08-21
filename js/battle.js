@@ -53,10 +53,10 @@ window.addEventListener("pageshow", () => {
   if (endScreen) endScreen.remove();
 });
 
-function persistPlayerHp() {
+function persistPlayerHp(extra = {}) {
   if (user && user.creatures && user.creatures[0]) {
     user.creatures[0].currentHp = player.hp;
-    updateCurrentUser({ creatures: user.creatures });
+    updateCurrentUser({ creatures: user.creatures, ...extra });
   }
 }
 
@@ -268,11 +268,7 @@ function enemyTurn() {
   animateAttack(enemy);
   setTimeout(() => {
     player.hp = Math.max(0, player.hp - enemy.move.power);
-    persistPlayerHp();
-    if (user && user.creatures && user.creatures[0]) {
-      user.creatures[0].currentHp = player.hp;
-      updateCurrentUser({ creatures: user.creatures });
-    }
+    persistPlayerHp(player.hp <= 0 ? { seashells: 0 } : undefined);
     animateHP("player", () => {
       if (player.hp <= 0) {
         endBattle(enemy);
