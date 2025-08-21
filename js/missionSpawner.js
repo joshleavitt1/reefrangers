@@ -1,5 +1,7 @@
 // missionSpawner.js
 // Random mission spawning with persistence across reloads.
+// Spawns a random mission first after 5s, then every 30s.
+// Spawns a random mission every 30 seconds.
 
 (async function () {
   document.addEventListener("DOMContentLoaded", async () => {
@@ -51,6 +53,27 @@
       bubble.style.top = `${top}px`;
       bubble.dataset.id = String(id);
 
+    function spawnMission() {
+      const app = document.getElementById("app");
+      if (!app) return;
+
+      const bubbles = app.querySelectorAll(".mission-bubble");
+      if (bubbles.length >= 3) bubbles[0].remove();
+      const existing = document.querySelector(".mission-bubble");
+      if (existing) existing.remove();
+
+      const mission = pickMission();
+      if (!mission) return;
+
+      const bubble = document.createElement("div");
+      bubble.className = "apple-glass mission-bubble spawn";
+
+      const size = 120;
+      const maxLeft = app.clientWidth - size;
+      const maxTop = app.clientHeight - size;
+      bubble.style.left = `${Math.random() * maxLeft}px`;
+      bubble.style.top = `${Math.random() * maxTop}px`;
+      bubble.className = "apple-glass mission-bubble";
       const img = document.createElement("img");
       const sprite = mission.enemy ? mission.enemy.sprite : mission.sprite;
       img.src = sprite;
@@ -62,6 +85,8 @@
         sessionStorage.setItem("currentMissionIndex", String(idx));
         activeMissions = activeMissions.filter((m) => m.id !== id);
         saveActive();
+        const idx = missions.indexOf(mission);
+        sessionStorage.setItem("currentMissionIndex", String(idx));
         window.location.href = "battle.html";
       });
 
@@ -116,3 +141,11 @@
   });
 })();
 
+    setTimeout(() => {
+      spawnMission();
+      setInterval(spawnMission, 30000);
+    }, 5000);
+    spawnMission();
+    setInterval(spawnMission, 30000);
+  });
+})();

@@ -134,6 +134,10 @@ function animateAttack(attacker) {
 // Phase B: show ONLY winner, centered with "Winner" banner; swap sprite if player wins
 function endBattle(winner) {
   persistPlayerHp();
+  if (user && user.creatures && user.creatures[0]) {
+    user.creatures[0].currentHp = player.hp;
+    updateCurrentUser({ creatures: user.creatures });
+  }
   if (typeof isGameOver !== "undefined" && isGameOver) return;
   if (typeof isGameOver === "undefined") window.isGameOver = true;
   else isGameOver = true;
@@ -265,6 +269,10 @@ function enemyTurn() {
   setTimeout(() => {
     player.hp = Math.max(0, player.hp - enemy.move.power);
     persistPlayerHp();
+    if (user && user.creatures && user.creatures[0]) {
+      user.creatures[0].currentHp = player.hp;
+      updateCurrentUser({ creatures: user.creatures });
+    }
     animateHP("player", () => {
       if (player.hp <= 0) {
         endBattle(enemy);
@@ -391,6 +399,12 @@ async function initGame() {
   const playerSpriteEl = document.querySelector("#player .fish-sprite");
   if (playerSpriteEl && playerCreature.sprite && playerCreature.sprite.battle) {
     playerSpriteEl.src = playerCreature.sprite.battle;
+  }
+
+  // Auto-win if mission has no enemy (e.g., Treasure)
+  if (!currentMission || !currentMission.enemy) {
+    setTimeout(() => endBattle(player), 1000);
+    return;
   }
 
   // Initial HP state
