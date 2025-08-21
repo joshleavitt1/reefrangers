@@ -27,10 +27,13 @@ const playerCreature =
     : defaultCreature;
 const PLAYER_VICTORY_SRC =
   playerCreature.sprite?.normal || "../images/shellfin.png";
+const maxHp = playerCreature.hp;
+const currentHp =
+  typeof playerCreature.currentHp === "number" ? playerCreature.currentHp : maxHp;
 const player = {
   name: playerCreature.name,
-  hp: playerCreature.hp,
-  maxHp: playerCreature.hp,
+  hp: currentHp,
+  maxHp: maxHp,
   move: { name: "Attack", power: playerCreature.attack },
 };
 const enemy = {
@@ -123,6 +126,10 @@ function animateAttack(attacker) {
 // Phase A: linger both creatures visible for LINGER_BOTH_MS (no layout changes)
 // Phase B: show ONLY winner, centered with "Winner" banner; swap sprite if player wins
 function endBattle(winner) {
+  if (user && user.creatures && user.creatures[0]) {
+    user.creatures[0].currentHp = player.hp;
+    updateCurrentUser({ creatures: user.creatures });
+  }
   if (typeof isGameOver !== "undefined" && isGameOver) return;
   if (typeof isGameOver === "undefined") window.isGameOver = true;
   else isGameOver = true;
@@ -253,6 +260,10 @@ function enemyTurn() {
   animateAttack(enemy);
   setTimeout(() => {
     player.hp = Math.max(0, player.hp - enemy.move.power);
+    if (user && user.creatures && user.creatures[0]) {
+      user.creatures[0].currentHp = player.hp;
+      updateCurrentUser({ creatures: user.creatures });
+    }
     animateHP("player", () => {
       if (player.hp <= 0) {
         endBattle(enemy);
