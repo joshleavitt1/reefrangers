@@ -44,6 +44,12 @@ let questions = [];
 let currentMission = null;
 let isGameOver = false;
 
+window.addEventListener("pageshow", () => {
+  isGameOver = false;
+  const endScreen = document.querySelector(".end-screen");
+  if (endScreen) endScreen.remove();
+});
+
 // ====== Helpers ======
 function updateHP() {
   const pPct = (player.hp / player.maxHp) * 100;
