@@ -77,11 +77,20 @@
           bubble.remove();
           return;
         }
+
+        // Persist the mission so battle.html knows what was selected
         sessionStorage.setItem("currentMission", JSON.stringify(mission));
         sessionStorage.setItem("currentMissionIndex", String(index));
+
+        // Remove from active list and persist
         activeMissions = activeMissions.filter((m) => m.id !== id);
         saveActive();
-        window.location.href = "battle.html";
+
+        // Non-combat missions (e.g., Potion or Treasure) should skip directly to
+        // the battle end screen. We signal this via a query param so battle.js
+        // can immediately show the result without attempting a fight.
+        const target = mission.enemy ? "battle.html" : "battle.html?end=1";
+        window.location.href = target;
       });
 
       app.appendChild(bubble);
