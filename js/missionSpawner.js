@@ -86,11 +86,21 @@
         activeMissions = activeMissions.filter((m) => m.id !== id);
         saveActive();
 
+        // Non-combat missions (e.g., Potion or Treasure) skip combat and go
+        // straight to the battle end screen. Flag this in sessionStorage so
+        // battle.js can immediately render the result.
+        if (mission.enemy) {
+          window.location.href = "battle.html";
+        } else {
+          sessionStorage.setItem("forceBattleEnd", "1");
+          window.location.href = "battle.html";
+        }
         // Non-combat missions (e.g., Potion or Treasure) should skip directly to
         // the battle end screen. We signal this via a query param so battle.js
         // can immediately show the result without attempting a fight.
         const target = mission.enemy ? "battle.html" : "battle.html?end=1";
         window.location.href = target;
+main
       });
 
       app.appendChild(bubble);
