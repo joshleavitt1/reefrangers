@@ -363,6 +363,12 @@ function fetchQuestion() {
 
 // ====== Delayed Init Flow ======
 async function initGame() {
+  const params = new URLSearchParams(window.location.search);
+  const forceEndParam = params.has("end");
+  const forceEndSession = sessionStorage.getItem("forceBattleEnd") === "1";
+  if (forceEndSession) sessionStorage.removeItem("forceBattleEnd");
+  const forceEnd = forceEndParam || forceEndSession;
+
   // Load mission data first so we can skip combat missions early
   try {
     const stored = sessionStorage.getItem("currentMission");
@@ -391,8 +397,9 @@ async function initGame() {
     console.error("Failed to load missions:", err);
   }
 
-  // If mission has no enemy (e.g., Treasure or Potion), handle immediately
-  if (!currentMission || !currentMission.enemy) {
+  // If mission has no enemy (e.g., Potion or Treasure) or we explicitly
+  // request to skip combat, immediately show the end screen.
+  if (forceEnd || !currentMission || !currentMission.enemy) {
     endBattle(player);
     return;
   }
