@@ -34,10 +34,10 @@
 
     function pickMission() {
       const weights = {
-        "Very Often": 0.7,
-        Often: 0.15,
-        Sometimes: 0.1,
-        Rare: 0.05,
+        "Very Often": 0.8,
+        Often: 0.1,
+        Sometimes: 0.08,
+        Rare: 0.02,
       };
       const total = missions.reduce(
         (sum, m) => sum + (weights[m.spawn] || 0),
@@ -111,8 +111,19 @@
       const size = 120;
       const maxLeft = app.clientWidth - size;
       const maxTop = app.clientHeight - size;
-      const left = Math.random() * maxLeft;
-      const top = Math.random() * maxTop;
+      let left, top;
+      let attempts = 0;
+      do {
+        left = Math.random() * maxLeft;
+        top = Math.random() * maxTop;
+        attempts++;
+      } while (
+        activeMissions.some(
+          (m) =>
+            Math.abs(m.left - left) < size && Math.abs(m.top - top) < size,
+        ) &&
+        attempts < 20
+      );
       const id = Date.now() + Math.random();
 
       createBubble(mission, index, left, top, id, true);
