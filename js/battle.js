@@ -142,6 +142,7 @@ function endBattle(winner) {
 
   const LINGER = typeof LINGER_BOTH_MS !== "undefined" ? LINGER_BOTH_MS : 1200;
   const isTreasure = currentMission && currentMission.name === "Treasure";
+  const isPotion = currentMission && currentMission.name === "Potion";
 
   // Close any open modal
   const modal = document.getElementById("modal");
@@ -172,9 +173,11 @@ function endBattle(winner) {
     banner.className = "end-banner";
     banner.textContent = isTreasure
       ? "Treasure"
-      : winnerIsPlayer
-        ? "Victory!"
-        : "Defeat";
+      : isPotion
+        ? "Potion"
+        : winnerIsPlayer
+          ? "Victory!"
+          : "Defeat";
 
     // Sprite wrapper
     const spriteWrapper = document.createElement("div");
@@ -186,14 +189,18 @@ function endBattle(winner) {
     sprite.className = "end-sprite";
     sprite.alt = isTreasure
       ? "Treasure"
-      : winnerIsPlayer
-        ? player.name
-        : enemy.name;
+      : isPotion
+        ? "Potion"
+        : winnerIsPlayer
+          ? player.name
+          : enemy.name;
     sprite.src = isTreasure
       ? currentMission?.sprite || "../images/treasure.png"
-      : winnerIsPlayer
-        ? PLAYER_VICTORY_SRC
-        : originalSprite?.getAttribute("src") || "";
+      : isPotion
+        ? currentMission?.sprite || "../images/potion.png"
+        : winnerIsPlayer
+          ? PLAYER_VICTORY_SRC
+          : originalSprite?.getAttribute("src") || "";
 
     spriteWrapper.appendChild(sprite);
 
@@ -202,11 +209,13 @@ function endBattle(winner) {
     button.className = "end-button";
     const reward = currentMission?.reward || 0;
     button.textContent = winnerIsPlayer
-      ? `Claim 🐚 ${reward} Seashell${reward === 1 ? "" : "s"}`
-      : "Back to Missions";
+      ? isPotion
+        ? "Back to Missions"
+        : `Claim 🐚 ${reward} Seashell${reward === 1 ? "" : "s"}`
+      : `${enemy.name} stole your seashells`;
     button.addEventListener("click", () => {
       if (winnerIsPlayer) {
-        if (currentMission && user) {
+        if (!isPotion && currentMission && user) {
           const newSeashells =
             (user.seashells || 0) + (currentMission.reward || 0);
           const idxStr = sessionStorage.getItem("currentMissionIndex");
@@ -230,7 +239,7 @@ function endBattle(winner) {
       } else {
         sessionStorage.removeItem("currentMission");
         sessionStorage.removeItem("currentMissionIndex");
-        window.location.href = "mission.html";
+        window.location.href = "home.html";
       }
     });
 
@@ -383,8 +392,14 @@ async function initGame() {
     console.error("Failed to load missions:", err);
   }
 
-  // If mission has no enemy (e.g., Treasure), show reward immediately
+  // If mission has no enemy (e.g., Treasure or Potion), handle immediately
   if (!currentMission || !currentMission.enemy) {
+    if (currentMission && currentMission.name === "Potion") {
+      if (user && user.creatures && user.creatures[0]) {
+        user.creatures[0].currentHp = user.creatures[0].hp;
+        updateCurrentUser({ creatures: user.creatures });
+      }
+    }
     endBattle(player);
     return;
   }
@@ -403,11 +418,7 @@ async function initGame() {
     playerSpriteEl.src = playerCreature.sprite.battle;
   }
 
-  // Auto-win if mission has no enemy (e.g., Treasure)
-  if (!currentMission || !currentMission.enemy) {
-    setTimeout(() => endBattle(player), 1000);
-    return;
-  }
+  // Auto-win handled earlier for treasure/potion missions
 
   // Initial HP state
   updateHP();

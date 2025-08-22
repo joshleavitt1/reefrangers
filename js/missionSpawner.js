@@ -1,6 +1,6 @@
 // missionSpawner.js
 // Random mission spawning with persistence across reloads.
-// Spawns a random mission first after 5s, then every 30s.
+// Spawns a random mission immediately and every 2s.
 
 (async function () {
   document.addEventListener("DOMContentLoaded", async () => {
@@ -33,13 +33,22 @@
     }
 
     function pickMission() {
-      const roll = Math.floor(Math.random() * 16) + 1; // 1-16
-      return missions.find((m) =>
-        String(m.spawn)
-          .split(",")
-          .map((n) => parseInt(n.trim(), 10))
-          .includes(roll),
+      const weights = {
+        "Very Often": 0.7,
+        Often: 0.15,
+        Sometimes: 0.1,
+        Rare: 0.05,
+      };
+      const total = missions.reduce(
+        (sum, m) => sum + (weights[m.spawn] || 0),
+        0,
       );
+      let r = Math.random() * total;
+      for (const m of missions) {
+        r -= weights[m.spawn] || 0;
+        if (r <= 0) return m;
+      }
+      return missions[missions.length - 1];
     }
 
     function createBubble(mission, index, left, top, id, animate) {
@@ -50,15 +59,24 @@
       bubble.className = `apple-glass mission-bubble${animate ? " spawn" : ""}`;
       bubble.style.left = `${left}px`;
       bubble.style.top = `${top}px`;
+      bubble.style.width = bubble.style.height = "120px";
       bubble.dataset.id = String(id);
 
-      const img = document.createElement("img");
       const sprite = mission.enemy ? mission.enemy.sprite : mission.sprite;
-      img.src = sprite;
-      img.alt = mission.name;
-      bubble.appendChild(img);
+      if (sprite) {
+        const img = document.createElement("img");
+        img.src = sprite;
+        img.alt = mission.name;
+        bubble.appendChild(img);
+      }
 
       bubble.addEventListener("click", () => {
+        if (mission.name === "Empty") {
+          activeMissions = activeMissions.filter((m) => m.id !== id);
+          saveActive();
+          bubble.remove();
+          return;
+        }
         sessionStorage.setItem("currentMission", JSON.stringify(mission));
         sessionStorage.setItem("currentMissionIndex", String(index));
         activeMissions = activeMissions.filter((m) => m.id !== id);
@@ -100,20 +118,12 @@
       createBubble(mission, index, left, top, id, true);
       activeMissions.push({ id, index, left, top });
       saveActive();
-      sessionStorage.setItem("lastSpawnTime", String(Date.now()));
     }
 
     restoreMissions();
 
-    const lastSpawn = parseInt(sessionStorage.getItem("lastSpawnTime"), 10);
-    const delay = isNaN(lastSpawn)
-      ? 5000
-      : Math.max(0, 30000 - (Date.now() - lastSpawn));
-
-    setTimeout(() => {
-      spawnMission();
-      setInterval(spawnMission, 30000);
-    }, delay);
+    spawnMission();
+    setInterval(spawnMission, 2000);
   });
 })();
 
