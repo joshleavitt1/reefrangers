@@ -3,6 +3,10 @@
   --max-width: 425px;
 }
 
+body.mission {
+  --max-width: 600px;
+}
+
 body {
   margin: 0;
   font-family: "Arial Rounded MT Bold", Arial, sans-serif;
