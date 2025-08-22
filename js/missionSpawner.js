@@ -34,10 +34,10 @@
 
     function pickMission() {
       const weights = {
-        "Very Often": 0.05,
-        Often: 0.85,
-        Sometimes: 0.04,
-        Rare: 0.02,
+        "Very Often": 0.90,
+        Often: 0.06,
+        Sometimes: 0.03,
+        Rare: 0.01,
       };
       const total = missions.reduce(
         (sum, m) => sum + (weights[m.spawn] || 0),
@@ -98,7 +98,7 @@
       const app = document.getElementById("app");
       if (!app) return;
 
-      if (activeMissions.length >= 3) {
+      if (activeMissions.length >= 6) {
         const first = app.querySelector(".mission-bubble");
         if (first) first.remove();
         activeMissions.shift();
