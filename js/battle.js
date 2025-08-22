@@ -134,6 +134,8 @@ function animateAttack(attacker) {
 // Phase B: show ONLY winner, centered with "Winner" banner; swap sprite if player wins
 function endBattle(winner) {
   if (document.querySelector(".end-screen")) return;
+  const intro = document.getElementById("intro");
+  if (intro) intro.remove();
   const isTreasure = currentMission && currentMission.name === "Treasure";
   const isPotion = currentMission && currentMission.name === "Potion";
   if (player.hp > 0 && !isPotion) {
@@ -361,16 +363,7 @@ function fetchQuestion() {
 
 // ====== Delayed Init Flow ======
 async function initGame() {
-  // Load questions
-  try {
-    const res = await fetch("../data/questions.json");
-    const data = await res.json();
-    if (Array.isArray(data)) questions = data;
-  } catch (err) {
-    console.error("Failed to load questions:", err);
-  }
-
-  // Load mission data
+  // Load mission data first so we can skip combat missions early
   try {
     const stored = sessionStorage.getItem("currentMission");
     if (stored) {
@@ -402,6 +395,15 @@ async function initGame() {
   if (!currentMission || !currentMission.enemy) {
     endBattle(player);
     return;
+  }
+
+  // Load questions only for combat missions
+  try {
+    const res = await fetch("../data/questions.json");
+    const data = await res.json();
+    if (Array.isArray(data)) questions = data;
+  } catch (err) {
+    console.error("Failed to load questions:", err);
   }
 
   const playerNameEl = document.getElementById("player-name");
