@@ -1,9 +1,13 @@
 {
   "missions": [
     {
+      "name": "Empty",
+      "spawn": "Often"
+    },
+    {
       "name": "Octomurk",
       "reward": 5,
-      "spawn": "1,2,3,4,5,6",
+      "spawn": "Sometimes",
       "enemy": {
         "name": "Octomurk",
         "hp": 50,
@@ -14,7 +18,7 @@
     {
       "name": "Clawspike",
       "reward": 10,
-      "spawn": "7,8,9,10",
+      "spawn": "Sometimes",
       "enemy": {
         "name": "Clawspike",
         "hp": 50,
@@ -23,21 +27,26 @@
       }
     },
     {
-      "name": "Treasure",
-      "reward": 10,
-      "spawn": "11,12,13,14",
-      "sprite": "../images/treasure.png"
-      },
-    {
       "name": "Sharksmash",
       "reward": 25,
-      "spawn": "15,16",
+      "spawn": "Rare",
       "enemy": {
         "name": "Sharksmash",
         "hp": 100,
         "attack": 50,
         "sprite": "../images/sharksmash.png"
       }
+    },
+    {
+      "name": "Treasure",
+      "reward": 10,
+      "spawn": "Rare",
+      "sprite": "../images/treasure.png"
+    },
+    {
+      "name": "Potion",
+      "spawn": "Rare",
+      "sprite": "../images/potion.png"
     }
   ]
 }
