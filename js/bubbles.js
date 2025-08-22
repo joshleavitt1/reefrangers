@@ -1,4 +1,8 @@
+const MAX_BUBBLES = 6;
+
 function createBubble() {
+  if (document.querySelectorAll(".bubble").length >= MAX_BUBBLES) return;
+
   const bubble = document.createElement("div");
   bubble.className = "bubble";
   const size = Math.random() * 15 + 10;
@@ -13,8 +17,10 @@ function createBubble() {
   bubble.addEventListener("animationend", () => bubble.remove());
 }
 
-// ✅ This makes one bubble appear immediately
-createBubble();
+// Spawn initial bubbles
+for (let i = 0; i < MAX_BUBBLES; i++) {
+  createBubble();
+}
 
-// Then keep making more every 2 seconds (change 2000 if you want faster/slower)
+// Keep making more if fewer than MAX_BUBBLES remain
 setInterval(createBubble, 2000);
