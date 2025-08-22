@@ -134,6 +134,8 @@ function animateAttack(attacker) {
 // Phase B: show ONLY winner, centered with "Winner" banner; swap sprite if player wins
 function endBattle(winner) {
   if (document.querySelector(".end-screen")) return;
+  const intro = document.getElementById("intro");
+  if (intro) intro.remove();
   const isTreasure = currentMission && currentMission.name === "Treasure";
   const isPotion = currentMission && currentMission.name === "Potion";
   if (player.hp > 0 && !isPotion) {
