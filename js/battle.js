@@ -133,7 +133,10 @@ function animateAttack(attacker) {
 // Phase A: linger both creatures visible for LINGER_BOTH_MS (no layout changes)
 // Phase B: show ONLY winner, centered with "Winner" banner; swap sprite if player wins
 function endBattle(winner) {
-  if (player.hp > 0) {
+  if (document.querySelector(".end-screen")) return;
+  const isTreasure = currentMission && currentMission.name === "Treasure";
+  const isPotion = currentMission && currentMission.name === "Potion";
+  if (player.hp > 0 && !isPotion) {
     persistPlayerHp();
   }
   if (typeof isGameOver !== "undefined" && isGameOver) return;
@@ -141,8 +144,6 @@ function endBattle(winner) {
   else isGameOver = true;
 
   const LINGER = typeof LINGER_BOTH_MS !== "undefined" ? LINGER_BOTH_MS : 1200;
-  const isTreasure = currentMission && currentMission.name === "Treasure";
-  const isPotion = currentMission && currentMission.name === "Potion";
 
   // Close any open modal
   const modal = document.getElementById("modal");
@@ -174,7 +175,7 @@ function endBattle(winner) {
     banner.textContent = isTreasure
       ? "Treasure"
       : isPotion
-        ? "Potion"
+        ? "Drink Potion"
         : winnerIsPlayer
           ? "Victory!"
           : "Defeat";
@@ -210,12 +211,17 @@ function endBattle(winner) {
     const reward = currentMission?.reward || 0;
     button.textContent = winnerIsPlayer
       ? isPotion
-        ? "Back to Missions"
+        ? "Heal All HP"
         : `Claim 🐚 ${reward} Seashell${reward === 1 ? "" : "s"}`
       : `${enemy.name} stole your seashells`;
     button.addEventListener("click", () => {
       if (winnerIsPlayer) {
-        if (!isPotion && currentMission && user) {
+        if (isPotion) {
+          if (user && user.creatures && user.creatures[0]) {
+            user.creatures[0].currentHp = user.creatures[0].hp;
+            updateCurrentUser({ creatures: user.creatures });
+          }
+        } else if (currentMission && user) {
           const newSeashells =
             (user.seashells || 0) + (currentMission.reward || 0);
           const idxStr = sessionStorage.getItem("currentMissionIndex");
@@ -394,12 +400,6 @@ async function initGame() {
 
   // If mission has no enemy (e.g., Treasure or Potion), handle immediately
   if (!currentMission || !currentMission.enemy) {
-    if (currentMission && currentMission.name === "Potion") {
-      if (user && user.creatures && user.creatures[0]) {
-        user.creatures[0].currentHp = user.creatures[0].hp;
-        updateCurrentUser({ creatures: user.creatures });
-      }
-    }
     endBattle(player);
     return;
   }
