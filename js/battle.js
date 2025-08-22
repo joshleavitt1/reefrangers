@@ -211,7 +211,7 @@ function endBattle(winner) {
     const reward = currentMission?.reward || 0;
     button.textContent = winnerIsPlayer
       ? isPotion
-        ? "Heal Your Creature"
+        ? "Heal All HP"
         : `Claim 🐚 ${reward} Seashell${reward === 1 ? "" : "s"}`
       : `${enemy.name} stole your seashells`;
     button.addEventListener("click", () => {
