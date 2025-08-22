@@ -368,7 +368,8 @@ async function initGame() {
   const forceEndSession = sessionStorage.getItem("forceBattleEnd") === "1";
   if (forceEndSession) sessionStorage.removeItem("forceBattleEnd");
   const forceEnd = forceEndParam || forceEndSession;
-
+  const forceEnd = params.has("end");
+  
   // Load mission data first so we can skip combat missions early
   try {
     const stored = sessionStorage.getItem("currentMission");
