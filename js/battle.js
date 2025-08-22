@@ -259,7 +259,7 @@ function endBattle(winner) {
     requestAnimationFrame(() => {
       victoryBox.classList.add("show");
     });
-  }, isTreasure ? 0 : LINGER);
+  }, isTreasure || isPotion ? 0 : LINGER);
 }
 
 // ====== Turn Flow ======

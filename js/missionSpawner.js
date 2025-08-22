@@ -34,9 +34,9 @@
 
     function pickMission() {
       const weights = {
-        "Very Often": 0.8,
-        Often: 0.1,
-        Sometimes: 0.08,
+        "Very Often": 0.05,
+        Often: 0.85,
+        Sometimes: 0.04,
         Rare: 0.02,
       };
       const total = missions.reduce(
