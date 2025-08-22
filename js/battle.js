@@ -29,7 +29,9 @@ const PLAYER_VICTORY_SRC =
   playerCreature.sprite?.normal || "../images/shellfin.png";
 const maxHp = playerCreature.hp;
 const currentHp =
-  typeof playerCreature.currentHp === "number" ? playerCreature.currentHp : maxHp;
+  typeof playerCreature.currentHp === "number"
+    ? playerCreature.currentHp
+    : maxHp;
 const player = {
   name: playerCreature.name,
   hp: currentHp,
@@ -134,6 +136,8 @@ function animateAttack(attacker) {
 // Phase B: show ONLY winner, centered with "Winner" banner; swap sprite if player wins
 function endBattle(winner) {
   if (document.querySelector(".end-screen")) return;
+  const intro = document.getElementById("intro");
+  if (intro) intro.remove();
   const isTreasure = currentMission && currentMission.name === "Treasure";
   const isPotion = currentMission && currentMission.name === "Potion";
   if (player.hp > 0 && !isPotion) {
@@ -155,111 +159,115 @@ function endBattle(winner) {
   const winnerIsPlayer = winner === player;
 
   // Phase A: linger briefly with both creatures visible (skip for treasure)
-  setTimeout(() => {
-    const battleRoot = document.getElementById("battle");
-    const battlefield = document.getElementById("battlefield");
+  setTimeout(
+    () => {
+      const battleRoot = document.getElementById("battle");
+      const battlefield = document.getElementById("battlefield");
 
-    // Remove battlefield/UI so only background remains
-    if (battlefield) battlefield.remove();
-    if (modal) modal.remove();
+      // Remove battlefield/UI so only background remains
+      if (battlefield) battlefield.remove();
+      if (modal) modal.remove();
 
-    if (battleRoot) battleRoot.style.position = "relative";
+      if (battleRoot) battleRoot.style.position = "relative";
 
-    // === Victory/defeat overlay ===
-    const victoryBox = document.createElement("div");
-    victoryBox.className = "end-screen";
+      // === Victory/defeat overlay ===
+      const victoryBox = document.createElement("div");
+      victoryBox.className = "end-screen";
 
-    // Banner
-    const banner = document.createElement("h1");
-    banner.className = "end-banner";
-    banner.textContent = isTreasure
-      ? "Treasure"
-      : isPotion
-        ? "Potion"
-        : winnerIsPlayer
-          ? "Victory!"
-          : "Defeat";
+      // Banner
+      const banner = document.createElement("h1");
+      banner.className = "end-banner";
+      banner.textContent = isTreasure
+        ? "Treasure"
+        : isPotion
+          ? "Potion"
+          : winnerIsPlayer
+            ? "Victory!"
+            : "Defeat";
 
-    // Sprite wrapper
-    const spriteWrapper = document.createElement("div");
-    spriteWrapper.className = "sprite-wrapper";
+      // Sprite wrapper
+      const spriteWrapper = document.createElement("div");
+      spriteWrapper.className = "sprite-wrapper";
 
-    // Winner sprite (player gets special art)
-    const originalSprite = winnerEl?.querySelector(".fish-sprite");
-    const sprite = document.createElement("img");
-    sprite.className = "end-sprite";
-    sprite.alt = isTreasure
-      ? "Treasure"
-      : isPotion
-        ? "Potion"
-        : winnerIsPlayer
-          ? player.name
-          : enemy.name;
-    sprite.src = isTreasure
-      ? currentMission?.sprite || "../images/treasure.png"
-      : isPotion
-        ? currentMission?.sprite || "../images/potion.png"
-        : winnerIsPlayer
-          ? PLAYER_VICTORY_SRC
-          : originalSprite?.getAttribute("src") || "";
+      // Winner sprite (player gets special art)
+      const originalSprite = winnerEl?.querySelector(".fish-sprite");
+      const sprite = document.createElement("img");
+      sprite.className = "end-sprite";
+      sprite.alt = isTreasure
+        ? "Treasure"
+        : isPotion
+          ? "Potion"
+          : winnerIsPlayer
+            ? player.name
+            : enemy.name;
+      sprite.src = isTreasure
+        ? currentMission?.sprite || "../images/treasure.png"
+        : isPotion
+          ? currentMission?.sprite || "../images/potion.png"
+          : winnerIsPlayer
+            ? PLAYER_VICTORY_SRC
+            : originalSprite?.getAttribute("src") || "";
 
-    spriteWrapper.appendChild(sprite);
+      spriteWrapper.appendChild(sprite);
 
-    // Dynamic button
-    const button = document.createElement("button");
-    button.className = "end-button";
-    const reward = currentMission?.reward || 0;
-    button.textContent = winnerIsPlayer
-      ? isPotion
-        ? "Heal All HP"
-        : `Claim 🐚 ${reward} Seashell${reward === 1 ? "" : "s"}`
-      : `${enemy.name} stole your seashells`;
-    button.addEventListener("click", () => {
-      if (winnerIsPlayer) {
-        if (isPotion) {
-          if (user && user.creatures && user.creatures[0]) {
-            user.creatures[0].currentHp = user.creatures[0].hp;
-            updateCurrentUser({ creatures: user.creatures });
+      // Dynamic button
+      const button = document.createElement("button");
+      button.className = "end-button";
+      const reward = currentMission?.reward || 0;
+      button.textContent = winnerIsPlayer
+        ? isPotion
+          ? "Heal All HP"
+          : `Claim 🐚 ${reward} Seashell${reward === 1 ? "" : "s"}`
+        : `${enemy.name} stole your seashells`;
+      button.addEventListener("click", () => {
+        if (winnerIsPlayer) {
+          if (isPotion) {
+            if (user && user.creatures && user.creatures[0]) {
+              user.creatures[0].currentHp = user.creatures[0].hp;
+              updateCurrentUser({ creatures: user.creatures });
+            }
+          } else if (currentMission && user) {
+            const newSeashells =
+              (user.seashells || 0) + (currentMission.reward || 0);
+            const idxStr = sessionStorage.getItem("currentMissionIndex");
+            const missionsCompleted = Array.isArray(user.missionsCompleted)
+              ? [...user.missionsCompleted]
+              : [];
+            if (idxStr !== null) {
+              const idx = parseInt(idxStr, 10);
+              if (missionsCompleted[idx])
+                missionsCompleted[idx].completed = true;
+              updateCurrentUser({
+                seashells: newSeashells,
+                missionsCompleted,
+              });
+            } else {
+              updateCurrentUser({ seashells: newSeashells });
+            }
           }
-        } else if (currentMission && user) {
-          const newSeashells =
-            (user.seashells || 0) + (currentMission.reward || 0);
-          const idxStr = sessionStorage.getItem("currentMissionIndex");
-          const missionsCompleted = Array.isArray(user.missionsCompleted)
-            ? [...user.missionsCompleted]
-            : [];
-          if (idxStr !== null) {
-            const idx = parseInt(idxStr, 10);
-            if (missionsCompleted[idx]) missionsCompleted[idx].completed = true;
-            updateCurrentUser({
-              seashells: newSeashells,
-              missionsCompleted,
-            });
-          } else {
-            updateCurrentUser({ seashells: newSeashells });
-          }
+          sessionStorage.removeItem("currentMission");
+          sessionStorage.removeItem("currentMissionIndex");
+          window.location.href = "missions.html";
+        } else {
+          sessionStorage.removeItem("currentMission");
+          sessionStorage.removeItem("currentMissionIndex");
+          window.location.href = "home.html";
         }
-        sessionStorage.removeItem("currentMission");
-        sessionStorage.removeItem("currentMissionIndex");
-        window.location.href = "mission.html";
-      } else {
-        sessionStorage.removeItem("currentMission");
-        sessionStorage.removeItem("currentMissionIndex");
-        window.location.href = "home.html";
-      }
-    });
+      });
 
-    // Assemble
-    victoryBox.appendChild(banner);
-    victoryBox.appendChild(spriteWrapper);
-    victoryBox.appendChild(button);
-    battleRoot.appendChild(victoryBox);
+      // Assemble
+      victoryBox.appendChild(banner);
+      victoryBox.appendChild(spriteWrapper);
+      victoryBox.appendChild(button);
+      battleRoot.appendChild(victoryBox);
 
-    // Trigger reveal animations
-    requestAnimationFrame(() => {
-      victoryBox.classList.add("show");
-    });
-  }, isTreasure || isPotion ? 0 : LINGER);
+      // Trigger reveal animations
+      requestAnimationFrame(() => {
+        victoryBox.classList.add("show");
+      });
+    },
+    isTreasure || isPotion ? 0 : LINGER,
+  );
 }
 
 // ====== Turn Flow ======
@@ -361,16 +369,10 @@ function fetchQuestion() {
 
 // ====== Delayed Init Flow ======
 async function initGame() {
-  // Load questions
-  try {
-    const res = await fetch("../data/questions.json");
-    const data = await res.json();
-    if (Array.isArray(data)) questions = data;
-  } catch (err) {
-    console.error("Failed to load questions:", err);
-  }
+  const params = new URLSearchParams(window.location.search);
+  const forceEnd = params.has("end");
 
-  // Load mission data
+  // Load mission data first so we can skip combat missions early
   try {
     const stored = sessionStorage.getItem("currentMission");
     if (stored) {
@@ -398,10 +400,20 @@ async function initGame() {
     console.error("Failed to load missions:", err);
   }
 
-  // If mission has no enemy (e.g., Treasure or Potion), handle immediately
-  if (!currentMission || !currentMission.enemy) {
+  // If mission has no enemy (e.g., Potion or Treasure) or we explicitly
+  // request to skip combat, immediately show the end screen.
+  if (forceEnd || !currentMission || !currentMission.enemy) {
     endBattle(player);
     return;
+  }
+
+  // Load questions only for combat missions
+  try {
+    const res = await fetch("../data/questions.json");
+    const data = await res.json();
+    if (Array.isArray(data)) questions = data;
+  } catch (err) {
+    console.error("Failed to load questions:", err);
   }
 
   const playerNameEl = document.getElementById("player-name");

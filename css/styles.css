@@ -3,10 +3,6 @@
   --max-width: 425px;
 }
 
-body.mission {
-  --max-width: 600px;
-}
-
 body {
   margin: 0;
   font-family: "Arial Rounded MT Bold", Arial, sans-serif;
@@ -63,6 +59,7 @@ body.home #app {
 /* Mission page layout */
 body.mission #app {
   justify-content: center;
+  max-width: 600px;
 }
 
 /* Apple glass base */
@@ -128,7 +125,7 @@ body.mission #app {
   width: 100%;
   padding: 24px 24px;
   box-sizing: border-box;
-  color:white;
+  color: white;
 }
 
 #creature-name {
@@ -197,7 +194,8 @@ body.mission #creature-container {
 }
 
 .mission-bubble.spawn {
-  animation: pop-in 0.3s ease-out forwards,
+  animation:
+    pop-in 0.3s ease-out forwards,
     float 3s ease-in-out infinite 0.3s;
 }
 
@@ -261,9 +259,8 @@ body.mission #creature-container {
   font-size: 16px;
   cursor: pointer;
   gap: 6px; /* spacing between emoji + label */
-  text-shadow: 4px 4px 4px rgba(0,0,0,0.2);
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
 }
-
 
 .nav-item span.emoji {
   font-size: 32px;

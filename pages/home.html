@@ -31,7 +31,11 @@
 
       <!-- Bottom nav -->
       <div class="nav-row">
-        <a class="apple-glass nav-block nav-item" href="mission.html" id="mission-link">
+        <a
+          class="apple-glass nav-block nav-item"
+          href="missions.html"
+          id="mission-link"
+        >
           <span class="emoji">🤿</span>
           <span class="text">Explore</span>
         </a>
@@ -40,9 +44,7 @@
           <span class="text">Market</span>
         </a>
       </div>
-      
-      
-
+    </div>
     <script src="../js/userData.js"></script>
     <script>
       const user = getCurrentUser();
@@ -73,8 +75,7 @@
           if (statsEl)
             statsEl.textContent = `HP: ${currentHp}/${c.hp} | ATK: ${c.attack}`;
           const imgEl = document.querySelector("#creature-container img");
-          if (imgEl && c.sprite && c.sprite.normal)
-            imgEl.src = c.sprite.normal;
+          if (imgEl && c.sprite && c.sprite.normal) imgEl.src = c.sprite.normal;
           if (currentHp <= 0) {
             c.currentHp = c.hp;
             seashells = 0;
@@ -96,7 +97,7 @@
         if (missionLink) {
           missionLink.addEventListener("click", (e) => {
             e.preventDefault();
-            window.location.href = "mission.html";
+            window.location.href = "missions.html";
           });
         }
       } else {

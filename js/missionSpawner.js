@@ -34,7 +34,7 @@
 
     function pickMission() {
       const weights = {
-        "Very Often": 0.90,
+        "Very Often": 0.9,
         Often: 0.06,
         Sometimes: 0.03,
         Rare: 0.01,
@@ -71,14 +71,11 @@
       }
 
       bubble.addEventListener("click", () => {
-        if (mission.name === "Empty") {
-          activeMissions = activeMissions.filter((m) => m.id !== id);
-          saveActive();
-          bubble.remove();
-          return;
-        }
+        // Persist the mission so battle.html knows what was selected
         sessionStorage.setItem("currentMission", JSON.stringify(mission));
         sessionStorage.setItem("currentMissionIndex", String(index));
+
+        // Remove from active list and persist
         activeMissions = activeMissions.filter((m) => m.id !== id);
         saveActive();
         window.location.href = "battle.html";
@@ -119,8 +116,7 @@
         attempts++;
       } while (
         activeMissions.some(
-          (m) =>
-            Math.abs(m.left - left) < size && Math.abs(m.top - top) < size,
+          (m) => Math.abs(m.left - left) < size && Math.abs(m.top - top) < size,
         ) &&
         attempts < 20
       );
@@ -137,4 +133,3 @@
     setInterval(spawnMission, 2000);
   });
 })();
-
